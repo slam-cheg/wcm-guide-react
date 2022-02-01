@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wcm-guide-react/static/css/main.c0858882.css",
-    "main.js": "/wcm-guide-react/static/js/main.b57a0097.js",
+    "main.js": "/wcm-guide-react/static/js/main.009eec80.js",
     "static/media/homescreen.jpg": "/wcm-guide-react/static/media/homescreen.7641a1a2ba5d46380397.jpg",
     "static/media/firstscreen.jpg": "/wcm-guide-react/static/media/firstscreen.31e23d225efc40b824c4.jpg",
     "static/media/reportClicks.svg": "/wcm-guide-react/static/media/reportClicks.89c5450f40e76ae3c7a9017b83bf883e.svg",
@@ -16,10 +16,10 @@
     "static/media/settingsMetrics.svg": "/wcm-guide-react/static/media/settingsMetrics.d051a1902baa1cf23656957ffa1ca92b.svg",
     "static/media/campaignTree.svg": "/wcm-guide-react/static/media/campaignTree.cf2c16f20cda16f107770afbb3f64a09.svg",
     "main.c0858882.css.map": "/wcm-guide-react/static/css/main.c0858882.css.map",
-    "main.b57a0097.js.map": "/wcm-guide-react/static/js/main.b57a0097.js.map"
+    "main.009eec80.js.map": "/wcm-guide-react/static/js/main.009eec80.js.map"
   },
   "entrypoints": [
     "static/css/main.c0858882.css",
-    "static/js/main.b57a0097.js"
+    "static/js/main.009eec80.js"
   ]
 }
