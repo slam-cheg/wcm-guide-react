@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/slam-cheg/wcm-guide-react/static/css/main.c0858882.css",
+    "main.js": "/slam-cheg/wcm-guide-react/static/js/main.8890af88.js",
+    "static/media/homescreen.jpg": "/slam-cheg/wcm-guide-react/static/media/homescreen.7641a1a2ba5d46380397.jpg",
+    "static/media/firstscreen.jpg": "/slam-cheg/wcm-guide-react/static/media/firstscreen.31e23d225efc40b824c4.jpg",
+    "static/media/reportClicks.svg": "/slam-cheg/wcm-guide-react/static/media/reportClicks.89c5450f40e76ae3c7a9017b83bf883e.svg",
+    "static/media/obzorStructure.svg": "/slam-cheg/wcm-guide-react/static/media/obzorStructure.72c14e6d8893ead94bd4fc1fec93b35c.svg",
+    "static/media/automatization.svg": "/slam-cheg/wcm-guide-react/static/media/automatization.3744607609de8b26d998ed13a45f2021.svg",
+    "static/media/reporting.svg": "/slam-cheg/wcm-guide-react/static/media/reporting.4c6108046a1a640cf01b960d1f098c6a.svg",
+    "static/media/metricsDescr.svg": "/slam-cheg/wcm-guide-react/static/media/metricsDescr.424affe255720e48b5d4fcc5caac6bed.svg",
+    "static/media/conversions.svg": "/slam-cheg/wcm-guide-react/static/media/conversions.ef58f3a07cdf192f40dca051568a0cb2.svg",
+    "static/media/auditories.svg": "/slam-cheg/wcm-guide-react/static/media/auditories.2a09c5516d804146da6fc3b509bfd18a.svg",
+    "static/media/downloadXlsx.svg": "/slam-cheg/wcm-guide-react/static/media/downloadXlsx.bab2321d020d1eb954ba53291871d455.svg",
+    "index.html": "/slam-cheg/wcm-guide-react/index.html",
+    "static/media/settingsMetrics.svg": "/slam-cheg/wcm-guide-react/static/media/settingsMetrics.d051a1902baa1cf23656957ffa1ca92b.svg",
+    "static/media/campaignTree.svg": "/slam-cheg/wcm-guide-react/static/media/campaignTree.cf2c16f20cda16f107770afbb3f64a09.svg",
+    "main.c0858882.css.map": "/slam-cheg/wcm-guide-react/static/css/main.c0858882.css.map",
+    "main.8890af88.js.map": "/slam-cheg/wcm-guide-react/static/js/main.8890af88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0858882.css",
+    "static/js/main.8890af88.js"
+  ]
+}
