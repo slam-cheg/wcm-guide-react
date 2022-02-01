@@ -1,0 +1,15 @@
+.menu__item-container_active {
+    border-left-color: $red;
+    background-color: $red;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 5px;
+        border-top: 8px solid transparent;
+        border-left: 6px solid;
+        border-left-color: inherit;
+        border-bottom: 8px solid transparent;
+    }
+}

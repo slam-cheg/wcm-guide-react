@@ -1,0 +1,7 @@
+.menu__text {
+    @include menuFont;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    width: 230px;
+}
