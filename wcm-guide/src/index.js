@@ -10,12 +10,10 @@ ReactDOM.render(
     document.getElementById("root")
 );
 
-export const sidebar = document.querySelector(".sidebar");
-const slide = document.querySelector(".section");
+const sidebar = document.querySelector(".sidebar");
 const menuContainer = sidebar.querySelector(".menu");
-const menuButtons = menuContainer.querySelectorAll(".menu__item-container");
 const menuItems = menuContainer.querySelectorAll(".menu__item");
-const contentWrapper = document.querySelector(".content__wrapper");
+const menuButtons = menuContainer.querySelectorAll(".menu__item-container");
 
 sidebar.addEventListener("mouseover", () => {
     menuOpen(menuContainer);
@@ -38,7 +36,7 @@ menuItems.forEach((item) => {
 
 function setMenuActive(menuButtons) {
     menuButtons.forEach((menuButton) => {
-        if (menuButton.id === slide.id) {
+        if (menuButton.id === document.location.pathname) {
             menuButton.classList.add("menu__item-container_active");
         } else {
             menuButton.classList.remove("menu__item_active");
@@ -51,7 +49,7 @@ function menuOpen(menuContainer) {
 }
 
 function menuClose(menuContainer) {
-    if (!slide.classList.contains("home-screen")) {
+    if (document.location.pathname !== "/") {
         menuContainer.classList.add("menu_disabled");
     }
 }
@@ -66,10 +64,14 @@ function closeSubmenu(button, subitem) {
     button.classList.remove("menu__item_opened");
 }
 
-setTimeout(() => {
-    if (document.location.pathname === "/") {
-        sidebar.classList.remove("sidebar_disabled");
-        contentWrapper.classList.remove("content__wrapper_resized");
-		document.querySelector(".page").classList.remove("page__light")
-    }
-}, 10);
+if (document.location.pathname !== "/") {
+    sidebar.classList.add("sidebar_disabled");
+    document.querySelector(".page").classList.add("page__light");
+} else {
+    sidebar.classList.remove("sidebar_disabled");
+    document.querySelector(".page").classList.remove("page__light");
+}
+
+// setTimeout(() => {
+
+// }, 10);

@@ -1,0 +1,13 @@
+.menu__subitem-container {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: 0s;
+}

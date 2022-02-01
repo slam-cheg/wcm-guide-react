@@ -9,15 +9,25 @@ import reportClicks from "../images/reportClicks.svg";
 import conversions from "../images/conversions.svg";
 import automatization from "../images/automatization.svg";
 import metricsDescr from "../images/metricsDescr.svg";
-import { sidebar } from "..";
+export let additionalURL = "";
+
+isGitHub();
+function isGitHub() {
+    if (document.location.hostname === "slam-cheg.github.io") {
+        additionalURL = "wcm-guide-react";
+        console.log(true);
+    } else {
+        return console.log(false);
+    }
+}
 
 function Menu() {
     return (
-        <aside className="sidebar sidebar_disabled">
+        <aside className="sidebar">
             <ul className="menu">
                 <li className="menu__item">
                     <div className="menu__item-container" id="wcm-structure">
-                        <a className="menu__link" href="wcm-structure">
+                        <a className="menu__link" href="/wcm-structure">
                             <div className="menu__ico-wrapper">
                                 <img src={obzorStructure} alt="Обзор" className="menu__ico" />
                             </div>
@@ -29,7 +39,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="campaigns">
-                        <a className="menu__link" href="campaigns.html">
+                        <a className="menu__link" href="/campaigns">
                             <div className="menu__ico-wrapper">
                                 <img src={obzorStructure} alt="Обзор" className="menu__ico" />
                             </div>
@@ -40,12 +50,12 @@ function Menu() {
                     </div>
                     <div className="menu__subitem-container">
                         <div className="menu__subitem">
-                            <a href="campaign-structure.html" className="menu__subitem-link">
+                            <a href="campaign-structure" className="menu__subitem-link">
                                 Просмотр структуры кампании
                             </a>
                         </div>
                         <div className="menu__subitem">
-                            <a href="campaign-report.html" className="menu__subitem-link">
+                            <a href="campaign-report" className="menu__subitem-link">
                                 Отчет по кампании
                             </a>
                         </div>
@@ -53,7 +63,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="reporting">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/">
                             <div className="menu__ico-wrapper">
                                 <img src={reporting} alt="Отчеты" className="menu__ico" />
                             </div>
@@ -65,7 +75,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="campaign-tree">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/">
                             <div className="menu__ico-wrapper">
                                 <img src={campaignTree} alt="Древо" className="menu__ico" />
                             </div>
@@ -77,7 +87,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="settings">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/">
                             <div className="menu__ico-wrapper">
                                 <img src={settingsMetrics} alt="" className="menu__ico" />
                             </div>
@@ -89,7 +99,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="xlsx-reports">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/">
                             <div className="menu__ico-wrapper">
                                 <img src={downloadXlsx} alt="" className="menu__ico" />
                             </div>
@@ -101,7 +111,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="auditoria-report">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/#">
                             <div className="menu__ico-wrapper">
                                 <img src={auditories} alt="" className="menu__ico" />
                             </div>
@@ -113,7 +123,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="views-report">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/#">
                             <div className="menu__ico-wrapper">
                                 <img src={reportClicks} alt="" className="menu__ico" />
                             </div>
@@ -125,7 +135,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="conversion-report">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/#">
                             <div className="menu__ico-wrapper">
                                 <img src={conversions} alt="" className="menu__ico" />
                             </div>
@@ -137,7 +147,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="automatization">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/#">
                             <div className="menu__ico-wrapper">
                                 <img src={automatization} alt="" className="menu__ico" />
                             </div>
@@ -149,7 +159,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="metrics">
-                        <a className="menu__link" href="#">
+                        <a className="menu__link" href="/#">
                             <div className="menu__ico-wrapper">
                                 <img src={metricsDescr} alt="" className="menu__ico" />
                             </div>
@@ -163,7 +173,5 @@ function Menu() {
         </aside>
     );
 }
-
-
 
 export default Menu;

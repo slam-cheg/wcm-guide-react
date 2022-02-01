@@ -1,6 +1,5 @@
 import React from "react";
 import firstscreen from "../images/firstscreen.jpg";
-import { sidebar } from "../index";
 
 function WcmStructure() {
     return (
@@ -28,13 +27,13 @@ function WcmStructure() {
                             </ul>
                         </div>
                         <div className="section-content__card_hover">
-                            <a className="section-content__card__heading" href="campaigns.html">
+                            <a className="section-content__card__heading" href="/campaigns">
                                 Campaigns
                             </a>
-                            <a className="section-content__card__selector" href="campaign-structure.html">
+                            <a className="section-content__card__selector" href="/campaign-structure">
                                 Просмотр структуры кампании
                             </a>
-                            <a className="section-content__card__selector" href="campaign-report.html">
+                            <a className="section-content__card__selector" href="/campaign-report">
                                 Отчет по кампании
                             </a>
                         </div>
@@ -87,6 +86,5 @@ function WcmStructure() {
         </div>
     );
 }
-
 
 export default WcmStructure;

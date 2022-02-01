@@ -1,0 +1,13 @@
+.menu__item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 0 10px;
+  align-items: flex-start;
+  transition: 0.2s;
+}
+.menu__item:last-of-type {
+  margin: 0;
+}

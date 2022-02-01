@@ -1,0 +1,13 @@
+.menu_disabled {
+  transition: 0.2s;
+  width: 65px;
+}
+.menu_disabled .menu__text-wrapper {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+}
+.menu_disabled .menu__text {
+  pointer-events: none;
+}
