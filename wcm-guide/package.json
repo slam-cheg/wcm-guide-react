@@ -24,7 +24,7 @@
         "type": "git",
         "url": "git+https://github.com/slam-cheg/wcm-guide-react.git"
     },
-    "homepage": "https://slam-cheg.github.io/wcm-guide-react/",
+    "homepage": "https://slam-cheg.github.io/wcm-guide-react",
     "eslintConfig": {
         "extends": [
             "react-app",

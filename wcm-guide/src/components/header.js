@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../images/logo.png";
-import { additionalURL } from "./menu";
 
 function Header() {
     return (
@@ -21,7 +20,7 @@ function HeaderLogoWrapper() {
 
 function Logo() {
     return (
-        <a href={"/"} className="header__logo-wrapper">
+        <a href="/wcm-guide-react" className="header__logo-wrapper">
             <img className="header__logo" src={logo} alt="Weborama" />
         </a>
     );

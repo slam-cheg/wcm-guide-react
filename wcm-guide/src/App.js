@@ -3,7 +3,6 @@ import Menu from "./components/menu";
 import HomePage from "./pages/homepage";
 import WcmStructure from "./pages/wcm-structure";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { additionalURL } from "./components/menu";
 
 function App() {
     return (
@@ -13,8 +12,8 @@ function App() {
                 <Router>
                     <Menu />
                     <Routes>
-                        <Route exact path={"/"} element={<HomePage />} />
-                        <Route path={"/wcm-structure"} element={<WcmStructure />} />
+                        <Route exact path="/wcm-guide-react" element={<HomePage />} />
+                        <Route path="/wcm-guide-react/wcm-structure" element={<WcmStructure />} />
                     </Routes>
                 </Router>
             </main>

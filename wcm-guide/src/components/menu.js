@@ -9,17 +9,6 @@ import reportClicks from "../images/reportClicks.svg";
 import conversions from "../images/conversions.svg";
 import automatization from "../images/automatization.svg";
 import metricsDescr from "../images/metricsDescr.svg";
-export let additionalURL = "";
-
-isGitHub();
-function isGitHub() {
-    if (document.location.hostname === "slam-cheg.github.io") {
-        additionalURL = "wcm-guide-react";
-        console.log(true);
-    } else {
-        return console.log(false);
-    }
-}
 
 function Menu() {
     return (
@@ -27,7 +16,7 @@ function Menu() {
             <ul className="menu">
                 <li className="menu__item">
                     <div className="menu__item-container" id="wcm-structure">
-                        <a className="menu__link" href="/wcm-structure">
+                        <a className="menu__link" href="/wcm-guide-react/wcm-structure">
                             <div className="menu__ico-wrapper">
                                 <img src={obzorStructure} alt="Обзор" className="menu__ico" />
                             </div>

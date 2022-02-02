@@ -14,6 +14,8 @@ const sidebar = document.querySelector(".sidebar");
 const menuContainer = sidebar.querySelector(".menu");
 const menuItems = menuContainer.querySelectorAll(".menu__item");
 const menuButtons = menuContainer.querySelectorAll(".menu__item-container");
+const contentContainer = document.querySelector(".content__wrapper");
+const page = document.querySelector(".page");
 
 sidebar.addEventListener("mouseover", () => {
     menuOpen(menuContainer);
@@ -49,7 +51,7 @@ function menuOpen(menuContainer) {
 }
 
 function menuClose(menuContainer) {
-    if (document.location.pathname !== "/") {
+    if (document.location.pathname !== "/wcm-guide-react") {
         menuContainer.classList.add("menu_disabled");
     }
 }
@@ -64,14 +66,12 @@ function closeSubmenu(button, subitem) {
     button.classList.remove("menu__item_opened");
 }
 
-if (document.location.pathname !== "/") {
+if (!document.querySelector(".section").classList.contains("home-screen")) {
     sidebar.classList.add("sidebar_disabled");
-    document.querySelector(".page").classList.add("page__light");
+    console.log("Not home");
+    page.classList.add("page__light");
+    contentContainer.classList.add("content__wrapper_resized");
 } else {
-    sidebar.classList.remove("sidebar_disabled");
-    document.querySelector(".page").classList.remove("page__light");
+    page.classList.remove("page__light");
+    console.log("Home");
 }
-
-// setTimeout(() => {
-
-// }, 10);
