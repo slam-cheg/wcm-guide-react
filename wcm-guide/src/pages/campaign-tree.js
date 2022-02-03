@@ -1,13 +1,12 @@
 import React from "react";
-import Infoblock from "../components/infoblock";
-import campaigns from "../images/campaigns.jpg";
+import campaignTree from "../images/campaign-tree.jpg";
 
-function Campaigns() {
+function CampaignTree() {
     return (
         <div className="section__wrapper">
-            <section className="section section__not-homepage" id="campaigns">
+            <section className="section section__not-homepage" id="campaign-tree">
                 <div className="section-heading">
-                    <h1 className="section-heading__title">WCM Campaigns (Кампании)</h1>
+                    <h1 className="section-heading__title">Campaign tree</h1>
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
@@ -16,27 +15,10 @@ function Campaigns() {
                         voluptates provident quis mollitia, sequi optio vel amet dolores beatae ab sint.
                     </p>
                 </div>
-                <SectionCover />
+                <img className="section__image" src={campaignTree} alt="campaign tree" />
             </section>
         </div>
     );
 }
 
-function SectionCover() {
-    return (
-        <div className="section__cover">
-            <SectionImage />
-            <InfoTrigger />
-            <Infoblock />
-        </div>
-    );
-}
-
-function SectionImage() {
-    return <img className="section__image" src={campaigns} alt="Кампании WCM" />;
-}
-function InfoTrigger() {
-    return <div className="infoblock__trigger">▼</div>;
-}
-
-export default Campaigns;
+export default CampaignTree;

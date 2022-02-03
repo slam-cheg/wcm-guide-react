@@ -1,0 +1,16 @@
+.infoblock__trigger {
+    color: #090e24;
+    opacity: 0.5;
+    font-size: 14px;
+    position: absolute;
+    top: 251px;
+    left: 402px;
+    cursor: pointer;
+}
+
+.infoblock__trigger:hover ~ .infoblock {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.2s;
+}

@@ -305,7 +305,7 @@
 
 .section__content {
   padding-left: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .section_not-homepage {
@@ -319,6 +319,10 @@
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.section__cover {
+  position: relative;
 }
 
 .card {
@@ -438,4 +442,71 @@
 }
 .card__list-item:last-of-type {
   margin-bottom: 0;
+}
+
+.infoblock {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #c5cacf;
+  top: 255px;
+  left: 410px;
+  border-radius: 4px;
+  min-width: 150px;
+  padding: 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+.infoblock:hover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.2s;
+}
+
+.infoblock__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.infoblock__list-item {
+  font-family: system-ui;
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 3px;
+  color: #4d4d4d;
+}
+.infoblock__list-item:last-of-type {
+  margin-bottom: 0;
+}
+.infoblock__list-item a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+.infoblock__list-item a:hover {
+  color: #c1002a;
+  transition: 0.2s;
+}
+
+.infoblock__trigger {
+  color: #090e24;
+  opacity: 0.5;
+  font-size: 14px;
+  position: absolute;
+  top: 251px;
+  left: 402px;
+  cursor: pointer;
+}
+
+.infoblock__trigger:hover ~ .infoblock {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.2s;
 }

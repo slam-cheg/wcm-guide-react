@@ -44,7 +44,7 @@ function Menu() {
                             </a>
                         </div>
                         <div className="menu__subitem">
-                            <a href="campaign-report" className="menu__subitem-link">
+                            <a href="/wcm-guide-react/campaign-report" className="menu__subitem-link">
                                 Отчет по кампании
                             </a>
                         </div>
@@ -52,7 +52,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="reporting">
-                        <a className="menu__link" href="/">
+                        <a className="menu__link" href="/wcm-guide-react/reporting">
                             <div className="menu__ico-wrapper">
                                 <img src={reporting} alt="Отчеты" className="menu__ico" />
                             </div>
@@ -64,7 +64,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="campaign-tree">
-                        <a className="menu__link" href="/">
+                        <a className="menu__link" href="/wcm-guide-react/campaign-tree">
                             <div className="menu__ico-wrapper">
                                 <img src={campaignTree} alt="Древо" className="menu__ico" />
                             </div>

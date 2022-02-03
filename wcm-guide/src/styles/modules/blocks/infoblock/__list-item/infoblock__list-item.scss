@@ -1,0 +1,23 @@
+.infoblock__list-item {
+    font-family: system-ui;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 3px;
+    color: $grey2;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.2s;
+
+        &:hover {
+            color: $red;
+            transition: 0.2s;
+        }
+    }
+}

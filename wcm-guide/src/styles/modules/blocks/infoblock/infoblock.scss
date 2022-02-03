@@ -1,0 +1,23 @@
+.infoblock {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    background: $white;
+    border: 1px solid $lightGrey;
+    top: 255px;
+    left: 410px;
+    border-radius: 4px;
+    min-width: 150px;
+    padding: 1px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+    transition: 0.2s;
+
+    &:hover {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transition: 0.2s;
+    }
+}

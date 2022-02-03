@@ -6,6 +6,8 @@ import WcmStructure from "./pages/wcm-structure";
 import Campaigns from "./pages/campaigns";
 import CampaignStructure from "./pages/campaign-structure";
 import CampaignReport from "./pages/campaign-report";
+import Reports from "./pages/reports";
+import CampaignTree from "./pages/campaign-tree";
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                         <Route path="/wcm-guide-react/campaigns" element={<Campaigns />} />
                         <Route path="/wcm-guide-react/campaign-structure" element={<CampaignStructure />} />
                         <Route path="/wcm-guide-react/campaign-report" element={<CampaignReport />} />
+                        <Route path="/wcm-guide-react/reporting" element={<Reports />} />
+                        <Route path="/wcm-guide-react/campaign-tree" element={<CampaignTree />} />
                     </Routes>
                 </Router>
             </main>

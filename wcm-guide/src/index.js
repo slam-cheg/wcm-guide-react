@@ -13,7 +13,6 @@ ReactDOM.render(
 const sidebar = document.querySelector(".sidebar");
 const menuContainer = sidebar.querySelector(".menu");
 const menuItems = menuContainer.querySelectorAll(".menu__item");
-const contentContainer = document.querySelector(".section");
 const page = document.querySelector(".page");
 sidebar.addEventListener("mouseover", () => {
     menuOpen(menuContainer);
@@ -53,6 +52,12 @@ function menuClose(menuContainer) {
     if (document.location.pathname !== "/wcm-guide-react") {
         menuContainer.classList.add("menu_disabled");
     }
+}
+
+if (document.location.pathname === "/wcm-guide-react/wcm-structure") {
+    document.getElementById("page").style.overflow = "hidden";
+} else {
+    document.getElementById("page").style.overflow = "auto";
 }
 
 function openSubmenu(button, subitem) {

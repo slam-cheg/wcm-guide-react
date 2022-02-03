@@ -11,6 +11,4 @@ function HomePage() {
     );
 }
 
-document.getElementById("page").style.overflow = "hidden";
-
 export default HomePage;
