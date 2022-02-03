@@ -13,17 +13,15 @@ ReactDOM.render(
 const sidebar = document.querySelector(".sidebar");
 const menuContainer = sidebar.querySelector(".menu");
 const menuItems = menuContainer.querySelectorAll(".menu__item");
-const menuButtons = menuContainer.querySelectorAll(".menu__item-container");
-const contentContainer = document.querySelector(".content__wrapper");
+const contentContainer = document.querySelector(".section");
 const page = document.querySelector(".page");
-
 sidebar.addEventListener("mouseover", () => {
     menuOpen(menuContainer);
 });
 sidebar.addEventListener("mouseout", () => {
     menuClose(menuContainer);
 });
-setMenuActive(menuButtons);
+setMenuActive();
 menuItems.forEach((item) => {
     if (item.childNodes.length > 1) {
         const subitem = item.querySelector(".menu__subitem-container");
@@ -36,9 +34,10 @@ menuItems.forEach((item) => {
     }
 });
 
-function setMenuActive(menuButtons) {
+function setMenuActive() {
+    const menuButtons = menuContainer.querySelectorAll(".menu__item-container");
     menuButtons.forEach((menuButton) => {
-        if (menuButton.id === document.location.pathname) {
+        if (menuButton.id === document.querySelector(".section").id) {
             menuButton.classList.add("menu__item-container_active");
         } else {
             menuButton.classList.remove("menu__item_active");
@@ -69,9 +68,8 @@ function closeSubmenu(button, subitem) {
 if (!document.querySelector(".section").classList.contains("home-screen")) {
     sidebar.classList.add("sidebar_disabled");
     console.log("Not home");
-    page.classList.add("page__light");
-    contentContainer.classList.add("content__wrapper_resized");
+    page.classList.add("page_light");
 } else {
-    page.classList.remove("page__light");
+    page.classList.remove("page_light");
     console.log("Home");
 }

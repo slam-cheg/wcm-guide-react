@@ -2,7 +2,7 @@
 @import "../styles/modules/variables.scss";
 @import "../styles/modules/mixins.scss";
 @import "../styles/modules/blocks/page/page.scss";
-@import "../styles/modules/blocks/page/__light/page__light.scss";
+@import "../styles/modules/blocks/page/_light/page_light.scss";
 @import "../styles/modules/blocks/section/section.scss";
 // header
 @import "../styles/modules/blocks/header/header.scss";
@@ -11,23 +11,6 @@
 @import "../styles/modules/blocks/header/__title-wrapper/header__title-wrapper.scss";
 @import "../styles/modules/blocks/header/__title/header__title.scss";
 @import "../styles/modules/blocks/header/__description/header__description.scss";
-//content
-@import "../styles/modules/blocks/content/content.scss";
-@import "../styles/modules/blocks/content/__wrapper/_resized/content__wrapper_resized.scss";
-@import "../styles/modules/blocks/section-content/__card/_hover/section-content__card_hover.scss";
-@import "../styles/modules/blocks/section-content/__card/__heading/section-content__card__heading.scss";
-@import "../styles/modules/blocks/section-content/__card/__selector/section-content__card__selector.scss";
-//sections inside styles
-@import "../styles/modules/blocks/section-heading/section-heading.scss";
-@import "../styles/modules/blocks/section-heading/__title/section-heading__title.scss";
-@import "../styles/modules/blocks/section-content/section-content.scss";
-@import "../styles/modules/blocks/section-content/__card/section-content__card.scss";
-@import "../styles/modules/blocks/section-content/__card/__title/section-content__card__title.scss";
-@import "../styles/modules/blocks/section-content/__card/__num-wrapper/section-content__card__num-wrapper.scss";
-@import "../styles/modules/blocks/section-content/__card/__description/section-content__card__description.scss";
-@import "../styles/modules/blocks/section-content/__card/__list/section-content__card__list.scss";
-@import "../styles/modules/blocks/section-content/__card/__list-item/section-content__card__list-item.scss";
-@import "../styles/modules/blocks/section-content/__card/__button/section-content__card__button.scss";
 //sidebar
 @import "../styles/modules/blocks/sidebar/sidebar.scss";
 @import "../styles/modules/blocks/sidebar/_disabled/sidebar_disabled.scss";
@@ -46,14 +29,28 @@
 @import "../styles/modules/blocks/menu/__subitem/menu__subitem.scss";
 @import "../styles/modules/blocks/menu/__subitem-container/_opened/menu__subitem-container_opened.scss";
 @import "../styles/modules/blocks/menu/__subitem-link/menu__subitem-link.scss";
+//content-wrapper
+@import "../styles/modules/blocks/main/main.scss";
 //homescreen
 @import "../styles/modules/blocks/home-screen/home-screen.scss";
 @import "../styles/modules/blocks/home-screen/__image/home-screen__image.scss";
-//first-screen
-@import "../styles/modules/blocks/first-screen/first-screen.scss";
-@import "../styles/modules/blocks/first-screen/__image/first-screen__image.scss";
-
-// popup
-@import "../styles/modules/blocks/popup/popup.scss";
-@import "../styles/modules/blocks/popup/_opened/popup_opened.scss";
-@import "../styles/modules/blocks/popup/__container/popup__container.scss";
+//all sections
+@import "../styles/modules/blocks/section-heading/section-heading.scss";
+@import "../styles/modules/blocks/section-heading/__title/section-heading__title.scss";
+@import '../styles/modules/blocks/section/__wrapper/section__wrapper.scss';
+@import "../styles/modules/blocks/section/__additional-content/section__additional-content.scss";
+@import "../styles/modules/blocks/section/__image/section__image.scss";
+@import "../styles/modules/blocks/section/__lead/section__lead.scss";
+@import "../styles/modules/blocks/section/__content/section__content.scss";
+@import "../styles/modules/blocks/section/_not-homepage/section_not-homepage.scss";
+@import "../styles/modules/blocks/section/__image/_resized/section__image_resized.scss";
+// card
+@import "../styles/modules/blocks/card/card.scss";
+@import "../styles/modules/blocks/card/_hover/card_hover.scss";
+@import "../styles/modules/blocks/card/__heading/card__heading.scss";
+@import "../styles/modules/blocks/card/__selector/card__selector.scss";
+@import "../styles/modules/blocks/card/__title/card__title.scss";
+@import "../styles/modules/blocks/card/__num-wrapper/card__num-wrapper.scss";
+@import "../styles/modules/blocks/card/__description/card__description.scss";
+@import "../styles/modules/blocks/card/__list/card__list.scss";
+@import "../styles/modules/blocks/card/__list-item/card__list-item.scss";

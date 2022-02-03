@@ -28,7 +28,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="campaigns">
-                        <a className="menu__link" href="/campaigns">
+                        <a className="menu__link" href="/wcm-guide-react/campaigns">
                             <div className="menu__ico-wrapper">
                                 <img src={obzorStructure} alt="Обзор" className="menu__ico" />
                             </div>
@@ -39,7 +39,7 @@ function Menu() {
                     </div>
                     <div className="menu__subitem-container">
                         <div className="menu__subitem">
-                            <a href="campaign-structure" className="menu__subitem-link">
+                            <a href="/wcm-guide-react/campaign-structure" className="menu__subitem-link">
                                 Просмотр структуры кампании
                             </a>
                         </div>

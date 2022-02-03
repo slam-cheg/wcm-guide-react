@@ -1,8 +1,0 @@
-.section-content__card__list-item {
-    @include defaultText;
-    margin-bottom: 5px;
-
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-}
