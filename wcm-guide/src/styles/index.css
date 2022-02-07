@@ -301,6 +301,12 @@
   font-family: system-ui;
   font-size: 16px;
   color: #101a46;
+  width: 60%;
+}
+
+.section__lead_color {
+  color: #c1002a;
+  font-weight: 600;
 }
 
 .section__content {
@@ -469,7 +475,7 @@
 
 .infoblock__list {
   list-style: none;
-  padding: 0;
+  padding: 3px 0;
   margin: 0;
 }
 
@@ -488,6 +494,9 @@
   text-decoration: none;
   color: inherit;
   transition: 0.2s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .infoblock__list-item a:hover {
   color: #c1002a;
@@ -499,8 +508,6 @@
   opacity: 0.5;
   font-size: 14px;
   position: absolute;
-  top: 251px;
-  left: 402px;
   cursor: pointer;
 }
 
@@ -509,4 +516,8 @@
   opacity: 1;
   pointer-events: auto;
   transition: 0.2s;
+}
+
+.infoblock__list-item__icon {
+  margin-inline: 5px;
 }

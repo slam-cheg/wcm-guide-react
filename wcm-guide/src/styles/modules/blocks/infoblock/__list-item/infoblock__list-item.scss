@@ -6,6 +6,7 @@
     margin-bottom: 3px;
     color: $grey2;
 
+
     &:last-of-type {
         margin-bottom: 0;
     }
@@ -14,6 +15,9 @@
         text-decoration: none;
         color: inherit;
         transition: 0.2s;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
 
         &:hover {
             color: $red;

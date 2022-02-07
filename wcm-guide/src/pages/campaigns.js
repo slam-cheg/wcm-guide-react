@@ -1,5 +1,6 @@
 import React from "react";
 import Infoblock from "../components/infoblock";
+import InfoTrigger from "../components/infotrigger";
 import campaigns from "../images/campaigns.jpg";
 
 function Campaigns() {
@@ -11,9 +12,8 @@ function Campaigns() {
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit totam facere sit consectetur at culpa, quisquam ratione voluptates provident quis mollitia, sequi
-                        optio vel amet dolores beatae ab sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit totam facere sit consectetur at culpa, quisquam ratione
-                        voluptates provident quis mollitia, sequi optio vel amet dolores beatae ab sint.
+                        <span className="section__lead_color">Campaigns</span> &mdash;&nbsp;первая вкладка, которая открывается внутри аккаунта WCM Здесь удобно смотреть структуру заведения кампании
+                        и&nbsp;основные метрики.
                     </p>
                 </div>
                 <SectionCover />
@@ -34,9 +34,6 @@ function SectionCover() {
 
 function SectionImage() {
     return <img className="section__image" src={campaigns} alt="Кампании WCM" />;
-}
-function InfoTrigger() {
-    return <div className="infoblock__trigger">▼</div>;
 }
 
 export default Campaigns;

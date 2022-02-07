@@ -10,9 +10,8 @@ function Reports() {
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit totam facere sit consectetur at culpa, quisquam ratione voluptates provident quis mollitia, sequi
-                        optio vel amet dolores beatae ab sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit totam facere sit consectetur at culpa, quisquam ratione
-                        voluptates provident quis mollitia, sequi optio vel amet dolores beatae ab sint.
+                        <span className="section__lead_color">Reporting</span> &mdash;&nbsp;вкладка со&nbsp;статистикой по&nbsp;размещению и&nbsp;всеми отчетами&nbsp;По умолчанию тут представлены все
+                        проекты, заведенные внутри аккаунта (список проектов в&nbsp;таблице под графиком) Можно зайти внутрь проекта, кликнув по&nbsp;нему
                     </p>
                 </div>
                 <img className="section__image" src={Reporting} alt="отчеты" />

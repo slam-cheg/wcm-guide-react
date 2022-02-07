@@ -1,4 +1,5 @@
 .section__lead {
     @include description;
     color: $blue;
+    width: 60%;
 }
