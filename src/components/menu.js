@@ -88,7 +88,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="xlsx-reports">
-                        <a className="menu__link" href="/">
+                        <a className="menu__link" href="/xlsx-reports">
                             <div className="menu__ico-wrapper">
                                 <img src={downloadXlsx} alt="" className="menu__ico" />
                             </div>

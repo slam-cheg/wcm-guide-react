@@ -9,6 +9,7 @@ import CampaignReport from "./pages/campaign-report";
 import Reports from "./pages/reports";
 import CampaignTree from "./pages/campaign-tree";
 import PeriodMetrics from "./pages/period-metrics";
+import XlsxReports from "./pages/xlsx-reports";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                         <Route path="/reporting" element={<Reports />} />
                         <Route path="/campaign-tree" element={<CampaignTree />} />
                         <Route path="/settings" element={<PeriodMetrics />} />
+                        <Route path="/xlsx-reports" element={<XlsxReports />} />
                     </Routes>
                 </Router>
             </main>
