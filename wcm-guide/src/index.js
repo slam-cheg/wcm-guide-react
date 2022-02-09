@@ -74,7 +74,7 @@ if (!document.querySelector(".section").classList.contains("home-screen")) {
     sidebar.classList.add("sidebar_disabled");
     console.log("Not home");
     page.classList.add("page_light");
-    menuClose(menuContainer)
+    menuClose(menuContainer);
 } else {
     page.classList.remove("page_light");
     console.log("Home");

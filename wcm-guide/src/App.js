@@ -8,6 +8,7 @@ import CampaignStructure from "./pages/campaign-structure";
 import CampaignReport from "./pages/campaign-report";
 import Reports from "./pages/reports";
 import CampaignTree from "./pages/campaign-tree";
+import PeriodMetrics from "./pages/period-metrics";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                         <Route path="/wcm-guide-react/campaign-report" element={<CampaignReport />} />
                         <Route path="/wcm-guide-react/reporting" element={<Reports />} />
                         <Route path="/wcm-guide-react/campaign-tree" element={<CampaignTree />} />
+                        <Route path="/wcm-guide-react/settings" element={<PeriodMetrics />} />
                     </Routes>
                 </Router>
             </main>

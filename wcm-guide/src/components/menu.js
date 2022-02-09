@@ -76,7 +76,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="settings">
-                        <a className="menu__link" href="/">
+                        <a className="menu__link" href="/wcm-guide-react/settings">
                             <div className="menu__ico-wrapper">
                                 <img src={settingsMetrics} alt="" className="menu__ico" />
                             </div>

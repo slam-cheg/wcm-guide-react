@@ -12,8 +12,8 @@ function Campaigns() {
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        <span className="section__lead_color">Campaigns</span> &mdash;&nbsp;первая вкладка, которая открывается внутри аккаунта WCM Здесь удобно смотреть структуру заведения кампании
-                        и&nbsp;основные метрики.
+                        <span className="section__lead_color">Campaigns</span> &mdash;&nbsp;первая вкладка, которая открывается внутри аккаунта WCM Здесь удобно смотреть
+                        структуру заведения кампании и&nbsp;основные метрики.
                     </p>
                 </div>
                 <SectionCover />
