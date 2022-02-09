@@ -20,7 +20,7 @@ function HeaderLogoWrapper() {
 
 function Logo() {
     return (
-        <a href="/wcm-guide-react" className="header__logo-wrapper">
+        <a href="/" className="header__logo-wrapper">
             <img className="header__logo" src={logo} alt="Weborama" />
         </a>
     );

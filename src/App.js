@@ -18,14 +18,14 @@ function App() {
                 <Router>
                     <Menu />
                     <Routes>
-                        <Route exact path="/wcm-guide-react" element={<HomePage />} />
-                        <Route path="/wcm-guide-react/wcm-structure" element={<WcmStructure />} />
-                        <Route path="/wcm-guide-react/campaigns" element={<Campaigns />} />
-                        <Route path="/wcm-guide-react/campaign-structure" element={<CampaignStructure />} />
-                        <Route path="/wcm-guide-react/campaign-report" element={<CampaignReport />} />
-                        <Route path="/wcm-guide-react/reporting" element={<Reports />} />
-                        <Route path="/wcm-guide-react/campaign-tree" element={<CampaignTree />} />
-                        <Route path="/wcm-guide-react/settings" element={<PeriodMetrics />} />
+                        <Route exact path="/" element={<HomePage />} />
+                        <Route path="/wcm-structure" element={<WcmStructure />} />
+                        <Route path="/campaigns" element={<Campaigns />} />
+                        <Route path="/campaign-structure" element={<CampaignStructure />} />
+                        <Route path="/campaign-report" element={<CampaignReport />} />
+                        <Route path="/reporting" element={<Reports />} />
+                        <Route path="/campaign-tree" element={<CampaignTree />} />
+                        <Route path="/settings" element={<PeriodMetrics />} />
                     </Routes>
                 </Router>
             </main>

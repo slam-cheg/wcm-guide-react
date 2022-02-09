@@ -16,7 +16,7 @@ function Menu() {
             <ul className="menu">
                 <li className="menu__item">
                     <div className="menu__item-container" id="wcm-structure">
-                        <a className="menu__link" href="/wcm-guide-react/wcm-structure">
+                        <a className="menu__link" href="/wcm-structure">
                             <div className="menu__ico-wrapper">
                                 <img src={obzorStructure} alt="Обзор" className="menu__ico" />
                             </div>
@@ -28,7 +28,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="campaigns">
-                        <a className="menu__link" href="/wcm-guide-react/campaigns">
+                        <a className="menu__link" href="/campaigns">
                             <div className="menu__ico-wrapper">
                                 <img src={obzorStructure} alt="Обзор" className="menu__ico" />
                             </div>
@@ -39,12 +39,12 @@ function Menu() {
                     </div>
                     <div className="menu__subitem-container">
                         <div className="menu__subitem">
-                            <a href="/wcm-guide-react/campaign-structure" className="menu__subitem-link">
+                            <a href="/campaign-structure" className="menu__subitem-link">
                                 Просмотр структуры кампании
                             </a>
                         </div>
                         <div className="menu__subitem">
-                            <a href="/wcm-guide-react/campaign-report" className="menu__subitem-link">
+                            <a href="/campaign-report" className="menu__subitem-link">
                                 Отчет по кампании
                             </a>
                         </div>
@@ -52,7 +52,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="reporting">
-                        <a className="menu__link" href="/wcm-guide-react/reporting">
+                        <a className="menu__link" href="/reporting">
                             <div className="menu__ico-wrapper">
                                 <img src={reporting} alt="Отчеты" className="menu__ico" />
                             </div>
@@ -64,7 +64,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="campaign-tree">
-                        <a className="menu__link" href="/wcm-guide-react/campaign-tree">
+                        <a className="menu__link" href="/campaign-tree">
                             <div className="menu__ico-wrapper">
                                 <img src={campaignTree} alt="Древо" className="menu__ico" />
                             </div>
@@ -76,7 +76,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="settings">
-                        <a className="menu__link" href="/wcm-guide-react/settings">
+                        <a className="menu__link" href="/settings">
                             <div className="menu__ico-wrapper">
                                 <img src={settingsMetrics} alt="" className="menu__ico" />
                             </div>

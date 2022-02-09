@@ -9,22 +9,22 @@ function Infoblock() {
         <div className="infoblock">
             <menu className="infoblock__list">
                 <li className="infoblock__list-item">
-                    <a href="/wcm-guide-react/campaign-structure">
-                        <img className="infoblock__list-item__icon" src={folder} />
+                    <a href="/campaign-structure">
+                        <img className="infoblock__list-item__icon" alt="ico-folder" src={folder} />
                         Open
                     </a>
                 </li>
                 <li className="infoblock__list-item">
-                    <img className="infoblock__list-item__icon" src={pencil} />
+                    <img className="infoblock__list-item__icon" alt="ico-pencil" src={pencil} />
                     Edit
                 </li>
                 <li className="infoblock__list-item">
-                    <img className="infoblock__list-item__icon" src={mail} />
+                    <img className="infoblock__list-item__icon" alt="ico-mail" src={mail} />
                     Send tags
                 </li>
                 <li className="infoblock__list-item">
-                    <a href="/wcm-guide-react/campaign-report">
-                        <img className="infoblock__list-item__icon" src={segment} />
+                    <a href="/campaign-report">
+                        <img className="infoblock__list-item__icon" alt="ico-segment" src={segment} />
                         Reporting
                     </a>
                 </li>
