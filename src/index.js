@@ -22,8 +22,9 @@ sidebar.addEventListener("mouseout", () => {
 });
 setMenuActive();
 menuItems.forEach((item) => {
-    if (item.childNodes.length > 1) {
+    if (item.querySelector(".menu__subitem-container")) {
         const subitem = item.querySelector(".menu__subitem-container");
+        console.log(subitem)
         item.addEventListener("mouseover", () => {
             openSubmenu(item, subitem);
         });
@@ -49,12 +50,12 @@ function menuOpen(menuContainer) {
 }
 
 function menuClose(menuContainer) {
-    if (document.location.pathname !== "/wcm-guide-react") {
+    if (document.location.pathname !== "/") {
         menuContainer.classList.add("menu_disabled");
     }
 }
 
-if (document.location.pathname === "/wcm-guide-react/wcm-structure") {
+if (document.location.pathname === "/wcm-structure") {
     document.getElementById("page").style.overflow = "hidden";
 } else {
     document.getElementById("page").style.overflow = "auto";

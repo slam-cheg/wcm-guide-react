@@ -85,6 +85,18 @@ function Menu() {
                             </div>
                         </a>
                     </div>
+                    <div className="menu__subitem-container">
+                        <div className="menu__subitem">
+                            <a href="/settings#period" className="menu__subitem-link">
+                                Настройка периода
+                            </a>
+                        </div>
+                        <div className="menu__subitem">
+                            <a href="/settings#metrics" className="menu__subitem-link">
+                                Настройка метрик
+                            </a>
+                        </div>
+                    </div>
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="xlsx-reports">
