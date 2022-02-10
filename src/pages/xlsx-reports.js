@@ -1,32 +1,18 @@
 import React from "react";
-import permalink from "../images/permalink.png";
-import exportSettings from "../images/export-settings.jpg"
+import exportSettings from "../images/export-settings.jpg";
 
 function XlsxReports() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="xlsx-reports">
                 <div className="section-heading">
-                    <h1 className="section-heading__title">Формирование гостевых ссылок</h1>
+                    <h1 className="section-heading__title">выгрузка отчетов .xlsx</h1>
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        Для формирования гостевой ссылки необходимо предварительно настроить нужный раздел данных и&nbsp;вывести набор метрик в&nbsp;интерфейс.
-                        Затем&nbsp;&mdash; нажать на&nbsp;кнопку <span className="section__lead_color">Permalink</span>. Инструмент сгенерирует гостевую
-                        ссылку&nbsp;&mdash; при переходе по&nbsp;ней можно менять только период отображения данных, функционал выбора метрик, перехода в&nbsp;другие
-                        разделы данных при такой форме доступа к&nbsp;статистике невозможен.
-                    </p>
-                </div>
-                <img className="section__image" src={permalink} alt="структура кампании" />
-                <div className="section-heading">
-                    <h2 className="section-heading__title">Формирование гостевых ссылок</h2>
-                </div>
-                <div className="section__content">
-                    <p className="section__lead">
-                        Для формирования гостевой ссылки необходимо предварительно настроить нужный раздел данных и&nbsp;вывести набор метрик в&nbsp;интерфейс.
-                        Затем&nbsp;&mdash; нажать на&nbsp;кнопку <span className="section__lead_color">Permalink</span>. Инструмент сгенерирует гостевую
-                        ссылку&nbsp;&mdash; при переходе по&nbsp;ней можно менять только период отображения данных, функционал выбора метрик, перехода в&nbsp;другие
-                        разделы данных при такой форме доступа к&nbsp;статистике невозможен.
+                        Для выгрузки отчета в&nbsp;формате .xlsx предварительно необходимо настроить <a className="section__lead_color" href="/campaign-tree">нужный раздел данных</a> и&nbsp;вывести набор метрик в&nbsp;интерфейс.
+                        Затем&nbsp;&mdash; нажать на&nbsp;кнопку Export, присвоить отчету название и&nbsp;выгрузить его в&nbsp;формате .xlsx сразу, либо настроить его
+                        отправку по&nbsp;адресу электронной почты.
                     </p>
                 </div>
                 <img className="section__image" src={exportSettings} alt="структура кампании" />

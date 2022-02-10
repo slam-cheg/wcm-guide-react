@@ -340,6 +340,7 @@
   cursor: pointer;
   transition: 0.3s;
   overflow: hidden;
+  text-decoration: none;
 }
 .card:hover {
   transform: translateY(-10px);
@@ -376,6 +377,7 @@
   justify-content: flex-start;
   padding: 0 10px;
   text-decoration: none;
+  margin: 0;
 }
 
 .card__selector {
@@ -520,4 +522,46 @@
 
 .infoblock__list-item__icon {
   margin-inline: 5px;
+}
+
+.accord {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.accord__item {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #000;
+  border-bottom: none;
+  transition: 0.3s;
+}
+.accord__item:nth-of-type(2) {
+  background: #c5cacf;
+}
+.accord__item:last-of-type {
+  border-bottom: 1px solid #000;
+}
+.accord__item:hover {
+  background: #c1002a;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.accord__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.accord__title {
+  margin: 0;
+  font-family: system-ui;
+  font-size: 20px;
 }

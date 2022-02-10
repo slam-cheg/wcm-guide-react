@@ -1,5 +1,5 @@
 import React from "react";
-import campaignStructure from "../images/campaign-structure.jpg";
+import campaignStructure from "../../images/campaign-structure.jpg";
 
 function CampaignStructure() {
     return (

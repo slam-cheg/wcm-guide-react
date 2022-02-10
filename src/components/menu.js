@@ -39,12 +39,12 @@ function Menu() {
                     </div>
                     <div className="menu__subitem-container">
                         <div className="menu__subitem">
-                            <a href="/campaign-structure" className="menu__subitem-link">
+                            <a href="/campaigns/campaign-structure" className="menu__subitem-link">
                                 Просмотр структуры кампании
                             </a>
                         </div>
                         <div className="menu__subitem">
-                            <a href="/campaign-report" className="menu__subitem-link">
+                            <a href="/campaigns/campaign-report" className="menu__subitem-link">
                                 Отчет по кампании
                             </a>
                         </div>
@@ -87,12 +87,12 @@ function Menu() {
                     </div>
                     <div className="menu__subitem-container">
                         <div className="menu__subitem">
-                            <a href="/settings#period" className="menu__subitem-link">
+                            <a href="/settings/period" className="menu__subitem-link">
                                 Настройка периода
                             </a>
                         </div>
                         <div className="menu__subitem">
-                            <a href="/settings#metrics" className="menu__subitem-link">
+                            <a href="/settings/metrics" className="menu__subitem-link">
                                 Настройка метрик
                             </a>
                         </div>
@@ -105,14 +105,26 @@ function Menu() {
                                 <img src={downloadXlsx} alt="" className="menu__ico" />
                             </div>
                             <div className="menu__text-wrapper">
-                                <p className="menu__text">Выгрузка отчетов .xlsx и&nbsp;формирование гостевых ссылок</p>
+                                <p className="menu__text">Выгрузка отчетов .xlsx</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li className="menu__item">
+                    <div className="menu__item-container" id="permalinks">
+                        <a className="menu__link" href="/permalinks">
+                            <div className="menu__ico-wrapper">
+                                <img src={downloadXlsx} alt="" className="menu__ico" />
+                            </div>
+                            <div className="menu__text-wrapper">
+                                <p className="menu__text">Формирование гостевых ссылок</p>
                             </div>
                         </a>
                     </div>
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="auditoria-report">
-                        <a className="menu__link" href="/#">
+                        <a className="menu__link" href="/auditoria-report">
                             <div className="menu__ico-wrapper">
                                 <img src={auditories} alt="" className="menu__ico" />
                             </div>
@@ -124,7 +136,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="views-report">
-                        <a className="menu__link" href="/#">
+                        <a className="menu__link" href="/views-report">
                             <div className="menu__ico-wrapper">
                                 <img src={reportClicks} alt="" className="menu__ico" />
                             </div>
@@ -136,7 +148,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="conversion-report">
-                        <a className="menu__link" href="/#">
+                        <a className="menu__link" href="/conversion-report">
                             <div className="menu__ico-wrapper">
                                 <img src={conversions} alt="" className="menu__ico" />
                             </div>
@@ -148,7 +160,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="automatization">
-                        <a className="menu__link" href="/#">
+                        <a className="menu__link" href="/automatization">
                             <div className="menu__ico-wrapper">
                                 <img src={automatization} alt="" className="menu__ico" />
                             </div>
@@ -160,7 +172,7 @@ function Menu() {
                 </li>
                 <li className="menu__item">
                     <div className="menu__item-container" id="metrics">
-                        <a className="menu__link" href="/#">
+                        <a className="menu__link" href="/metrics">
                             <div className="menu__ico-wrapper">
                                 <img src={metricsDescr} alt="" className="menu__ico" />
                             </div>

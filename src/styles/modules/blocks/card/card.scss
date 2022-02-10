@@ -7,6 +7,7 @@
     cursor: pointer;
     transition: .3s;
     overflow: hidden;
+    text-decoration: none;
 
     &:hover {
         transform: translateY(-10px);

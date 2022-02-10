@@ -1,7 +1,7 @@
 import React from "react";
-import Infoblock from "../components/infoblock";
-import InfoTrigger from "../components/infotrigger";
-import campaigns from "../images/campaigns.jpg";
+import Infoblock from "../../components/infoblock";
+import InfoTrigger from "../../components/infotrigger";
+import campaigns from "../../images/campaigns.jpg";
 
 function Campaigns() {
     return (

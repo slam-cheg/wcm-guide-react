@@ -24,7 +24,6 @@ setMenuActive();
 menuItems.forEach((item) => {
     if (item.querySelector(".menu__subitem-container")) {
         const subitem = item.querySelector(".menu__subitem-container");
-        console.log(subitem)
         item.addEventListener("mouseover", () => {
             openSubmenu(item, subitem);
         });
@@ -55,7 +54,7 @@ function menuClose(menuContainer) {
     }
 }
 
-if (document.location.pathname === "/wcm-structure") {
+if (document.location.pathname === "/wcm-structure" || document.location.pathname === "/settings" || document.location.pathname === "/settings/period") {
     document.getElementById("page").style.overflow = "hidden";
 } else {
     document.getElementById("page").style.overflow = "auto";
