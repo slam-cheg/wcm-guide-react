@@ -15,6 +15,9 @@ import SetPeriod from "./pages/period-metrics/set-period";
 import AuditoriaReport from "./pages/auditoria-report";
 import Permalinks from "./pages/permalinks";
 import Metrics from "./pages/metrics";
+import ViewsReport from "./pages/views-report";
+import ConversionReport from "./pages/conversion-report";
+import Automatization from "./pages/automatization";
 
 function App() {
     return (
@@ -37,7 +40,10 @@ function App() {
                         <Route path="/xlsx-reports" element={<XlsxReports />} />
                         <Route path="/permalinks" element={<Permalinks />} />
                         <Route path="/auditoria-report" element={<AuditoriaReport />} />
+                        <Route path="/views-report" element={<ViewsReport />} />
+                        <Route path="/conversion-report" element={<ConversionReport />} />
                         <Route path="/metrics" element={<Metrics />} />
+                        <Route path="/automatization" element={<Automatization />} />
                     </Routes>
                 </Router>
             </main>

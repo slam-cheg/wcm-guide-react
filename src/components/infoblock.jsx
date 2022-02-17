@@ -9,7 +9,7 @@ function Infoblock() {
         <div className="infoblock">
             <menu className="infoblock__list">
                 <li className="infoblock__list-item">
-                    <a href="/campaign-structure">
+                    <a href="/campaigns/campaign-structure">
                         <img className="infoblock__list-item__icon" alt="ico-folder" src={folder} />
                         Open
                     </a>
@@ -23,7 +23,7 @@ function Infoblock() {
                     Send tags
                 </li>
                 <li className="infoblock__list-item">
-                    <a href="/campaign-report">
+                    <a href="/campaigns/campaign-report">
                         <img className="infoblock__list-item__icon" alt="ico-segment" src={segment} />
                         Reporting
                     </a>

@@ -4,4 +4,16 @@
     justify-content: space-between;
     height: 60px;
     padding: 0 20px;
+    border: 1px solid #000;
+    background: $red;
+    transition: 0.3s;
+    color: $white;
+    position: relative;
+    z-index: 100;
+    border-bottom: none;
+
+    &:hover {
+        background: $GoldenFishBlue;
+        transition: 0.3s;
+    }
 }

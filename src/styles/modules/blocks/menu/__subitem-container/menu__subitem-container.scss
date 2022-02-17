@@ -6,12 +6,7 @@
     position: absolute;
     bottom: 0;
     visibility: hidden;
-    opacity: 0;
     pointer-events: none;
-    transform: translateX(-100%);
-    transition: 0s;
+    transform: translate(-100%, 60px);
+    transition: .3s;
 }
-
-// .menu__item:hover .menu__subitem-contaier {
-//     display: flex;
-// }

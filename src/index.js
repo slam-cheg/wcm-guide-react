@@ -14,13 +14,16 @@ const sidebar = document.querySelector(".sidebar");
 const menuContainer = sidebar.querySelector(".menu");
 const menuItems = menuContainer.querySelectorAll(".menu__item");
 const page = document.querySelector(".page");
+
 sidebar.addEventListener("mouseover", () => {
     menuOpen(menuContainer);
 });
 sidebar.addEventListener("mouseout", () => {
     menuClose(menuContainer);
 });
+
 setMenuActive();
+
 menuItems.forEach((item) => {
     if (item.querySelector(".menu__subitem-container")) {
         const subitem = item.querySelector(".menu__subitem-container");
@@ -50,6 +53,10 @@ function menuOpen(menuContainer) {
 
 function menuClose(menuContainer) {
     if (document.location.pathname !== "/") {
+        const backBtn = document.querySelector(".section-heading__back-button");
+        backBtn.addEventListener("click", () => {
+            window.history.back();
+        });
         menuContainer.classList.add("menu_disabled");
     }
 }
@@ -78,4 +85,31 @@ if (!document.querySelector(".section").classList.contains("home-screen")) {
 } else {
     page.classList.remove("page_light");
     console.log("Home");
+}
+
+if (document.location.pathname === "/metrics") {
+    accord();
+}
+
+function accord() {
+    const accord = document.querySelector(".accord");
+    const accordItems = accord.querySelectorAll(".accord__item");
+    accord.addEventListener("click", (event) => {
+        const accordItem = event.target.closest(".accord__item");
+        const accordHeader = accordItem.querySelector(".accord__heading");
+        const accordContent = accordItem.querySelector(".accord__content");
+        if (accordContent.classList.contains("accord__content_opened")) {
+            accordContent.classList.remove("accord__content_opened");
+            accordHeader.classList.remove("accord__heading_opened");
+        } else {
+            accordItems.forEach((item) => {
+                if (item.querySelector(".accord__content").classList.contains("accord__content_opened")) {
+                    item.querySelector(".accord__content").classList.remove("accord__content_opened");
+                    item.querySelector(".accord__heading").classList.remove("accord__heading_opened");
+                }
+            });
+            accordContent.classList.add("accord__content_opened");
+            accordHeader.classList.add("accord__heading_opened");
+        }
+    });
 }

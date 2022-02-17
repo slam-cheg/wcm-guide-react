@@ -1,11 +1,13 @@
 import React from "react";
 import campaignTree from "../images/campaign-tree.jpg";
+import BackButton from "../components/backButton";
 
 function CampaignTree() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaign-tree">
                 <div className="section-heading">
+                    <BackButton />
                     <h1 className="section-heading__title">Campaign tree</h1>
                 </div>
                 <div className="section__content">

@@ -1,12 +1,14 @@
 import React from "react";
 import Reporting from "../images/Reporting.jpg";
 import reportingTwo from "../images/Reporting-two.jpg";
+import BackButton from "../components/backButton";
 
 function Reports() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="reporting">
                 <div className="section-heading">
+                    <BackButton />
                     <h1 className="section-heading__title">Reporting (Отчеты)</h1>
                 </div>
                 <div className="section__content">

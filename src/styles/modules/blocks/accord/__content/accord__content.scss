@@ -1,0 +1,12 @@
+.accord__content {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: .3s;
+    z-index: 99;
+    max-height: 0;
+}
+
+.accord__content > .accord__heading {
+    border-bottom: none;
+}

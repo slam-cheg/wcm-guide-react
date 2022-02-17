@@ -1,11 +1,13 @@
 import React from "react";
 import period from "../../images/period.jpg";
+import BackButton from "../../components/backButton";
 
 function SetPeriod() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="settings">
                 <div className="section-heading" id="period">
+                    <BackButton />
                     <h1 className="section-heading__title">Настройка периода</h1>
                 </div>
                 <div className="section__content">

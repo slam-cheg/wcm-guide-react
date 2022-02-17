@@ -1,7 +1,6 @@
 .menu__subitem-container_opened {
     visibility: visible;
-    opacity: 1;
     pointer-events: auto;
-    transform: translateX(0);
-    transition: .5s;
+    transform: translate(0, 60px);
+    transition: .3s;
 }

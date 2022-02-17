@@ -1,14 +1,16 @@
 import React from "react";
 import firstscreen from "../images/firstscreen.jpg";
+import BackButton from "../components/backButton";
 
 function WcmStructure() {
     return (
         <div className="section__wrapper">
             <section className="section section_not-homepage" id="wcm-structure">
                 <div className="section-heading">
-                    <h2 className="section-heading__title">
+                    <BackButton />
+                    <h1 className="section-heading__title">
                         Интерфейс WCM содержит <span>5 основных вкладок:</span>
-                    </h2>
+                    </h1>
                 </div>
                 <img className="section__image section__image_resized" src={firstscreen} alt="Интерфейс WCM" />
                 <AdditionalContent />
@@ -41,13 +43,13 @@ function Cards() {
                     </ul>
                 </div>
                 <div className="card_hover">
-                    <a className="card__heading" href="/wcm-guide-react/campaigns">
+                    <a className="card__heading" href="/campaigns">
                         Campaigns
                     </a>
-                    <a className="card__selector" href="/wcm-guide-react/campaign-structure">
+                    <a className="card__selector" href="/campaigns/campaign-structure">
                         Просмотр структуры кампании
                     </a>
-                    <a className="card__selector" href="/wcm-guide-react/campaign-report">
+                    <a className="card__selector" href="/campaigns/campaign-report">
                         Отчет по кампании
                     </a>
                 </div>

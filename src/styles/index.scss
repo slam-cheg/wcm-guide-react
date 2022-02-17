@@ -46,6 +46,7 @@
 @import "./modules/blocks/section/_not-homepage/section_not-homepage.scss";
 @import "./modules/blocks/section/__image/_resized/section__image_resized.scss";
 @import "./modules/blocks/section/__cover/section__cover.scss";
+@import "./modules/blocks/section-heading/__back-button/section-heading__back-button.scss";
 // card
 @import "./modules/blocks/card/card.scss";
 @import "./modules/blocks/card/_hover/card_hover.scss";
@@ -66,4 +67,9 @@
 @import "./modules/blocks/accord/accord.scss";
 @import "./modules/blocks/accord/__item/accord__item.scss";
 @import "./modules/blocks/accord/__heading/accord__heading.scss";
+@import "./modules/blocks/accord/__heading/_opened/accord__heading_opened.scss";
 @import "./modules/blocks/accord/__title/accord__title.scss";
+@import "./modules/blocks/accord/__content/accord__content.scss";
+@import "./modules/blocks/accord/__content-item/accord__content-item.scss";
+@import "./modules/blocks/accord/__content-item/_subtitle/accord__content-item_subtitle.scss";
+@import "./modules/blocks/accord/__content/_opened/accord__content_opened.scss";
