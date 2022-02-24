@@ -12,9 +12,18 @@ function CampaignReport() {
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit totam facere sit consectetur at culpa, quisquam ratione voluptates
-                        provident quis mollitia, sequi optio vel amet dolores beatae ab sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit
-                        totam facere sit consectetur at culpa, quisquam ratione voluptates provident quis mollitia, sequi optio vel amet dolores beatae ab sint.
+                        Чтобы попасть в&nbsp;отчет по&nbsp;конкретной кампании в&nbsp;структуре кампании необходимо перейти в&nbsp;Reporting Зайдя
+                        внутрь кампании (кликнув на&nbsp;Reporting), попадаем в&nbsp;подробный отчет по&nbsp;кампании в&nbsp;целом с&nbsp;разбивкой
+                        по&nbsp;структуре.
+                        <br />
+                        Этот уровень называется{" "}
+                        <a className="section__lead_color" href="/campaign-tree">
+                            &laquo;campaign tree&raquo;
+                        </a>
+                        , так как структура подобна дереву: внутри кампании выделены сайты, внутри сайтов выделены инсершны (формат или отдельный сайт
+                        селлера), внутри инсершна можно выделить креативы.
+                        <br />
+                        Эта структура формируется при заведении кампании, на&nbsp;основании медиаплана
                     </p>
                 </div>
                 <img className="section__image" src={campaignReport} alt="отчет по кампании" />

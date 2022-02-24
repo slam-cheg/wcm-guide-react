@@ -9,6 +9,8 @@ import reportClicks from "../images/reportClicks.svg";
 import conversions from "../images/conversions.svg";
 import automatization from "../images/automatization.svg";
 import metricsDescr from "../images/metricsDescr.svg";
+import icon from "../images/campaigns.svg";
+import links from "../images/links.svg";
 
 function Menu() {
     return (
@@ -30,7 +32,7 @@ function Menu() {
                     <div className="menu__item-container" id="campaigns">
                         <a className="menu__link" href="/campaigns">
                             <div className="menu__ico-wrapper">
-                                <img src={obzorStructure} alt="Обзор" className="menu__ico" />
+                                <img src={icon} alt="Обзор" className="menu__ico" />
                             </div>
                             <div className="menu__text-wrapper">
                                 <p className="menu__text">Campaigns</p>
@@ -114,7 +116,7 @@ function Menu() {
                     <div className="menu__item-container" id="permalinks">
                         <a className="menu__link" href="/permalinks">
                             <div className="menu__ico-wrapper">
-                                <img src={downloadXlsx} alt="" className="menu__ico" />
+                                <img src={links} alt="" className="menu__ico" />
                             </div>
                             <div className="menu__text-wrapper">
                                 <p className="menu__text">Формирование гостевых ссылок</p>

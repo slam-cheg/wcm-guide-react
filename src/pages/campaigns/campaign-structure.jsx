@@ -12,9 +12,12 @@ function CampaignStructure() {
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit totam facere sit consectetur at culpa, quisquam ratione voluptates
-                        provident quis mollitia, sequi optio vel amet dolores beatae ab sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit
-                        totam facere sit consectetur at culpa, quisquam ratione voluptates provident quis mollitia, sequi optio vel amet dolores beatae ab sint.
+                        Здесь удобно смотреть структуру заведения кампании и&nbsp;основные метрики.
+                        <br />
+                        Выводятся следующие данные по&nbsp;структуре заведения: Название и&nbsp;идентификатор кампаний Площадки, на&nbsp;которых идет
+                        размещение и&nbsp;идентификатор.
+                        <br />
+                        При раскрытии площадок можно увидеть заведенные позиции (Insertions). Активное&nbsp;/ не&nbsp;активное размещение
                     </p>
                 </div>
                 <img className="section__image" src={campaignStructure} alt="структура кампании" />
