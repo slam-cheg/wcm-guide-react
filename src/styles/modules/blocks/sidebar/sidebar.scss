@@ -1,8 +1,14 @@
 .sidebar {
     display: flex;
+    overflow: auto;
     background-color: $darkblue;
     height: 100%;
     transition: .3s;
     position: relative;
     z-index: 10000;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 }

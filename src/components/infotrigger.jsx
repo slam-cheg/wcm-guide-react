@@ -4,16 +4,16 @@ function InfoTrigger() {
     const trigger = {
         icon: "▼",
         one: {
-            top: "251px",
-            left: "402px",
+            bottom: "calc(50px + 8.6vw)",
+            left: "22.3%",
         },
         two: {
-            top: "286px",
-            left: "402px",
+            bottom: "calc(50px + 6.77vw)",
+            left: "22.3%",
         },
         three: {
-            top: "321px",
-            left: "402px",
+            bottom: "calc(50px + 5vw)",
+            left: "22.3%",
         },
     };
     return (
