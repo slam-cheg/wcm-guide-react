@@ -12,17 +12,16 @@ function Permalinks() {
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        Для формирования гостевой ссылки необходимо предварительно настроить{" "}
-                        <a className="section__lead_color" href="/campaign-tree">
-                            нужный раздел данных
-                        </a>{" "}
-                        и&nbsp;вывести{" "}
-                        <a className="section__lead_color" href="/metrics">
-                            набор метрик
-                        </a>{" "}
-                        в&nbsp;интерфейс. Затем&nbsp;&mdash; нажать на&nbsp;кнопку <span className="section__lead_color">Permalink</span>. Инструмент сгенерирует гостевую
-                        ссылку&nbsp;&mdash; при переходе по&nbsp;ней можно менять только период отображения данных, функционал выбора метрик, перехода в&nbsp;другие
-                        разделы данных при такой форме доступа к&nbsp;статистике невозможен.
+                        Справа вверху находится кнопка <span className="section__lead_color">&laquo;Permalink&raquo;</span> для получения гостевой
+                        ссылки (пермалинка).
+                        <br />
+                        <br />
+                        По&nbsp;клику на&nbsp;<span className="section__lead_color">&laquo;Permalink&raquo;</span> вы&nbsp;получаете
+                        пермалинк&nbsp;&mdash; гостевую ссылку с&nbsp;доступом к&nbsp;отчету. По&nbsp;такой ссылке можно увидеть точно такой&nbsp;же
+                        отчет на&nbsp;том&nbsp;же самом уровне, можно менять период.
+                        <br />
+                        <br />
+                        Менять метрики или зайти в&nbsp;другой уровень отчета&nbsp;/ в&nbsp;другую кампанию по&nbsp;гостевой ссылке невозможно.
                     </p>
                 </div>
                 <img className="section__image" src={permalink} alt="гостевая ссылка" />

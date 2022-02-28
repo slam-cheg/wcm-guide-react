@@ -6,6 +6,15 @@
   overflow: hidden;
 }
 
+#page::-webkit-scrollbar {
+  width: 10px;
+  background: #1c3861;
+}
+#page::-webkit-scrollbar-thumb {
+  background: #c1002a;
+  border-radius: 10px;
+}
+
 .page_light {
   background-color: #fff;
   transition: 0.3s;

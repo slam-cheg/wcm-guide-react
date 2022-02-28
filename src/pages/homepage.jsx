@@ -1,6 +1,5 @@
 import React from "react";
 import homescreen from "../images/homescreen.jpg";
-import BackButton from "../components/backButton";
 
 function HomePage() {
     return (

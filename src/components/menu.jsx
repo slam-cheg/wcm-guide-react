@@ -16,18 +16,7 @@ function Menu() {
     return (
         <aside className="sidebar">
             <ul className="menu">
-                <li className="menu__item">
-                    <div className="menu__item-container" id="wcm-structure">
-                        <a className="menu__link" href="/wcm-structure">
-                            <div className="menu__ico-wrapper">
-                                <img src={obzorStructure} alt="Обзор" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Обзор структуры WCM</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
+                <MenuItem prop={props.wcmStructure} />
                 <li className="menu__item">
                     <div className="menu__item-container" id="campaigns">
                         <a className="menu__link" href="/campaigns">
@@ -188,5 +177,34 @@ function Menu() {
         </aside>
     );
 }
+
+function MenuItem({ prop }) {
+    return (
+        <li className="menu__item">
+            <div className="menu__item-container" id={prop.id}>
+                <a className="menu__link" href={prop.href}>
+                    <div className="menu__ico-wrapper">
+                        <img src={prop.img} alt={prop.name} className="menu__ico" />
+                    </div>
+                    <div className="menu__text-wrapper">
+                        <p className="menu__text">{prop.name}</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+    );
+}
+function SubmenuItem() {
+    
+}
+
+const props = {
+    wcmStructure: {
+        id: "wcm-structure",
+        href: "/wcm-structure",
+        img: obzorStructure,
+        name: "Обзор структуры WCM",
+    },
+};
 
 export default Menu;
