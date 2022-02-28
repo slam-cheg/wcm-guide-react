@@ -4,15 +4,15 @@ function InfoTrigger() {
     const trigger = {
         icon: "▼",
         one: {
-            bottom: "calc(50px + 8.6vw)",
+            bottom: "calc(50px + 8.5vw)",
             left: "22.3%",
         },
         two: {
-            bottom: "calc(50px + 6.77vw)",
+            bottom: "calc(50px + 6.67vw)",
             left: "22.3%",
         },
         three: {
-            bottom: "calc(50px + 5vw)",
+            bottom: "calc(50px + 4.9vw)",
             left: "22.3%",
         },
     };
