@@ -16,12 +16,11 @@ function Permalinks() {
                         ссылки (пермалинка).
                         <br />
                         <br />
-                        По&nbsp;клику на&nbsp;<span className="section__lead_color">&laquo;Permalink&raquo;</span> вы&nbsp;получаете
-                        пермалинк&nbsp;&mdash; гостевую ссылку с&nbsp;доступом к&nbsp;отчету. По&nbsp;такой ссылке можно увидеть точно такой&nbsp;же
+                        По&nbsp;клику на&nbsp;<span className="section__lead_color">&laquo;Permalink&raquo;</span> вы&nbsp;получаете &nbsp;&mdash; гостевую ссылку с&nbsp;доступом к&nbsp;отчету. По&nbsp;такой ссылке можно увидеть точно такой&nbsp;же
                         отчет на&nbsp;том&nbsp;же самом уровне, можно менять период.
                         <br />
                         <br />
-                        Менять метрики или зайти в&nbsp;другой уровень отчета&nbsp;/ в&nbsp;другую кампанию по&nbsp;гостевой ссылке невозможно.
+                        <span className="section__lead_color">Менять метрики или зайти в&nbsp;другой уровень отчета&nbsp;/ в&nbsp;другую кампанию по&nbsp;гостевой ссылке невозможно.</span>
                     </p>
                 </div>
                 <img className="section__image" src={permalink} alt="гостевая ссылка" />

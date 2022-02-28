@@ -21,11 +21,10 @@ sidebar.addEventListener("mouseover", () => {
 sidebar.addEventListener("mouseout", () => {
     menuClose(menuContainer);
 });
-
+console.log(menuItems)
 setMenuActive();
-
 menuItems.forEach((item) => {
-    if (item.querySelector(".menu__subitem-container")) {
+    if (item.childNodes) {
         const subitem = item.querySelector(".menu__subitem-container");
         item.addEventListener("mouseover", () => {
             openSubmenu(item, subitem);
@@ -61,7 +60,11 @@ function menuClose(menuContainer) {
     }
 }
 
-if (document.location.pathname === "/wcm-structure" || document.location.pathname === "/settings" || document.location.pathname === "/settings/period") {
+if (
+    document.location.pathname === "/wcm-structure" ||
+    document.location.pathname === "/settings" ||
+    document.location.pathname === "/settings/period"
+) {
     document.getElementById("page").style.overflow = "hidden";
 } else {
     document.getElementById("page").style.overflow = "auto";

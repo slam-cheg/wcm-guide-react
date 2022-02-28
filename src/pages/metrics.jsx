@@ -10,11 +10,6 @@ function Metrics() {
                     <h1 className="section-heading__title">Описание метрик</h1>
                 </div>
                 <div className="section__content">
-                    <p className="section__lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit totam facere sit consectetur at culpa, quisquam ratione voluptates
-                        provident quis mollitia, sequi optio vel amet dolores beatae ab sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit
-                        totam facere sit consectetur at culpa, quisquam ratione voluptates provident quis mollitia, sequi optio vel amet dolores beatae ab sint.
-                    </p>
                 </div>
                 <ul className="accord">
                     <li className="accord__item">

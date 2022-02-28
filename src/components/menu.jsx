@@ -17,162 +17,17 @@ function Menu() {
         <aside className="sidebar">
             <ul className="menu">
                 <MenuItem prop={props.wcmStructure} />
-                <li className="menu__item">
-                    <div className="menu__item-container" id="campaigns">
-                        <a className="menu__link" href="/campaigns">
-                            <div className="menu__ico-wrapper">
-                                <img src={icon} alt="Обзор" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Campaigns</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="menu__subitem-container">
-                        <div className="menu__subitem">
-                            <a href="/campaigns/campaign-structure" className="menu__subitem-link">
-                                Просмотр структуры кампании
-                            </a>
-                        </div>
-                        <div className="menu__subitem">
-                            <a href="/campaigns/campaign-report" className="menu__subitem-link">
-                                Отчет по кампании
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="reporting">
-                        <a className="menu__link" href="/reporting">
-                            <div className="menu__ico-wrapper">
-                                <img src={reporting} alt="Отчеты" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Reporting</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="campaign-tree">
-                        <a className="menu__link" href="/campaign-tree">
-                            <div className="menu__ico-wrapper">
-                                <img src={campaignTree} alt="Древо" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Campaign tree</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="settings">
-                        <a className="menu__link" href="/settings">
-                            <div className="menu__ico-wrapper">
-                                <img src={settingsMetrics} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Настройка периода и&nbsp;метрик</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="menu__subitem-container">
-                        <div className="menu__subitem">
-                            <a href="/settings/period" className="menu__subitem-link">
-                                Настройка периода
-                            </a>
-                        </div>
-                        <div className="menu__subitem">
-                            <a href="/settings/metrics" className="menu__subitem-link">
-                                Настройка метрик
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="xlsx-reports">
-                        <a className="menu__link" href="/xlsx-reports">
-                            <div className="menu__ico-wrapper">
-                                <img src={downloadXlsx} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Выгрузка отчетов .xlsx</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="permalinks">
-                        <a className="menu__link" href="/permalinks">
-                            <div className="menu__ico-wrapper">
-                                <img src={links} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Формирование гостевых ссылок</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="auditoria-report">
-                        <a className="menu__link" href="/auditoria-report">
-                            <div className="menu__ico-wrapper">
-                                <img src={auditories} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Отчет по пересечению аудитории</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="views-report">
-                        <a className="menu__link" href="/views-report">
-                            <div className="menu__ico-wrapper">
-                                <img src={reportClicks} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Отчет по распределению показов, кликов, конверсий и&nbsp;частоты</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="conversion-report">
-                        <a className="menu__link" href="/conversion-report">
-                            <div className="menu__ico-wrapper">
-                                <img src={conversions} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Отчет по конверсиям</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="automatization">
-                        <a className="menu__link" href="/automatization">
-                            <div className="menu__ico-wrapper">
-                                <img src={automatization} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Автоматизация выгрузки отчетов</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li className="menu__item">
-                    <div className="menu__item-container" id="metrics">
-                        <a className="menu__link" href="/metrics">
-                            <div className="menu__ico-wrapper">
-                                <img src={metricsDescr} alt="" className="menu__ico" />
-                            </div>
-                            <div className="menu__text-wrapper">
-                                <p className="menu__text">Описание метрик</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
+                <MenuItemWithSubmenu prop={props.campaigns} prop2={subitemProps.campaigns} />
+                <MenuItem prop={props.reporting} />
+                <MenuItem prop={props.campaignTree} />
+                <MenuItem prop={props.settings} />
+                <MenuItem prop={props.xlsxReports} />
+                <MenuItem prop={props.permalinks} />
+                <MenuItem prop={props.auditoriaReport} />
+                <MenuItem prop={props.viewsReport} />
+                <MenuItem prop={props.conversionReport} />
+                <MenuItem prop={props.automatization} />
+                <MenuItem prop={props.metrics} />
             </ul>
         </aside>
     );
@@ -194,8 +49,34 @@ function MenuItem({ prop }) {
         </li>
     );
 }
-function SubmenuItem() {
-    
+function MenuItemWithSubmenu({ prop }, { prop2 }) {
+    console.log(document.querySelector(".menu__subitem-container"));
+    return (
+        <li className="menu__item">
+            <div className="menu__item-container" id={prop.id}>
+                <a className="menu__link" href={prop.href}>
+                    <div className="menu__ico-wrapper">
+                        <img src={prop.img} alt={prop.name} className="menu__ico" />
+                    </div>
+                    <div className="menu__text-wrapper">
+                        <p className="menu__text">{prop.name}</p>
+                    </div>
+                </a>
+            </div>
+            <div className="menu__subitem-container">
+                <div className="menu__subitem">
+                    <a href={prop2.href} className="menu__subitem-link">
+                        {prop2.name}
+                    </a>
+                </div>
+                <div className="menu__subitem">
+                    <a href={prop2.href2} className="menu__subitem-link">
+                        {prop2.name2}
+                    </a>
+                </div>
+            </div>
+        </li>
+    );
 }
 
 const props = {
@@ -204,6 +85,87 @@ const props = {
         href: "/wcm-structure",
         img: obzorStructure,
         name: "Обзор структуры WCM",
+    },
+    campaigns: {
+        id: "campaigns",
+        href: "/campaigns",
+        img: icon,
+        name: "Campaigns",
+    },
+    reporting: {
+        id: "reporting",
+        href: "/reporting",
+        img: reporting,
+        name: "Reporting",
+    },
+    campaignTree: {
+        id: "campaign-tree",
+        href: "/campaign-tree",
+        img: campaignTree,
+        name: "Campaign tree",
+    },
+    settings: {
+        id: "settings",
+        href: "/settings",
+        img: settingsMetrics,
+        name: "Настройка периода и метрик",
+    },
+    xlsxReports: {
+        id: "xlsx-reports",
+        href: "/xlsx-reports",
+        img: downloadXlsx,
+        name: "Выгрузка отчетов .xlsx",
+    },
+    permalinks: {
+        id: "permalinks",
+        href: "/permalinks",
+        img: links,
+        name: "Формирование гостевых ссылок",
+    },
+    auditoriaReport: {
+        id: "auditoria-report",
+        href: "/auditoria-report",
+        img: auditories,
+        name: "Отчет по пересечению аудитории",
+    },
+    viewsReport: {
+        id: "views-report",
+        href: "/views-report",
+        img: reportClicks,
+        name: "Отчет по распределению показов, кликов, конверсий и частоты",
+    },
+    conversionReport: {
+        id: "conversion-report",
+        href: "/conversion-report",
+        img: conversions,
+        name: "Отчет по конверсиям",
+    },
+    automatization: {
+        id: "automatization",
+        href: "/automatization",
+        img: automatization,
+        name: "Автоматизация выгрузки отчетов",
+    },
+    metrics: {
+        id: "metrics",
+        href: "/metrics",
+        img: metricsDescr,
+        name: "Описание метрик",
+    },
+};
+
+const subitemProps = {
+    campaigns: {
+        href: "/campaigns/campaign-structure",
+        name: "Просмотр структуры кампании",
+        href2: "/campaigns/campaign-report",
+        name2: "Отчет по кампании",
+    },
+    settings: {
+        href: "/settings/period",
+        name: "Настройка периода",
+        href2: "/settings/metrics",
+        name2: "Настройка метрик",
     },
 };
 
