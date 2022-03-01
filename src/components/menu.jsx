@@ -17,7 +17,7 @@ function Menu() {
         <aside className="sidebar">
             <ul className="menu">
                 <MenuItem prop={props.wcmStructure} />
-                <MenuItemWithSubmenu prop={props.campaigns} prop2={subitemProps.campaigns} />
+                <MenuItem prop={props.campaigns} />
                 <MenuItem prop={props.reporting} />
                 <MenuItem prop={props.campaignTree} />
                 <MenuItem prop={props.settings} />

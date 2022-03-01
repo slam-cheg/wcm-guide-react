@@ -23,17 +23,7 @@ sidebar.addEventListener("mouseout", () => {
 });
 console.log(menuItems)
 setMenuActive();
-menuItems.forEach((item) => {
-    if (item.childNodes) {
-        const subitem = item.querySelector(".menu__subitem-container");
-        item.addEventListener("mouseover", () => {
-            openSubmenu(item, subitem);
-        });
-        item.addEventListener("mouseout", () => {
-            closeSubmenu(item, subitem);
-        });
-    }
-});
+
 
 function setMenuActive() {
     const menuButtons = menuContainer.querySelectorAll(".menu__item-container");
@@ -68,16 +58,6 @@ if (
     document.getElementById("page").style.overflow = "hidden";
 } else {
     document.getElementById("page").style.overflow = "auto";
-}
-
-function openSubmenu(button, subitem) {
-    button.classList.add("menu__item_opened");
-    subitem.classList.add("menu__subitem-container_opened");
-}
-
-function closeSubmenu(button, subitem) {
-    subitem.classList.remove("menu__subitem-container_opened");
-    button.classList.remove("menu__item_opened");
 }
 
 if (!document.querySelector(".section").classList.contains("home-screen")) {
