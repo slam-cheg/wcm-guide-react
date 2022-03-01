@@ -21,7 +21,7 @@ sidebar.addEventListener("mouseover", () => {
 sidebar.addEventListener("mouseout", () => {
     menuClose(menuContainer);
 });
-console.log(menuItems)
+
 setMenuActive();
 
 
@@ -62,12 +62,10 @@ if (
 
 if (!document.querySelector(".section").classList.contains("home-screen")) {
     sidebar.classList.add("sidebar_disabled");
-    console.log("Not home");
     page.classList.add("page_light");
     menuClose(menuContainer);
 } else {
     page.classList.remove("page_light");
-    console.log("Home");
 }
 
 if (document.location.pathname === "/metrics") {

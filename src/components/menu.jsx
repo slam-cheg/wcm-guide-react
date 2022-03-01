@@ -16,66 +16,64 @@ function Menu() {
     return (
         <aside className="sidebar">
             <ul className="menu">
-                <MenuItem prop={props.wcmStructure} />
-                <MenuItem prop={props.campaigns} />
-                <MenuItem prop={props.reporting} />
-                <MenuItem prop={props.campaignTree} />
-                <MenuItem prop={props.settings} />
-                <MenuItem prop={props.xlsxReports} />
-                <MenuItem prop={props.permalinks} />
-                <MenuItem prop={props.auditoriaReport} />
-                <MenuItem prop={props.viewsReport} />
-                <MenuItem prop={props.conversionReport} />
-                <MenuItem prop={props.automatization} />
-                <MenuItem prop={props.metrics} />
+                <MenuListItem prop={props.wcmStructure} />
+                <MenuListItem prop={props.campaigns} />
+                <MenuListItem prop={props.reporting} />
+                <MenuListItem prop={props.campaignTree} />
+                <MenuListItem prop={props.settings} />
+                <MenuListItem prop={props.xlsxReports} />
+                <MenuListItem prop={props.permalinks} />
+                <MenuListItem prop={props.auditoriaReport} />
+                <MenuListItem prop={props.viewsReport} />
+                <MenuListItem prop={props.conversionReport} />
+                <MenuListItem prop={props.automatization} />
+                <MenuListItem prop={props.metrics} />
             </ul>
         </aside>
     );
 }
 
-function MenuItem({ prop }) {
+function MenuListItem({ prop }) {
     return (
         <li className="menu__item">
-            <div className="menu__item-container" id={prop.id}>
-                <a className="menu__link" href={prop.href}>
-                    <div className="menu__ico-wrapper">
-                        <img src={prop.img} alt={prop.name} className="menu__ico" />
-                    </div>
-                    <div className="menu__text-wrapper">
-                        <p className="menu__text">{prop.name}</p>
-                    </div>
-                </a>
-            </div>
+            <MenuItem prop={prop} />
+            <Submenu prop={prop} />
         </li>
     );
 }
-function MenuItemWithSubmenu({ prop }, { prop2 }) {
-    console.log(document.querySelector(".menu__subitem-container"));
+
+function MenuItem({ prop }) {
     return (
-        <li className="menu__item">
-            <div className="menu__item-container" id={prop.id}>
-                <a className="menu__link" href={prop.href}>
-                    <div className="menu__ico-wrapper">
-                        <img src={prop.img} alt={prop.name} className="menu__ico" />
-                    </div>
-                    <div className="menu__text-wrapper">
-                        <p className="menu__text">{prop.name}</p>
-                    </div>
+        <div className="menu__item-container" id={prop.id}>
+            <a className="menu__link" href={prop.href}>
+                <div className="menu__ico-wrapper">
+                    <img src={prop.img} alt={prop.name} className="menu__ico" />
+                </div>
+                <div className="menu__text-wrapper">
+                    <p className="menu__text">{prop.name}</p>
+                </div>
+            </a>
+        </div>
+    );
+}
+
+function Submenu({ prop }) {
+    if (prop.href2 === undefined) {
+        return null;
+    }
+    return (
+        <div className="menu__subitem-container">
+            <div className="menu__subitem">
+                <a href={prop.href2} className="menu__subitem-link">
+                    {prop.name2}
                 </a>
             </div>
-            <div className="menu__subitem-container">
-                <div className="menu__subitem">
-                    <a href={prop2.href} className="menu__subitem-link">
-                        {prop2.name}
-                    </a>
-                </div>
-                <div className="menu__subitem">
-                    <a href={prop2.href2} className="menu__subitem-link">
-                        {prop2.name2}
-                    </a>
-                </div>
+            <div className="menu__subitem">
+                <a href={prop.href3} className="menu__subitem-link">
+                    {prop.name3}
+                </a>
             </div>
-        </li>
+        </div>
     );
 }
 
@@ -91,6 +89,10 @@ const props = {
         href: "/campaigns",
         img: icon,
         name: "Campaigns",
+        href2: "/campaigns/campaign-structure",
+        name2: "Просмотр структуры кампании",
+        href3: "/campaigns/campaign-report",
+        name3: "Отчет по кампании",
     },
     reporting: {
         id: "reporting",
@@ -109,6 +111,10 @@ const props = {
         href: "/settings",
         img: settingsMetrics,
         name: "Настройка периода и метрик",
+        href2: "/settings/period",
+        name2: "Настройка периода",
+        href3: "/settings/metrics",
+        name3: "Настройка метрик",
     },
     xlsxReports: {
         id: "xlsx-reports",
@@ -151,21 +157,6 @@ const props = {
         href: "/metrics",
         img: metricsDescr,
         name: "Описание метрик",
-    },
-};
-
-const subitemProps = {
-    campaigns: {
-        href: "/campaigns/campaign-structure",
-        name: "Просмотр структуры кампании",
-        href2: "/campaigns/campaign-report",
-        name2: "Отчет по кампании",
-    },
-    settings: {
-        href: "/settings/period",
-        name: "Настройка периода",
-        href2: "/settings/metrics",
-        name2: "Настройка метрик",
     },
 };
 

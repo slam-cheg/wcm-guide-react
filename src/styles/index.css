@@ -124,6 +124,12 @@
 .menu__item:last-of-type {
   margin: 0;
 }
+.menu__item:hover .menu__subitem-container {
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(0, 60px);
+  transition: 0.3s;
+}
 
 .menu__ico-wrapper {
   display: flex;

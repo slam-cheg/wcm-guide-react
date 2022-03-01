@@ -11,4 +11,11 @@
     &:last-of-type {
         margin: 0;
     }
+
+    &:hover .menu__subitem-container {
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(0, 60px);
+        transition: 0.3s;
+    }
 }
