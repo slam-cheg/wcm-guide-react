@@ -15,7 +15,7 @@ function Automatization() {
                 </div>
                 <div className="section__content">
                     <p className="section__lead">
-                        Для настройки автоматической отправки отчетов на&nbsp;почту необходимо задать параметры его формирования в&nbsp;блоке Report Center через функцию
+                        Для настройки автоматической отправки отчетов на&nbsp;почту необходимо задать параметры его формирования в&nbsp;блоке <a className="section__lead_color" href="/wcm-structure">Report Center</a> через функцию
                         &laquo;+ New Report&raquo;
                     </p>
                 </div>

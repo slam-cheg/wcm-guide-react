@@ -5,42 +5,14 @@ function Cards() {
         <>
             <Card prop={propsCards.campaigns} />
             <Card prop={propsCards.creativeLibrary} />
-            <div className="card" id="conversions">
-                <div className="card_default">
-                    <div className="card__num-wrapper">
-                        <span>3</span>
-                    </div>
-                    <h3 className="card__title">Convertions</h3>
-                    <p className="card__description">Конверсии</p>
-                    <ul className="card__list">
-                        <li className="card__list-item">Создание и управление страницами конверсий</li>
-                    </ul>
-                </div>
-            </div>
-            <div className="card" id="reporting">
-                <div className="card__num-wrapper">
-                    <span>4</span>
-                </div>
-                <h3 className="card__title">Reporting</h3>
-                <p className="card__description">Кампании</p>
-                <ul className="card__list">
-                    <li className="card__list-item">Подробный мониторинг размещений</li>
-                    <li className="card__list-item">Создание расширенных отчетов по компании</li>
-                </ul>
-            </div>
-            <div className="card" id="report-center">
-                <div className="card__num-wrapper">
-                    <span>5</span>
-                </div>
-                <h3 className="card__title">Report center</h3>
-                <p className="card__description">Шаблоны отчетов</p>
-                <ul className="card__list">
-                    <li className="card__list-item">Создание шаблонов отчетов с автоматической отправкой по расписанию</li>
-                </ul>
-            </div>
+            <Card prop={propsCards.conversions} />
+            <Card prop={propsCards.reporting} />
+            <Card prop={propsCards.reportCenter} />
         </>
     );
 }
+
+export default Cards;
 
 function Card({ prop }) {
     return (
@@ -53,7 +25,7 @@ function Card({ prop }) {
 
 function CardItem({ prop }) {
     return (
-        <div className="card" id={prop.id}>
+        <a className="card" id={prop.id} href={prop.cardLink}>
             <div className="card__num-wrapper">
                 <span>{prop.num}</span>
             </div>
@@ -63,7 +35,7 @@ function CardItem({ prop }) {
                 <li className="card__list-item">{prop.listItemOne}</li>
                 <li className="card__list-item">{prop.listItemTwo}</li>
             </ul>
-        </div>
+        </a>
     );
 }
 
@@ -109,6 +81,32 @@ const propsCards = {
         listItemOne: "Создание креативов",
         listItemTwo: "Управление креативами (в т.ч. динамическими)",
     },
+    conversions: {
+        id: "conversions",
+        num: "3",
+        title: "Convertions",
+        description: "Конверсии",
+        listItemOne: "Создание страниц конверсий",
+        listItemTwo: "Управление страницами конверсий",
+    },
+    reporting: {
+        id: "reporting",
+        num: "4",
+        title: "Reporting",
+        description: "Отчеты",
+        listItemOne: "Подробный мониторинг размещений",
+        listItemTwo: "Создание расширенных отчетов по компании",
+        cardLink: "/reporting"
+    },
+    reportCenter: {
+        id: "report-center",
+        num: "5",
+        title: "Report center",
+        description: "Шаблоны отчетов",
+        listItemOne: "Создание шаблонов отчетов",
+        listItemTwo: "Автоматическая отправка отчетов по расписанию",
+        cardLink: "/automatization"
+    }
 };
 
-export default Cards;
+

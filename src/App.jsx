@@ -18,6 +18,7 @@ import Metrics from "./pages/metrics";
 import ViewsReport from "./pages/views-report";
 import ConversionReport from "./pages/conversion-report";
 import Automatization from "./pages/automatization";
+import Popup from "./components/zoom";
 
 function App() {
     return (
@@ -47,6 +48,7 @@ function App() {
                     </Routes>
                 </Router>
             </main>
+            <Popup />
         </div>
     );
 }

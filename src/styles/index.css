@@ -312,14 +312,15 @@
   max-width: 100%;
   max-height: 100%;
   margin-bottom: 50px;
+  cursor: zoom-in;
 }
 
 .section__lead {
   margin: 0;
   font-family: system-ui;
-  font-size: 16px;
+  font-size: 18px;
   color: #101a46;
-  width: 60%;
+  width: 450px;
 }
 
 .section__lead_color {
@@ -330,6 +331,8 @@
 .section__content {
   padding-left: 20px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .section_not-homepage {
@@ -365,6 +368,12 @@
   width: 40px;
 }
 
+.section__grid-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -375,6 +384,7 @@
   transition: 0.3s;
   overflow: hidden;
   text-decoration: none;
+  color: #000;
 }
 .card:hover {
   transform: translateY(-10px);
@@ -540,7 +550,7 @@
 }
 
 .infoblock__trigger {
-  color: #090e24;
+  color: #347AA2;
   opacity: 0.5;
   font-size: 0.7vw;
   position: absolute;
@@ -652,4 +662,46 @@
   transform: translateY(0);
   transition: 0.3s;
   max-height: 1000px;
+}
+
+.popup {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.popup_opened {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.popup__close-button {
+  background: none;
+  border: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transition: 0.3s;
+  font-size: 35px;
+}
+.popup__close-button:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.popup__image {
+  width: 90%;
 }
