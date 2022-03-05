@@ -661,7 +661,7 @@
   pointer-events: auto;
   transform: translateY(0);
   transition: 0.3s;
-  max-height: 1000px;
+  max-height: 5000px;
 }
 
 .popup {
