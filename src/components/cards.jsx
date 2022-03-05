@@ -15,12 +15,7 @@ function Cards() {
 export default Cards;
 
 function Card({ prop }) {
-    return (
-        <>
-            <CardItem prop={prop} />
-            <CardSubmenu prop={prop} />
-        </>
-    );
+    return <CardItem prop={prop} />;
 }
 
 function CardItem({ prop }) {
@@ -35,6 +30,7 @@ function CardItem({ prop }) {
                 <li className="card__list-item">{prop.listItemOne}</li>
                 <li className="card__list-item">{prop.listItemTwo}</li>
             </ul>
+            <CardSubmenu prop={prop} />
         </a>
     );
 }
@@ -96,7 +92,7 @@ const propsCards = {
         description: "Отчеты",
         listItemOne: "Подробный мониторинг размещений",
         listItemTwo: "Создание расширенных отчетов по компании",
-        cardLink: "/reporting"
+        cardLink: "/reporting",
     },
     reportCenter: {
         id: "report-center",
@@ -105,8 +101,6 @@ const propsCards = {
         description: "Шаблоны отчетов",
         listItemOne: "Создание шаблонов отчетов",
         listItemTwo: "Автоматическая отправка отчетов по расписанию",
-        cardLink: "/automatization"
-    }
+        cardLink: "/automatization",
+    },
 };
-
-
