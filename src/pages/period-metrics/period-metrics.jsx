@@ -1,32 +1,34 @@
 import React from "react";
-import periodMetrics from "../../images/period-metrics.jpg";
-import BackButton from "../../components/backButton";
 import Card from "../../components/cards";
+import SectionHeading from "../../components/sectionHeading";
+import Image from "../../components/image";
+import { sectionsTexts } from "../../props/sectionsTexts";
 import { periodMetricsCardsProps } from "../../props/periodMetricsCardsProps";
+import Link from "../../components/links";
 
-function PeriodMetrics() {
+const links = {
+    period: {
+        text: "настройки метрики",
+        href: "/settings/period",
+    },
+    metrics: {
+        text: "настройки периода",
+        href: "/settings/metrics",
+    },
+};
+
+export default function PeriodMetrics() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="settings">
-                <div className="section-heading">
-                    <BackButton />
-                    <h1 className="section-heading__title">Настройка периода и метрик</h1>
-                </div>
+                <SectionHeading prop={sectionsTexts.periodMetrics} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для{" "}
-                        <a className="section__lead_color" href="/settings/period">
-                            настройки метрики
-                        </a>{" "}
-                        необходимо перейти в&nbsp;меню Select Metrics. <br />
-                        Для{" "}
-                        <a className="section__lead_color" href="/settings/metrics">
-                            настройки периода
-                        </a>{" "}
-                        необходимо выбрать меню в правом верхнем углу.
+                        Для <Link prop={links.period} /> необходимо перейти в&nbsp;меню Select Metrics. <br />
+                        Для <Link prop={links.metrics} /> необходимо выбрать меню в правом верхнем углу.
                     </p>
                 </div>
-                <img className="section__image" src={periodMetrics} alt="настройка периода метрик" />
+                <Image prop={sectionsTexts.periodMetrics.image} />
                 <AddCards />
             </section>
         </div>
@@ -41,5 +43,3 @@ function AddCards() {
         </div>
     );
 }
-
-export default PeriodMetrics;

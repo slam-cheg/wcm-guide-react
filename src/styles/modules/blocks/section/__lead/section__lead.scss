@@ -1,5 +1,5 @@
 .section__lead {
     @include sectionText;
     color: $blue;
-    width: 450px;
+    max-width: 1000px;
 }

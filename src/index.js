@@ -93,15 +93,6 @@ function menuClose(menuContainer) {
     }
 }
 
-if (
-    document.location.pathname === "/wcm-structure" ||
-    document.location.pathname === "/settings" ||
-    document.location.pathname === "/settings/period"
-) {
-    document.getElementById("page").style.overflow = "hidden";
-} else {
-    document.getElementById("page").style.overflow = "auto";
-}
 
 if (!document.querySelector(".section").classList.contains("home-screen")) {
     sidebar.classList.add("sidebar_disabled");

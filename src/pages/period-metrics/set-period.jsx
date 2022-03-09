@@ -1,15 +1,13 @@
 import React from "react";
-import period from "../../images/period.jpg";
-import BackButton from "../../components/backButton";
+import { sectionsTexts } from "../../props/sectionsTexts";
+import Image from "../../components/image";
+import SectionHeading from "../../components/sectionHeading";
 
 function SetPeriod() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="settings">
-                <div className="section-heading" id="period">
-                    <BackButton />
-                    <h1 className="section-heading__title">Настройка периода</h1>
-                </div>
+                <SectionHeading prop={sectionsTexts.period} />
                 <div className="section__content">
                     <p className="section__lead">
                         По&nbsp;умолчанию установлен период за&nbsp;последние 10&nbsp;дней. Необходимо сразу выставить необходимый вам период, чтобы
@@ -20,7 +18,7 @@ function SetPeriod() {
                         А&nbsp;также есть возможность выбора периода по&nbsp;горячим клавишам
                     </p>
                 </div>
-                <img className="section__image" src={period} alt="выбор периода" />
+                <Image prop={sectionsTexts.period.image} />
             </section>
         </div>
     );

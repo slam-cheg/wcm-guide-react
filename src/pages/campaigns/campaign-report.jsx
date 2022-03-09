@@ -1,15 +1,13 @@
 import React from "react";
-import campaignReport from "../../images/campaign-report.jpg";
-import BackButton from "../../components/backButton";
+import Image from "../../components/image";
+import SectionHeading from "../../components/sectionHeading";
+import { sectionsTexts } from "../../props/sectionsTexts";
 
 function CampaignReport() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaigns">
-                <div className="section-heading">
-                    <BackButton />
-                    <h1 className="section-heading__title">Отчет по кампании</h1>
-                </div>
+                <SectionHeading prop={sectionsTexts.campaignsReport} />
                 <div className="section__content">
                     <p className="section__lead">
                         Чтобы попасть в&nbsp;отчет по&nbsp;конкретной кампании в&nbsp;структуре кампании необходимо перейти в&nbsp;Reporting Зайдя
@@ -26,7 +24,7 @@ function CampaignReport() {
                         Эта структура формируется при заведении кампании, на&nbsp;основании медиаплана
                     </p>
                 </div>
-                <img className="section__image" src={campaignReport} alt="отчет по кампании" />
+                <Image prop={sectionsTexts.campaignsReport.image} />
             </section>
         </div>
     );

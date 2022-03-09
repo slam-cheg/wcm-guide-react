@@ -3,19 +3,18 @@ import Infoblock from "../../components/infoblock";
 import InfoTrigger from "../../components/infotrigger";
 import campaigns from "../../images/campaigns.jpg";
 import BackButton from "../../components/backButton";
+import SectionHeading from "../../components/sectionHeading";
+import { sectionsTexts } from "../../props/sectionsTexts";
 
 function Campaigns() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaigns">
-                <div className="section-heading">
-                    <BackButton />
-                    <h1 className="section-heading__title">WCM Campaigns (Кампании)</h1>
-                </div>
+                <SectionHeading prop={sectionsTexts.campaigns} />
                 <div className="section__content">
                     <p className="section__lead">
-                        <span className="section__lead_color">Campaigns</span> &mdash;&nbsp;первая вкладка, которая открывается внутри аккаунта WCM Здесь удобно смотреть
-                        структуру заведения кампании и&nbsp;основные метрики.
+                        <span className="section__lead_color">Campaigns</span> &mdash;&nbsp;первая вкладка, которая открывается внутри аккаунта WCM
+                        Здесь удобно смотреть структуру заведения кампании и&nbsp;основные метрики.
                     </p>
                 </div>
                 <SectionCover />

@@ -1,22 +1,29 @@
 import React from "react";
-import Reporting from "../images/Reporting.jpg";
-import reportingTwo from "../images/Reporting-two.jpg";
-import BackButton from "../components/backButton";
+import SectionHeading from "../components/sectionHeading";
+import { sectionsTexts } from "../props/sectionsTexts";
+import Image from "../components/image";
+import Link from "../components/links";
 
 const style = {
-    justifyContent: "flex-end"
-}
+    maxHeight: "auto",
+};
 
-function Reports() {
+const links = {
+    text: "Campaigns",
+    href: "/campaigns",
+};
+
+const redWords = {
+    reporting: "Reporting ",
+};
+
+export default function Reports() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="reporting">
-                <div className="section-heading">
-                    <BackButton />
-                    <h1 className="section-heading__title">Reporting (Отчеты)</h1>
-                </div>
+                <SectionHeading prop={sectionsTexts.reports} />
                 <div className="section__grid-block">
-                    <div className="section__content" style={style}>
+                    <div className="section__content">
                         <p className="section__lead">
                             Для просмотра статистики по&nbsp;рекламной кампании необходимо выбрать блок{" "}
                             <span className="section__lead_color">Reporting </span>
@@ -24,17 +31,14 @@ function Reports() {
                             на&nbsp;флажок и&nbsp;выбрать блок <span className="section__lead_color">Reporting</span>.
                         </p>
                     </div>
-                    <img className="section__image" src={Reporting} alt="отчеты" />
+                    <Image prop={sectionsTexts.reports.image} style={style} />
                 </div>
                 <div className="section__grid-block">
-                    <img className="section__image" src={reportingTwo} alt="отчеты" />
+                    <Image prop={sectionsTexts.reports.imageTwo} style={style} />
                     <div className="section__content">
                         <p className="section__lead">
-                            Столбец слева&nbsp;&mdash; это меню уровней и&nbsp;отчетов. В&nbsp;нем выбираем{" "}
-                            <a className="section__lead_color" href="/campaigns">
-                                Campaigns
-                            </a>
-                            , чтобы увидеть список кампаний. Можно зайти внутрь кампании, кликнув по&nbsp;ней.
+                            Столбец слева&nbsp;&mdash; это меню уровней и&nbsp;отчетов. В&nbsp;нем выбираем <Link prop={links} />, чтобы увидеть
+                            список кампаний. Можно зайти внутрь кампании, кликнув по&nbsp;ней.
                         </p>
                     </div>
                 </div>
@@ -42,5 +46,3 @@ function Reports() {
         </div>
     );
 }
-
-export default Reports;
