@@ -132,4 +132,9 @@ export const sectionsTexts = {
         classes: "section section__not-homepage",
         id: "automatization",
     },
+    allMetrics: {
+        title: "Описание метрик",
+        classes: "section section__not-homepage",
+        id: "metrics",
+    }
 };

@@ -5,6 +5,11 @@ import campaigns from "../../images/campaigns.jpg";
 import BackButton from "../../components/backButton";
 import SectionHeading from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
+import RedWords from "../../components/redWords";
+
+const redWords = {
+    text: "Campaigns",
+};
 
 function Campaigns() {
     return (
@@ -13,8 +18,8 @@ function Campaigns() {
                 <SectionHeading prop={sectionsTexts.campaigns} />
                 <div className="section__content">
                     <p className="section__lead">
-                        <span className="section__lead_color">Campaigns</span> &mdash;&nbsp;первая вкладка, которая открывается внутри аккаунта WCM
-                        Здесь удобно смотреть структуру заведения кампании и&nbsp;основные метрики.
+                        <RedWords prop={redWords.text} />&nbsp;&mdash; первая вкладка, которая открывается внутри аккаунта WCM Здесь удобно смотреть
+                        структуру заведения кампании и&nbsp;основные метрики.
                     </p>
                 </div>
                 <SectionCover />

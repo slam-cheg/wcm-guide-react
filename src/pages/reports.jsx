@@ -3,6 +3,7 @@ import SectionHeading from "../components/sectionHeading";
 import { sectionsTexts } from "../props/sectionsTexts";
 import Image from "../components/image";
 import Link from "../components/links";
+import RedWords from "../components/redWords";
 
 const style = {
     maxHeight: "auto",
@@ -14,7 +15,7 @@ const links = {
 };
 
 const redWords = {
-    reporting: "Reporting ",
+    text: "Reporting ",
 };
 
 export default function Reports() {
@@ -25,10 +26,9 @@ export default function Reports() {
                 <div className="section__grid-block">
                     <div className="section__content">
                         <p className="section__lead">
-                            Для просмотра статистики по&nbsp;рекламной кампании необходимо выбрать блок{" "}
-                            <span className="section__lead_color">Reporting </span>
+                            Для просмотра статистики по&nbsp;рекламной кампании необходимо выбрать блок <RedWords prop={redWords.text} />
                             в&nbsp;выпадающем меню. Функционал появляется при наведении мышки на&nbsp;необходимую РК. Затем необходимо кликнуть
-                            на&nbsp;флажок и&nbsp;выбрать блок <span className="section__lead_color">Reporting</span>.
+                            на&nbsp;флажок и&nbsp;выбрать блок <RedWords prop={redWords.text} />.
                         </p>
                     </div>
                     <Image prop={sectionsTexts.reports.image} style={style} />

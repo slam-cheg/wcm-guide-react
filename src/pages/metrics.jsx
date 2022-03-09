@@ -3,15 +3,14 @@ import BackButton from "../components/backButton";
 import { metricsProps } from "../props/metricsProps";
 import { metricsHeadingProps } from "../props/metricsProps";
 import { color } from "../props/metricsProps";
+import SectionHeading from "../components/sectionHeading";
+import { sectionsTexts } from "../props/sectionsTexts";
 
 function Metrics() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="metrics">
-                <div className="section-heading">
-                    <BackButton />
-                    <h1 className="section-heading__title">Описание метрик</h1>
-                </div>
+                <SectionHeading prop={sectionsTexts.allMetrics} />
                 <div className="section__content"></div>
                 <ul className="accord">
                     <li className="accord__item">

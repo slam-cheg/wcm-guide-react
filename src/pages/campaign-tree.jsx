@@ -2,6 +2,11 @@ import React from "react";
 import { sectionsTexts } from "../props/sectionsTexts";
 import Image from "../components/image";
 import SectionHeading from "../components/sectionHeading";
+import RedWords from "../components/redWords";
+
+const redWords = {
+    text: " Campaign\u00A0Tree ",
+};
 
 function CampaignTree() {
     return (
@@ -11,7 +16,7 @@ function CampaignTree() {
                 <div className="section__content">
                     <p className="section__lead">
                         При переходе в&nbsp;блок статистических показателей по&nbsp;рекламной кампании данные отображаются в&nbsp;режиме
-                        <span className="section__lead_color"> &laquo;Campaign&nbsp;Tree&raquo; </span>
+                        <RedWords prop={redWords.text} />
                         (Дерево кампании), так как структура подобна дереву: внутри кампании выделены сайты, внутри сайтов выделены инсершны (формат
                         или отдельный сайт селлера), внутри инсершна можно выделить креатив. Эта структура формируется при заведении кампании
                         на&nbsp;основании медиаплана.
