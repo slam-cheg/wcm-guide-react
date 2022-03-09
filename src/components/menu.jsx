@@ -1,7 +1,7 @@
 import React from "react";
 import { menuProps } from "../props/menuProps";
 
-function Menu() {
+export default function Menu() {
     return (
         <aside className="sidebar">
             <ul className="menu">
@@ -65,5 +65,3 @@ function Submenu({ prop }) {
         </div>
     );
 }
-
-export default Menu;
