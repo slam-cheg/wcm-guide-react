@@ -1,4 +1,4 @@
-export const propsCards = {
+export const wcmStructureCardsProps = {
     campaigns: {
         id: "campaigns",
         num: "1",

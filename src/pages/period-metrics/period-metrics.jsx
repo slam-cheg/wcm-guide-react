@@ -1,6 +1,8 @@
 import React from "react";
 import periodMetrics from "../../images/period-metrics.jpg";
 import BackButton from "../../components/backButton";
+import Card from "../../components/cards";
+import { periodMetricsCardsProps } from "../../props/periodMetricsCardsProps";
 
 function PeriodMetrics() {
     return (
@@ -34,50 +36,9 @@ function PeriodMetrics() {
 function AddCards() {
     return (
         <div className="section__additional-content">
-            <Cards />
+            <Card prop={periodMetricsCardsProps.period} />
+            <Card prop={periodMetricsCardsProps.metrics} />
         </div>
-    );
-}
-
-function Cards() {
-    return (
-        <>
-            <a className="card" href="/settings/period">
-                <div className="card_default card_default_deactive">
-                    <div className="card__num-wrapper">
-                        <span>1</span>
-                    </div>
-                    <h3 className="card__title">Настройки периода</h3>
-                    <p className="card__description">Подпись описание</p>
-                    <ul className="card__list">
-                        <li className="card__list-item">Рандомный текст</li>
-                        <li className="card__list-item">Рандомный текст</li>
-                    </ul>
-                </div>
-            </a>
-            <div className="card" id="metrics">
-                <div className="card_default card_default_deactive">
-                    <div className="card__num-wrapper">
-                        <span>2</span>
-                    </div>
-                    <h3 className="card__title">Настройка метрик</h3>
-                    <p className="card__description">Подпись описание</p>
-                    <ul className="card__list">
-                        <li className="card__list-item">Рандомный текст</li>
-                        <li className="card__list-item">Рандомный текст</li>
-                    </ul>
-                </div>
-                <div className="card_hover">
-                    <h3 className="card__heading">Настройка метрик</h3>
-                    <a className="card__selector" href="/settings/metrics">
-                        Как настраивать метрики
-                    </a>
-                    <a className="card__selector" href="/metrics">
-                        Описание метрик
-                    </a>
-                </div>
-            </div>
-        </>
     );
 }
 

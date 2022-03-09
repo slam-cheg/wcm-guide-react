@@ -1,8 +1,8 @@
 import React from "react";
 import BackButton from "../components/backButton";
-import { metricsProps } from "../components/metricsProps";
-import { metricsHeadingProps } from "../components/metricsProps";
-import { color } from "../components/metricsProps";
+import { metricsProps } from "../props/metricsProps";
+import { metricsHeadingProps } from "../props/metricsProps";
+import { color } from "../props/metricsProps";
 
 function Metrics() {
     return (

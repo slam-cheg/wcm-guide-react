@@ -1,5 +1,5 @@
 import React from "react";
-import { menuProps } from "./menuProps";
+import { menuProps } from "../props/menuProps";
 
 function Menu() {
     return (

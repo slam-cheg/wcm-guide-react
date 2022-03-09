@@ -1,25 +1,6 @@
 import React from "react";
-import { propsCards } from "./cardsProps";
 
-function Cards() {
-    return (
-        <>
-            <Card prop={propsCards.campaigns} />
-            <Card prop={propsCards.creativeLibrary} />
-            <Card prop={propsCards.conversions} />
-            <Card prop={propsCards.reporting} />
-            <Card prop={propsCards.reportCenter} />
-        </>
-    );
-}
-
-export default Cards;
-
-function Card({ prop }) {
-    return <CardItem prop={prop} />;
-}
-
-function CardItem({ prop }) {
+export default function Card({ prop }) {
     return (
         <a className="card" id={prop.id} href={prop.cardLink}>
             <div className="card__num-wrapper">
