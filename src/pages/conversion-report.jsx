@@ -46,8 +46,8 @@ function ConversionReport() {
                 <Image prop={sectionsTexts.conversionReport.imageTwo} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для того, чтобы отобразить статистику по&nbsp;конверсиям на&nbsp;графике, необходимо поставить галочку в&nbsp;левом меню
-                        справа от&nbsp;графика.
+                        Для того, чтобы отобразить статистику по&nbsp;конверсиям на&nbsp;графике, <br />
+                        необходимо поставить галочку в&nbsp;левом меню справа от&nbsp;графика.
                     </p>
                 </div>
                 <Image prop={sectionsTexts.conversionReport.imageThree} />

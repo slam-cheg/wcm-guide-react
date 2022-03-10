@@ -18,8 +18,9 @@ function Campaigns() {
                 <SectionHeading prop={sectionsTexts.campaigns} />
                 <div className="section__content">
                     <p className="section__lead">
-                        <RedWords prop={redWords.text} />&nbsp;&mdash; первая вкладка, которая открывается внутри аккаунта WCM Здесь удобно смотреть
-                        структуру заведения кампании и&nbsp;основные метрики.
+                        <RedWords prop={redWords.text} />
+                        &nbsp;&mdash; первая вкладка, которая открывается внутри аккаунта WCM.
+                        <br /> Здесь удобно смотреть структуру заведения кампании и&nbsp;основные метрики.
                     </p>
                 </div>
                 <SectionCover />
