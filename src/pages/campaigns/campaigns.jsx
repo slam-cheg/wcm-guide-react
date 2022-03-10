@@ -1,14 +1,14 @@
 import React from "react";
 import Infoblock from "../../components/infoblock";
 import InfoTrigger from "../../components/infotrigger";
-import campaigns from "../../images/campaigns.jpg";
 import SectionHeading from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
 import RedWords from "../../components/redWords";
 import Card from "../../components/cards";
 import { campaignsProps } from "../../props/campaignsProps";
+import Image from "../../components/image";
 
-function Campaigns() {
+export default function Campaigns() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaigns">
@@ -33,15 +33,9 @@ function Campaigns() {
 function SectionCover() {
     return (
         <div className="section__cover">
-            <SectionImage />
+            <Image prop={sectionsTexts.campaigns.image} />
             <InfoTrigger />
             <Infoblock />
         </div>
     );
 }
-
-function SectionImage() {
-    return <img className="section__image" src={campaigns} alt="Кампании WCM" />;
-}
-
-export default Campaigns;

@@ -77,7 +77,7 @@ export default function Metrics() {
                     <li className="accord__item">
                         <AccordHeading prop={metricsHeadingProps.customEvents} />
                         <div className="accord__content">
-                            <AccordContentItem prop={metricsProps.customEvents.visibility} style={color.red} />
+                            <AccordContentItem prop={metricsProps.customEvents.visibility} />
                             <AccordContentItem prop={metricsProps.customEvents.MRCUndetermined} />
                             <AccordContentItem prop={metricsProps.customEvents.MRCUnviewable} />
                             <AccordContentItem prop={metricsProps.customEvents.MRCViewable} />
@@ -118,7 +118,7 @@ export default function Metrics() {
 function AccordContentItem({ prop }) {
     return (
         <div className="accord__content-item">
-            <p style={{ fontWeight: 600 }}>{prop.metric}</p>
+            <p style={prop.style}>{prop.metric}</p>
             <p>{prop.description}</p>
         </div>
     );
