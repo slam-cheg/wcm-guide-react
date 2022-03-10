@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { metricsProps } from "../props/metricsProps";
 import { metricsHeadingProps } from "../props/metricsProps";
 import { color } from "../props/metricsProps";
 import SectionHeading from "../components/sectionHeading";
 import { sectionsTexts } from "../props/sectionsTexts";
 
-function Metrics() {
+export default function Metrics() {
+    useEffect(() => {
+        accord();
+    });
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="metrics">
@@ -130,4 +133,25 @@ function AccordHeading({ prop }) {
     );
 }
 
-export default Metrics;
+function accord() {
+    const accord = document.querySelector(".accord");
+    const accordItems = accord.querySelectorAll(".accord__item");
+    accord.addEventListener("click", (event) => {
+        const accordItem = event.target.closest(".accord__item");
+        const accordHeader = accordItem.querySelector(".accord__heading");
+        const accordContent = accordItem.querySelector(".accord__content");
+        if (accordContent.classList.contains("accord__content_opened")) {
+            accordContent.classList.remove("accord__content_opened");
+            accordHeader.classList.remove("accord__heading_opened");
+        } else {
+            accordItems.forEach((item) => {
+                if (item.querySelector(".accord__content").classList.contains("accord__content_opened")) {
+                    item.querySelector(".accord__content").classList.remove("accord__content_opened");
+                    item.querySelector(".accord__heading").classList.remove("accord__heading_opened");
+                }
+            });
+            accordContent.classList.add("accord__content_opened");
+            accordHeader.classList.add("accord__heading_opened");
+        }
+    });
+}

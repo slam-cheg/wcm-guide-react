@@ -1,6 +1,22 @@
 import React from "react";
 
 export default function Card({ prop }) {
+    if (prop.cardLink === undefined) {
+        return (
+            <div className="card" id={prop.id} href={prop.cardLink}>
+                <div className="card__num-wrapper">
+                    <span>{prop.num}</span>
+                </div>
+                <h3 className="card__title">{prop.title}</h3>
+                <p className="card__description">{prop.description}</p>
+                <ul className="card__list">
+                    <li className="card__list-item">{prop.listItemOne}</li>
+                    <li className="card__list-item">{prop.listItemTwo}</li>
+                </ul>
+                <CardSubmenu prop={prop} />
+            </div>
+        );
+    }
     return (
         <a className="card" id={prop.id} href={prop.cardLink}>
             <div className="card__num-wrapper">
