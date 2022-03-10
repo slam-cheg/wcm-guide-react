@@ -136,5 +136,5 @@ export const sectionsTexts = {
         title: "Описание метрик",
         classes: "section section__not-homepage",
         id: "metrics",
-    }
+    },
 };

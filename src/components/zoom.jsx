@@ -1,6 +1,6 @@
 import React from "react";
 
-function Popup() {
+export default function Popup() {
     return (
         <div className="popup">
             <img src="" alt="" className="popup__image" />
@@ -8,5 +8,3 @@ function Popup() {
         </div>
     );
 }
-
-export default Popup;

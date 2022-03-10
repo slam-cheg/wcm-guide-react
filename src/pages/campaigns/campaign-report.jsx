@@ -2,6 +2,7 @@ import React from "react";
 import Image from "../../components/image";
 import SectionHeading from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
+import Link from "../../components/links";
 
 function CampaignReport() {
     return (
@@ -14,10 +15,7 @@ function CampaignReport() {
                         внутрь кампании (кликнув на&nbsp;Reporting), попадаем в&nbsp;подробный отчет по&nbsp;кампании в&nbsp;целом с&nbsp;разбивкой
                         по&nbsp;структуре.
                         <br />
-                        Этот уровень называется{" "}
-                        <a className="section__lead_color" href="/campaign-tree">
-                            &laquo;campaign tree&raquo;
-                        </a>
+                        Этот уровень называется <Link prop={{ text: "campaign tree", href: "/campaign-tree" }} />
                         , так как структура подобна дереву: внутри кампании выделены сайты, внутри сайтов выделены инсершны (формат или отдельный сайт
                         селлера), внутри инсершна можно выделить креативы.
                         <br />

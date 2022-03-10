@@ -6,17 +6,6 @@ import { sectionsTexts } from "../../props/sectionsTexts";
 import { periodMetricsCardsProps } from "../../props/periodMetricsCardsProps";
 import Link from "../../components/links";
 
-const links = {
-    period: {
-        text: "настройки метрики",
-        href: "/settings/period",
-    },
-    metrics: {
-        text: "настройки периода",
-        href: "/settings/metrics",
-    },
-};
-
 export default function PeriodMetrics() {
     return (
         <div className="section__wrapper">
@@ -24,8 +13,23 @@ export default function PeriodMetrics() {
                 <SectionHeading prop={sectionsTexts.periodMetrics} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для <Link prop={links.period} /> необходимо перейти в&nbsp;меню Select Metrics. <br />
-                        Для <Link prop={links.metrics} /> необходимо выбрать меню в правом верхнем углу.
+                        Для{" "}
+                        <Link
+                            prop={{
+                                text: "настройки периода",
+                                href: "/settings/period",
+                            }}
+                        />{" "}
+                        необходимо выбрать меню в правом верхнем углу.
+                        <br />
+                        Для{" "}
+                        <Link
+                            prop={{
+                                text: "настройки метрики",
+                                href: "/settings/metrics",
+                            }}
+                        />{" "}
+                        необходимо перейти в&nbsp;меню Select Metrics.
                     </p>
                 </div>
                 <Image prop={sectionsTexts.periodMetrics.image} />

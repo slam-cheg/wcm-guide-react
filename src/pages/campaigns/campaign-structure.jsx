@@ -1,10 +1,9 @@
 import React from "react";
-import BackButton from "../../components/backButton";
 import SectionHeading from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
 import Image from "../../components/image";
 
-function CampaignStructure() {
+export default function CampaignStructure() {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaigns">
@@ -24,5 +23,3 @@ function CampaignStructure() {
         </div>
     );
 }
-
-export default CampaignStructure;

@@ -13,26 +13,8 @@ ReactDOM.render(
 const sidebar = document.querySelector(".sidebar");
 const menuContainer = sidebar.querySelector(".menu");
 const page = document.querySelector(".page");
-const elem = document.querySelectorAll(".section__image");
-const popup = document.querySelector(".popup");
-const popupImage = document.querySelector(".popup__image");
-const closeButton = document.querySelector(".popup__close-button");
 
-elem.forEach((img) => {
-    img.addEventListener("click", (evt) => {
-        openPopup(evt);
-    });
-});
 
-closeButton.addEventListener("click", (evt) => {
-    closePopup(evt);
-});
-window.addEventListener("keyup", (evt) => {
-    closePopupByEscape(evt);
-});
-popup.addEventListener("click", (evt) => {
-    closePopupByOverlay(evt);
-});
 sidebar.addEventListener("mouseover", () => {
     menuOpen(menuContainer);
 });
@@ -41,32 +23,6 @@ sidebar.addEventListener("mouseout", () => {
 });
 
 setMenuActive();
-
-function openPopup(evt) {
-    popup.classList.add("popup_opened");
-    popupImage.src = evt.target.src;
-    popupImage.alt = evt.target.alt;
-}
-
-function closePopup() {
-    popup.classList.remove("popup_opened");
-    popupImage.src = "";
-    popupImage.alt = "";
-}
-
-function closePopupByEscape(evt) {
-    if (evt.keyCode === 27) {
-        closePopup();
-    }
-}
-
-function closePopupByOverlay(evt) {
-    if (evt.type === "click") {
-        if (evt.target === evt.currentTarget) {
-            closePopup();
-        }
-    }
-}
 
 function setMenuActive() {
     const menuButtons = menuContainer.querySelectorAll(".menu__item-container");

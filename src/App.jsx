@@ -48,7 +48,6 @@ function App() {
                     </Routes>
                 </Router>
             </main>
-            <Popup />
         </div>
     );
 }

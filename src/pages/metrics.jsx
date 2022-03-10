@@ -1,5 +1,4 @@
 import React from "react";
-import BackButton from "../components/backButton";
 import { metricsProps } from "../props/metricsProps";
 import { metricsHeadingProps } from "../props/metricsProps";
 import { color } from "../props/metricsProps";
@@ -116,7 +115,7 @@ function Metrics() {
 function AccordContentItem({ prop }) {
     return (
         <div className="accord__content-item">
-            <p style={prop}>{prop.metric}</p>
+            <p style={{ fontWeight: 600 }}>{prop.metric}</p>
             <p>{prop.description}</p>
         </div>
     );
