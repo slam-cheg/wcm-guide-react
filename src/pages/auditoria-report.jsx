@@ -5,7 +5,7 @@ import SectionHeading from "../components/sectionHeading";
 import Link from "../components/links";
 import BoldText from "../components/boldText";
 
-function AuditoriaReport() {
+export const AuditoriaReport = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="auditoria-report">
@@ -94,6 +94,4 @@ function AuditoriaReport() {
             </section>
         </div>
     );
-}
-
-export default AuditoriaReport;
+};

@@ -4,7 +4,7 @@ import SectionHeading from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
 import Link from "../../components/links";
 
-function CampaignReport() {
+export const CampaignReport = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaigns">
@@ -26,6 +26,4 @@ function CampaignReport() {
             </section>
         </div>
     );
-}
-
-export default CampaignReport;
+};

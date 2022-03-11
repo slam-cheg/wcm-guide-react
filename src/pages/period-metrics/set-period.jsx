@@ -3,7 +3,7 @@ import { sectionsTexts } from "../../props/sectionsTexts";
 import Image from "../../components/image";
 import SectionHeading from "../../components/sectionHeading";
 
-function SetPeriod() {
+export const SetPeriod = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="settings">
@@ -22,6 +22,4 @@ function SetPeriod() {
             </section>
         </div>
     );
-}
-
-export default SetPeriod;
+};

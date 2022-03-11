@@ -3,7 +3,7 @@ import SectionHeading from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
 import Image from "../../components/image";
 
-export default function CampaignStructure() {
+export const CampaignStructure = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaigns">
@@ -22,4 +22,4 @@ export default function CampaignStructure() {
             </section>
         </div>
     );
-}
+};

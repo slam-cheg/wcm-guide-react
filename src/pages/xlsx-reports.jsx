@@ -4,7 +4,7 @@ import Image from "../components/image";
 import SectionHeading from "../components/sectionHeading";
 import Link from "../components/links";
 
-function XlsxReports() {
+export const XlsxReports = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="xlsx-reports">
@@ -27,5 +27,3 @@ function XlsxReports() {
         </div>
     );
 }
-
-export default XlsxReports;

@@ -4,7 +4,7 @@ import Image from "../components/image";
 import SectionHeading from "../components/sectionHeading";
 import RedWords from "../components/redWords";
 
-function CampaignTree() {
+export const CampaignTree = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaign-tree">
@@ -21,6 +21,4 @@ function CampaignTree() {
             </section>
         </div>
     );
-}
-
-export default CampaignTree;
+};

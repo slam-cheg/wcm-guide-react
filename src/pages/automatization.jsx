@@ -5,7 +5,7 @@ import SectionHeading from "../components/sectionHeading";
 import Link from "../components/links";
 import RedWords from "../components/redWords";
 
-function Automatization() {
+export const Automatization = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="automatization">
@@ -46,6 +46,4 @@ function Automatization() {
             </section>
         </div>
     );
-}
-
-export default Automatization;
+};

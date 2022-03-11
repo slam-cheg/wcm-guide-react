@@ -6,7 +6,7 @@ import Link from "../components/links";
 import RedWords from "../components/redWords";
 import Popup from "../components/zoom";
 
-export default function Reports() {
+export const Reports = () => {
     useEffect(() => {
         zoomIn();
     });
@@ -40,7 +40,7 @@ export default function Reports() {
             <Popup />
         </>
     );
-}
+};
 
 function zoomIn() {
     const closeButton = document.querySelector(".popup__close-button");

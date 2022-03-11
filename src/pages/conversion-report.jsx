@@ -6,7 +6,7 @@ import Link from "../components/links";
 import RedWords from "../components/redWords";
 import BoldText from "../components/boldText";
 
-function ConversionReport() {
+export const ConversionReport = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="conversion-report">
@@ -88,6 +88,4 @@ function ConversionReport() {
             </section>
         </div>
     );
-}
-
-export default ConversionReport;
+};

@@ -6,7 +6,7 @@ import RedWords from "../../components/redWords";
 import Link from "../../components/links";
 import BoldText from "../../components/boldText";
 
-function SetMetrics() {
+export const SetMetrics = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="settings">
@@ -34,6 +34,4 @@ function SetMetrics() {
             </section>
         </div>
     );
-}
-
-export default SetMetrics;
+};

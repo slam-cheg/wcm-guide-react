@@ -6,7 +6,7 @@ import { sectionsTexts } from "../../props/sectionsTexts";
 import { periodMetricsCardsProps } from "../../props/periodMetricsCardsProps";
 import Link from "../../components/links";
 
-export default function PeriodMetrics() {
+export const PeriodMetrics = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="settings">
@@ -37,13 +37,13 @@ export default function PeriodMetrics() {
             </section>
         </div>
     );
-}
+};
 
-function AddCards() {
+const AddCards = () => {
     return (
         <div className="section__additional-content">
             <Card prop={periodMetricsCardsProps.period} />
             <Card prop={periodMetricsCardsProps.metrics} />
         </div>
     );
-}
+};

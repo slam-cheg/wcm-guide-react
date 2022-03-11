@@ -4,7 +4,7 @@ import SectionContent from "../components/SectionContent";
 import Card from "../components/cards";
 import { wcmStructureCardsProps } from "../props/wcmStructureCardsProps";
 
-export default function WcmStructure() {
+export const WcmStructure = () => {
     return (
         <div className="section__wrapper">
             <section className={sectionsTexts.wcmStructure.classes} id={sectionsTexts.wcmStructure.id}>
@@ -19,4 +19,4 @@ export default function WcmStructure() {
             </section>
         </div>
     );
-}
+};

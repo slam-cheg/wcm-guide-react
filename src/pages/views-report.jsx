@@ -4,7 +4,7 @@ import Image from "../components/image";
 import SectionHeading from "../components/sectionHeading";
 import BoldText from "../components/boldText";
 
-function ViewsReport() {
+export const ViewsReport = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="views-report">
@@ -36,5 +36,3 @@ function ViewsReport() {
         </div>
     );
 }
-
-export default ViewsReport;

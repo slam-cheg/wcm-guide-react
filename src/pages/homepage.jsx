@@ -1,7 +1,7 @@
 import React from "react";
 import homescreen from "../images/homescreen.jpg";
 
-function HomePage() {
+export const HomePage = () => {
     return (
         <div className="content__wrapper">
             <section className="section home-screen">
@@ -9,6 +9,4 @@ function HomePage() {
             </section>
         </div>
     );
-}
-
-export default HomePage;
+};

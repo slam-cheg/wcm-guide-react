@@ -8,7 +8,7 @@ import Card from "../../components/cards";
 import { campaignsProps } from "../../props/campaignsProps";
 import Image from "../../components/image";
 
-export default function Campaigns() {
+export const Campaigns = () => {
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaigns">
@@ -28,9 +28,9 @@ export default function Campaigns() {
             </section>
         </div>
     );
-}
+};
 
-function SectionCover() {
+const SectionCover = () => {
     return (
         <div className="section__cover">
             <Image prop={sectionsTexts.campaigns.image} />
@@ -38,4 +38,4 @@ function SectionCover() {
             <Infoblock />
         </div>
     );
-}
+};

@@ -5,7 +5,7 @@ import { color } from "../props/metricsProps";
 import SectionHeading from "../components/sectionHeading";
 import { sectionsTexts } from "../props/sectionsTexts";
 
-export default function Metrics() {
+export const Metrics = () => {
     useEffect(() => {
         accord();
     });
@@ -113,27 +113,27 @@ export default function Metrics() {
             </section>
         </div>
     );
-}
+};
 
-function AccordContentItem({ prop }) {
+const AccordContentItem = ({ prop }) => {
     return (
         <div className="accord__content-item">
             <p style={prop.style}>{prop.metric}</p>
             <p>{prop.description}</p>
         </div>
     );
-}
+};
 
-function AccordHeading({ prop }) {
+const AccordHeading = ({ prop }) => {
     return (
         <div className="accord__heading">
             <p className="accord__title">{prop.title}</p>
             <div className="accord__arrow">{prop.arrow}</div>
         </div>
     );
-}
+};
 
-function accord() {
+const accord = () => {
     const accord = document.querySelector(".accord");
     const accordItems = accord.querySelectorAll(".accord__item");
     accord.addEventListener("click", (event) => {
@@ -154,4 +154,4 @@ function accord() {
             accordHeader.classList.add("accord__heading_opened");
         }
     });
-}
+};
