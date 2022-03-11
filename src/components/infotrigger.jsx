@@ -1,6 +1,6 @@
 import React from "react";
 
-function InfoTrigger() {
+export const InfoTrigger = () => {
     return (
         <>
             <div
@@ -32,6 +32,4 @@ function InfoTrigger() {
             </div>
         </>
     );
-}
-
-export default InfoTrigger;
+};

@@ -1,8 +1,8 @@
 import React from "react";
 import { sectionsTexts } from "../props/sectionsTexts";
-import Image from "../components/image";
-import SectionHeading from "../components/sectionHeading";
-import Link from "../components/links";
+import { Image } from "../components/image";
+import { SectionHeading } from "../components/sectionHeading";
+import { Link } from "../components/links";
 
 export const XlsxReports = () => {
     return (
@@ -26,4 +26,4 @@ export const XlsxReports = () => {
             </section>
         </div>
     );
-}
+};

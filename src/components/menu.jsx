@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { menuProps } from "../props/menuProps";
 
-export default function Menu() {
+export const Menu = () => {
     useEffect(() => {
         handlerMenu();
     });
@@ -23,18 +23,18 @@ export default function Menu() {
             </ul>
         </aside>
     );
-}
+};
 
-function MenuListItem({ prop }) {
+const MenuListItem = ({ prop }) => {
     return (
         <li className="menu__item">
             <MenuItem prop={prop} />
             <Submenu prop={prop} />
         </li>
     );
-}
+};
 
-function MenuItem({ prop }) {
+const MenuItem = ({ prop }) => {
     return (
         <div className="menu__item-container" id={prop.id}>
             <a className="menu__link" href={prop.href}>
@@ -47,9 +47,9 @@ function MenuItem({ prop }) {
             </a>
         </div>
     );
-}
+};
 
-function Submenu({ prop }) {
+const Submenu = ({ prop }) => {
     if (prop.href2 === undefined) {
         return null;
     }
@@ -67,9 +67,9 @@ function Submenu({ prop }) {
             </div>
         </div>
     );
-}
+};
 
-function handlerMenu() {
+const handlerMenu = () => {
     const sidebar = document.querySelector(".sidebar");
     const menuContainer = sidebar.querySelector(".menu");
     const page = document.querySelector(".page");
@@ -114,4 +114,4 @@ function handlerMenu() {
     } else {
         page.classList.remove("page_light");
     }
-}
+};

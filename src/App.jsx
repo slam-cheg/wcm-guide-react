@@ -1,24 +1,23 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header";
-import Menu from "./components/menu";
-import HomePage from "./pages/homepage";
-import WcmStructure from "./pages/wcm-structure";
-import Campaigns from "./pages/campaigns/campaigns";
-import CampaignStructure from "./pages/campaigns/campaign-structure";
-import CampaignReport from "./pages/campaigns/campaign-report";
-import Reports from "./pages/reports";
-import CampaignTree from "./pages/campaign-tree";
-import PeriodMetrics from "./pages/period-metrics/period-metrics";
-import XlsxReports from "./pages/xlsx-reports";
-import SetMetrics from "./pages/period-metrics/set-metrics";
-import SetPeriod from "./pages/period-metrics/set-period";
-import AuditoriaReport from "./pages/auditoria-report";
-import Permalinks from "./pages/permalinks";
-import Metrics from "./pages/metrics";
-import ViewsReport from "./pages/views-report";
-import ConversionReport from "./pages/conversion-report";
-import Automatization from "./pages/automatization";
-import Popup from "./components/zoom";
+import {Header} from "./components/header";
+import {Menu} from "./components/menu";
+import {HomePage} from "./pages/homepage";
+import {WcmStructure} from "./pages/wcm-structure";
+import {Campaigns} from "./pages/campaigns/campaigns";
+import {CampaignStructure} from "./pages/campaigns/campaign-structure";
+import {CampaignReport} from "./pages/campaigns/campaign-report";
+import {Reports} from "./pages/reports";
+import {CampaignTree} from "./pages/campaign-tree";
+import {PeriodMetrics} from "./pages/period-metrics/period-metrics";
+import {XlsxReports} from "./pages/xlsx-reports";
+import {SetMetrics} from "./pages/period-metrics/set-metrics";
+import {SetPeriod} from "./pages/period-metrics/set-period";
+import {AuditoriaReport} from "./pages/auditoria-report";
+import {Permalinks} from "./pages/permalinks";
+import {Metrics} from "./pages/metrics";
+import {ViewsReport} from "./pages/views-report";
+import {ConversionReport} from "./pages/conversion-report";
+import {Automatization} from "./pages/automatization";
 
 function App() {
     return (

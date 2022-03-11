@@ -1,12 +1,12 @@
 import React from "react";
-import Infoblock from "../../components/infoblock";
-import InfoTrigger from "../../components/infotrigger";
-import SectionHeading from "../../components/sectionHeading";
+import {Infoblock} from "../../components/infoblock";
+import {InfoTrigger} from "../../components/infotrigger";
+import {SectionHeading} from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
-import RedWords from "../../components/redWords";
+import {RedWords} from "../../components/redWords";
 import Card from "../../components/cards";
 import { campaignsProps } from "../../props/campaignsProps";
-import Image from "../../components/image";
+import {Image} from "../../components/image";
 
 export const Campaigns = () => {
     return (
@@ -15,7 +15,7 @@ export const Campaigns = () => {
                 <SectionHeading prop={sectionsTexts.campaigns} />
                 <div className="section__content">
                     <p className="section__lead">
-                        <RedWords prop={"Campaigns"} />
+                        <RedWords prop={"«Campaigns»"} />
                         &nbsp;&mdash; первая вкладка, которая открывается внутри аккаунта WCM.
                         <br /> Здесь удобно смотреть структуру заведения кампании и&nbsp;основные метрики.
                     </p>

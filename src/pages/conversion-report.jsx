@@ -1,9 +1,9 @@
 import React from "react";
 import { sectionsTexts } from "../props/sectionsTexts";
-import Image from "../components/image";
-import SectionHeading from "../components/sectionHeading";
-import Link from "../components/links";
-import RedWords from "../components/redWords";
+import {Image} from "../components/image";
+import {SectionHeading} from "../components/sectionHeading";
+import {Link} from "../components/links";
+import {RedWords} from "../components/redWords";
 import BoldText from "../components/boldText";
 
 export const ConversionReport = () => {
@@ -35,12 +35,12 @@ export const ConversionReport = () => {
                         в&nbsp;раздел{" "}
                         <Link
                             prop={{
-                                text: "Reporting",
+                                text: "«Reporting»",
                                 href: "/reporting",
                             }}
                         />{" "}
-                        по&nbsp;РК. В&nbsp;меню <BoldText prop={"«Select Metrics»"} /> в&nbsp;разделе <BoldText prop={"Basic"} /> выбрать метрику{" "}
-                        <RedWords prop={"«Conversion»"} />
+                        по&nbsp;РК. В&nbsp;меню <BoldText prop={"«Select Metrics»"} /> в&nbsp;разделе <BoldText prop={"«Basic»"} /> выбрать метрику{" "}
+                        <BoldText prop={"«Conversions»"} />
                         &nbsp;&mdash; затем применить условия настройки, нажав кнопку <RedWords prop={"«Save\u00A0&\u00A0close»"} />.
                     </p>
                 </div>
@@ -55,10 +55,10 @@ export const ConversionReport = () => {
 
                 <div className="section__content">
                     <p className="section__lead">
-                        Для разбивки конверсий по&nbsp;типам необходимо перейти в&nbsp;раздел <BoldText prop={"All conversion types and pages"} />,
-                        в&nbsp;блоке <BoldText prop={"Conversion types"} /> выбрать необходимый тип конверсии, а&nbsp;
-                        <BoldText prop={"Display"} />
-                        &nbsp;&mdash; опцию <BoldText prop={"Breakdown by\u00A0types"} />, предварительно настроив список необходимых тегов
+                        Для разбивки конверсий по&nbsp;типам необходимо перейти в&nbsp;раздел <BoldText prop={"«All conversion types and pages»"} />,
+                        в&nbsp;блоке <BoldText prop={"«Conversion types»"} /> выбрать необходимый тип конверсии, а&nbsp;
+                        <BoldText prop={"«Display»"} />
+                        &nbsp;&mdash; опцию <BoldText prop={"«Breakdown by\u00A0types»"} />, предварительно настроив список необходимых тегов
                         в&nbsp;левом меню. Для отображения настроенных параметров нужно кликнуть на&nbsp;
                         <RedWords prop={"«Save\u00A0&\u00A0close»"} />.
                     </p>
@@ -67,21 +67,21 @@ export const ConversionReport = () => {
                 <div className="section__content">
                     <p className="section__lead">
                         Для просмотра данных по&nbsp;общему количеству конверсий с&nbsp;привязкой к&nbsp;рекламной кампании, но&nbsp;отдельно
-                        по&nbsp;конверсионным тегам, необходимо перейти в&nbsp;раздел <BoldText prop={"Conversion pages"} /> в&nbsp;левом меню
+                        по&nbsp;конверсионным тегам, необходимо перейти в&nbsp;раздел <BoldText prop={"«Conversion pages»"} /> в&nbsp;левом меню
                     </p>
                 </div>
                 <Image prop={sectionsTexts.conversionReport.imageFive} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для того, чтобы просмотреть, с&nbsp;какой площадки (<BoldText prop={"site/offers"} />) была совершена конверсия, необходимо
-                        перейти в&nbsp;раздел <BoldText prop={"Sites"} /> под <BoldText prop={"Conversion pages"} />.
+                        Для того, чтобы просмотреть, с&nbsp;какой площадки (<BoldText prop={"«site/offers»"} />) была совершена конверсия, необходимо
+                        перейти в&nbsp;раздел <BoldText prop={"«Sites»"} /> под <BoldText prop={"«Conversion pages»"} />.
                     </p>
                 </div>
                 <Image prop={sectionsTexts.conversionReport.imageSix} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для того, чтобы просмотреть, с&nbsp;какой позиции (<BoldText prop={"insertion"} />) была совершена конверсия, необходимо
-                        перейти в&nbsp;раздел <BoldText prop={"Insertions"} /> под <BoldText prop={"Conversion pages"} />.
+                        Для того, чтобы просмотреть, с&nbsp;какой позиции (<BoldText prop={"«insertion»"} />) была совершена конверсия, необходимо
+                        перейти в&nbsp;раздел <BoldText prop={"«Insertions»"} /> под <BoldText prop={"«Conversion pages»"} />.
                     </p>
                 </div>
                 <Image prop={sectionsTexts.conversionReport.imageSeven} />

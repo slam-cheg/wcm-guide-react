@@ -1,8 +1,8 @@
 import React from "react";
 import { sectionsTexts } from "../props/sectionsTexts";
-import Image from "../components/image";
-import SectionHeading from "../components/sectionHeading";
-import Link from "../components/links";
+import { Image } from "../components/image";
+import { SectionHeading } from "../components/sectionHeading";
+import { Link } from "../components/links";
 import BoldText from "../components/boldText";
 
 export const AuditoriaReport = () => {
@@ -12,31 +12,6 @@ export const AuditoriaReport = () => {
                 <SectionHeading prop={sectionsTexts.auditoriaReport} />
                 <div className="section__content">
                     <p className="section__lead" style={{ width: 1000 }}>
-                        <Link
-                            prop={{
-                                text: "«Reporting»",
-                                href: "/reporting",
-                            }}
-                        />
-                        &nbsp;&#10230;{" "}
-                        <Link
-                            prop={{
-                                text: "«Campaign Structure»",
-                                href: "/campaigns/campaign-structure",
-                            }}
-                        />
-                        &nbsp;&#10230;{" "}
-                        <Link
-                            prop={{
-                                text: "«Campaign tree»",
-                                href: "/campaign-tree",
-                            }}
-                        />
-                        &nbsp;&#10230; <BoldText prop={"«View»"} />
-                        &nbsp;&#10230; <BoldText prop={"«Pivot table»"} />
-                        &nbsp;&#10230; <BoldText prop={"«Audience overlapping»"} />
-                        <br />
-                        <br />
                         Для выгрузки отчета по&nbsp;пересечению аудитории необходимо провалится в&nbsp;основную вкладку{" "}
                         <Link
                             prop={{
@@ -75,7 +50,7 @@ export const AuditoriaReport = () => {
                             }}
                         />{" "}
                         к&nbsp;отчету по&nbsp;пересечению аудитории необходимо кликнуть на&nbsp;заголовок <BoldText prop={"«view»"} />, который
-                        находится над таблицей&nbsp;/ под графиком По&nbsp;клику на&nbsp;окошко, откроется дополнительное меню с&nbsp;5&nbsp;видами
+                        находится над таблицей&nbsp;/ под графиком. По&nbsp;клику на&nbsp;окошко, откроется дополнительное меню с&nbsp;5&nbsp;видами
                         представления данных и&nbsp;дополнительными настройками
                         <br />
                         <br />

@@ -1,9 +1,9 @@
 import React from "react";
 import { sectionsTexts } from "../../props/sectionsTexts";
-import Image from "../../components/image";
-import SectionHeading from "../../components/sectionHeading";
-import RedWords from "../../components/redWords";
-import Link from "../../components/links";
+import {Image} from "../../components/image";
+import {SectionHeading} from "../../components/sectionHeading";
+import {RedWords} from "../../components/redWords";
+import {Link} from "../../components/links";
 import BoldText from "../../components/boldText";
 
 export const SetMetrics = () => {
@@ -13,21 +13,21 @@ export const SetMetrics = () => {
                 <SectionHeading prop={sectionsTexts.metrics} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для настройки метрики необходимо перейти в&nbsp;меню <BoldText prop={"Select Metrics"} />, выбрать{" "}
+                        Для настройки метрики необходимо перейти в&nbsp;меню <BoldText prop={"«Select Metrics»"} />, выбрать{" "}
                         <Link
                             prop={{
                                 text: "набор нужных показателей",
                                 href: "/metrics",
                             }}
                         />
-                        , затем&nbsp;&mdash; нажать на&nbsp;кнопку <RedWords prop={"Save&Close"} />. Данные автоматически обновятся в&nbsp;интерфейсе.
+                        , затем&nbsp;&mdash; нажать на&nbsp;кнопку <RedWords prop={"«Save&Close»"} />. Данные автоматически обновятся в&nbsp;интерфейсе.
                     </p>
                 </div>
                 <Image prop={sectionsTexts.metrics.image} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для настройки метрики необходимо перейти в&nbsp;меню <RedWords prop={"Select Metrics"} />, выбрать набор нужных показателй,
-                        затем&nbsp;&mdash; нажать на&nbsp;кнопку <RedWords prop={"Save&Close"} />. Данные автоматически обновятся в&nbsp;интерфейсе.
+                        Для настройки метрики необходимо перейти в&nbsp;меню <BoldText prop={"«Select Metrics»"} />, выбрать набор нужных показателй,
+                        затем&nbsp;&mdash; нажать на&nbsp;кнопку <RedWords prop={"«Save&Close»"} />. Данные автоматически обновятся в&nbsp;интерфейсе.
                     </p>
                 </div>
                 <Image prop={sectionsTexts.metrics.imageTwo} />

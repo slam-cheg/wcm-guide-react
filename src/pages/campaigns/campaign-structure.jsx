@@ -1,7 +1,7 @@
 import React from "react";
-import SectionHeading from "../../components/sectionHeading";
+import {SectionHeading} from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
-import Image from "../../components/image";
+import {Image} from "../../components/image";
 
 export const CampaignStructure = () => {
     return (

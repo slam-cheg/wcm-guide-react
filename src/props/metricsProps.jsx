@@ -3,49 +3,82 @@ export const metricsProps = {
         impressions: {
             metric: "Impressions",
             description: "Количество показов рекламного объявления",
+            style: {
+                fontWeight: 600,
+            },
         },
         clicks: {
             metric: "Clicks",
             description: "Количество кликов по рекламному объявлению",
+            style: {
+                fontWeight: 600,
+            },
         },
         ctr: {
             metric: "Click rate versus impressions (CTR)",
             description: "Отношение кликов к показам рекламного объявления",
+            style: {
+                fontWeight: 600,
+            },
         },
         uniqueUsers: {
             metric: "Unique users",
             description: "Число уникальных пользователей, увидевших рекламное объявление за все время рекламной кампании",
+            style: {
+                fontWeight: 600,
+            },
         },
         dailyUniqueUsers: {
             metric: "Daily unique users",
             description:
                 "Число уникальных пользователей, увидевших рекламное объявление за отдельные дни кампании (без учета пересечений между ними)",
+            style: {
+                fontWeight: 600,
+            },
         },
         uniqueClicks: {
             metric: "Unique clicks",
             description: "Число уникальных пользователей, совершивших клик по рекламному объявлению за все время рекламной кампании",
+            style: {
+                fontWeight: 600,
+            },
         },
         dailyUniqueClicks: {
             metric: "Daily unique clicks",
             description: "Число уникальных пользователей, совершивших клик по рекламному объявлению за все время рекламной кампании",
+            style: {
+                fontWeight: 600,
+            },
         },
         reachImpressions: {
             metric: "Reach impressions",
             description:
                 "Охват. Общее количество пользователей, которые увидели показ объявления в ходе рекламной кампании. Охват рекламной кампании меньше чем число показов рекламно гообъявления, т.к. один пользователь может увидеть рекламное объявление неограниченное число раз.",
+            style: {
+                fontWeight: 600,
+            },
         },
         reachClicks: {
             metric: "Reach clicks",
             description: "Общее количество пользователей, которые совершили клик на рекламное объявление",
+            style: {
+                fontWeight: 600,
+            },
         },
         uniqueFrequency: {
             metric: "Unique frequency",
             description: "Частота. Количество показанных объявлений на одного уникального пользователя",
+            style: {
+                fontWeight: 600,
+            },
         },
         dailyUniqueFrequency: {
             metric: "Daily unique frequency",
             description:
                 "Количество показанных объявлений на одного уникального пользователя (без учета пересечений между пользователями, взаимодействующими с размещением в различные дни кампании)",
+            style: {
+                fontWeight: 600,
+            },
         },
     },
     video: {

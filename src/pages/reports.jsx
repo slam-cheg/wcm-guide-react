@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import SectionHeading from "../components/sectionHeading";
+import {SectionHeading} from "../components/sectionHeading";
 import { sectionsTexts } from "../props/sectionsTexts";
-import Image from "../components/image";
-import Link from "../components/links";
-import RedWords from "../components/redWords";
-import Popup from "../components/zoom";
+import {Image} from "../components/image";
+import {Link} from "../components/links";
+import {RedWords} from "../components/redWords";
+import {Popup} from "../components/zoom";
 
 export const Reports = () => {
     useEffect(() => {
@@ -18,9 +18,9 @@ export const Reports = () => {
                     <div className="section__grid-block">
                         <div className="section__content" style={{ justifyContent: "center" }}>
                             <p className="section__lead">
-                                Для просмотра статистики по&nbsp;рекламной кампании необходимо выбрать блок <RedWords prop={"Reporting"} />{" "}
+                                Для просмотра статистики по&nbsp;рекламной кампании необходимо выбрать блок <RedWords prop={"«Reporting»"} />{" "}
                                 в&nbsp;выпадающем меню. Функционал появляется при наведении мышки на&nbsp;необходимую РК. Затем необходимо кликнуть
-                                на&nbsp;флажок и&nbsp;выбрать блок <RedWords prop={"Reporting"} />.
+                                на&nbsp;флажок и&nbsp;выбрать блок <RedWords prop={"«Reporting»"} />.
                             </p>
                         </div>
                         <Image prop={sectionsTexts.reports.image} />
@@ -30,7 +30,7 @@ export const Reports = () => {
                         <div className="section__content" style={{ justifyContent: "center" }}>
                             <p className="section__lead">
                                 Столбец слева&nbsp;&mdash; это меню уровней и&nbsp;отчетов. В&nbsp;нем выбираем{" "}
-                                <Link prop={{ text: "Campaigns", href: "/campaigns" }} />, чтобы увидеть список кампаний. Можно зайти внутрь кампании,
+                                <Link prop={{ text: "«Campaigns»", href: "/campaigns" }} />, чтобы увидеть список кампаний. Можно зайти внутрь кампании,
                                 кликнув по&nbsp;ней.
                             </p>
                         </div>

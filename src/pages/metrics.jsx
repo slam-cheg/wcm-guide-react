@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { metricsProps } from "../props/metricsProps";
 import { metricsHeadingProps } from "../props/metricsProps";
-import { color } from "../props/metricsProps";
-import SectionHeading from "../components/sectionHeading";
+import {SectionHeading} from "../components/sectionHeading";
 import { sectionsTexts } from "../props/sectionsTexts";
 
 export const Metrics = () => {

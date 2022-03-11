@@ -97,7 +97,7 @@ export const sectionsTexts = {
         id: "permalinks",
     },
     auditoriaReport: {
-        title: "Формирование гостевых ссылок",
+        title: "Отчет по пересечению аудиторий",
         image: auditoriaReport,
         imageTwo: auditoriaReportTwo,
         classes: "section section__not-homepage",

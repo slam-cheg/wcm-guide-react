@@ -4,7 +4,7 @@ import pencil from "../images/pencil.png";
 import mail from "../images/mail.png";
 import segment from "../images/segment.png";
 
-function Infoblock() {
+export const Infoblock = () => {
     return (
         <div className="infoblock">
             <menu className="infoblock__list">
@@ -15,9 +15,9 @@ function Infoblock() {
             </menu>
         </div>
     );
-}
+};
 
-function InfoblockListItem({ prop }) {
+const InfoblockListItem = ({ prop }) => {
     return (
         <li className="infoblock__list-item">
             <a href="/campaigns/campaign-structure">
@@ -26,7 +26,7 @@ function InfoblockListItem({ prop }) {
             </a>
         </li>
     );
-}
+};
 
 const props = {
     open: {
@@ -46,5 +46,3 @@ const props = {
         img: segment,
     },
 };
-
-export default Infoblock;

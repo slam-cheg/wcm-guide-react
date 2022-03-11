@@ -1,6 +1,6 @@
 import React from "react";
 import { sectionsTexts } from "../props/sectionsTexts";
-import SectionContent from "../components/SectionContent";
+import {SectionContent} from "../components/SectionContent";
 import Card from "../components/cards";
 import { wcmStructureCardsProps } from "../props/wcmStructureCardsProps";
 

@@ -1,7 +1,5 @@
 import React from "react";
 
-export default function RedWords({prop}) {
-    return(
-        <span className="section__lead_color">{prop}</span>
-    )
-}
+export const RedWords = ({ prop }) => {
+    return <span className="section__lead_color">{prop}</span>;
+};

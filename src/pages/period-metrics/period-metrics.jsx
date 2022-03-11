@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "../../components/cards";
-import SectionHeading from "../../components/sectionHeading";
-import Image from "../../components/image";
+import {SectionHeading} from "../../components/sectionHeading";
+import {Image} from "../../components/image";
 import { sectionsTexts } from "../../props/sectionsTexts";
 import { periodMetricsCardsProps } from "../../props/periodMetricsCardsProps";
-import Link from "../../components/links";
+import {Link} from "../../components/links";
 
 export const PeriodMetrics = () => {
     return (

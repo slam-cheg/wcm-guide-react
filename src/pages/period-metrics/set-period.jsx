@@ -1,7 +1,7 @@
 import React from "react";
 import { sectionsTexts } from "../../props/sectionsTexts";
-import Image from "../../components/image";
-import SectionHeading from "../../components/sectionHeading";
+import {Image} from "../../components/image";
+import {SectionHeading} from "../../components/sectionHeading";
 
 export const SetPeriod = () => {
     return (
