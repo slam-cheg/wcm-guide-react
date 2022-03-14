@@ -257,9 +257,6 @@
 }
 
 .main {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 20px;
   padding-top: 80px;
   min-height: calc(100vh - 80px);
 }

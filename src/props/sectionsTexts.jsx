@@ -137,4 +137,9 @@ export const sectionsTexts = {
         classes: "section section__not-homepage",
         id: "metrics",
     },
+    notFound: {
+        title: "Страница не найдена",
+        classes: "section section__not-homepage",
+        id: "not-found",
+    },
 };

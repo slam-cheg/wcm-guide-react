@@ -112,6 +112,10 @@ const handlerMenu = () => {
         backBtn.addEventListener("click", goBack);
         menuClose(menuContainer);
     } else {
+        const main = document.querySelector(".main");
         page.classList.remove("page_light");
+        main.style.display = "grid";
+        main.style.gridTemplateColumns = "auto auto";
+        main.style.gap = "20px";
     }
 };

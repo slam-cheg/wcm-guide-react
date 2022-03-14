@@ -3,7 +3,7 @@ import React from "react";
 export default function Card({ prop }) {
     if (prop.cardLink === undefined) {
         return (
-            <div className="card" id={prop.id} href={prop.cardLink}>
+            <div className="card" id={prop.id} href={prop.cardLink} style={{ cursor: "auto" }}>
                 <div className="card__num-wrapper">
                     <span>{prop.num}</span>
                 </div>
