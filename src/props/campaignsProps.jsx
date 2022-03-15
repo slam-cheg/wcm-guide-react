@@ -6,6 +6,7 @@ export const campaignsProps = {
         description: "Структура кампании",
         listItemOne: "Первичный мониторинг результатов размещения",
         listItemTwo: "Структура рекламных кампаний",
+        cardLink: "/campaigns/campaign-structure"
     },
     campaignReport: {
         id: "campaign-report",
@@ -14,5 +15,6 @@ export const campaignsProps = {
         description: "Отчет по кампании",
         listItemOne: "Подробный отчет",
         listItemTwo: "Схематичный график",
+        cardLink: "/campaigns/campaign-report"
     },
 };

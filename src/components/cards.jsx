@@ -3,7 +3,7 @@ import React from "react";
 export default function Card({ prop }) {
     if (prop.cardLink === undefined) {
         return (
-            <div className="card" id={prop.id} href={prop.cardLink} style={{ cursor: "auto" }}>
+            <div className="card" id={prop.id} style={{ cursor: "auto" }}>
                 <div className="card__num-wrapper">
                     <span>{prop.num}</span>
                 </div>
@@ -16,21 +16,22 @@ export default function Card({ prop }) {
                 <CardSubmenu prop={prop} />
             </div>
         );
+    } else {
+        return (
+            <a className="card" id={prop.id} href={prop.cardLink}>
+                <div className="card__num-wrapper">
+                    <span>{prop.num}</span>
+                </div>
+                <h3 className="card__title">{prop.title}</h3>
+                <p className="card__description">{prop.description}</p>
+                <ul className="card__list">
+                    <li className="card__list-item">{prop.listItemOne}</li>
+                    <li className="card__list-item">{prop.listItemTwo}</li>
+                </ul>
+                <CardSubmenu prop={prop} />
+            </a>
+        );
     }
-    return (
-        <a className="card" id={prop.id} href={prop.cardLink}>
-            <div className="card__num-wrapper">
-                <span>{prop.num}</span>
-            </div>
-            <h3 className="card__title">{prop.title}</h3>
-            <p className="card__description">{prop.description}</p>
-            <ul className="card__list">
-                <li className="card__list-item">{prop.listItemOne}</li>
-                <li className="card__list-item">{prop.listItemTwo}</li>
-            </ul>
-            <CardSubmenu prop={prop} />
-        </a>
-    );
 }
 
 function CardSubmenu({ prop }) {
