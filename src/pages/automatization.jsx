@@ -4,7 +4,6 @@ import { Image } from "../components/image";
 import { SectionHeading } from "../components/sectionHeading";
 import { Link } from "../components/links";
 import { RedWords } from "../components/redWords";
-import BoldText from "../components/boldText";
 
 export const Automatization = () => {
     return (
@@ -20,26 +19,26 @@ export const Automatization = () => {
                                 href: "/wcm-structure",
                             }}
                         />{" "}
-                        через функцию <BoldText prop={"«+ New Report»"} />
+                        через функцию <RedWords prop={"«+ New Report»"} />
                     </p>
                 </div>
                 <Image prop={sectionsTexts.automatization.image} />
                 <div className="section__content">
                     <p className="section__lead">
-                        В&nbsp;форме <BoldText prop={"«Alert me via email when the report is ready»"} /> необходимо настроить адресатов
+                        В&nbsp;форме <RedWords prop={"«Alert me via email when the report is ready»"} /> необходимо настроить адресатов
                     </p>
                 </div>
                 <Image prop={sectionsTexts.automatization.imageTwo} />
                 <div className="section__content">
                     <p className="section__lead">
-                        В&nbsp;форме <BoldText prop={"«Report Content»"} /> необходимо настроить необходимые метрики и&nbsp;детализацию данных.
+                        В&nbsp;форме <RedWords prop={"«Report Content»"} /> необходимо настроить необходимые метрики и&nbsp;детализацию данных.
                     </p>
                 </div>
                 <Image prop={sectionsTexts.automatization.imageThree} />
                 <div className="section__content">
                     <p className="section__lead">
-                        В&nbsp;форме <BoldText prop={"«Preview of final Report»"} /> можно проверить структуру собранного отчета согласно настроенным
-                        параметрам в&nbsp;форме <BoldText prop={"«Report Content»"} />. Для завершения настройки необходимо кликнуть{" "}
+                        В&nbsp;форме <RedWords prop={"«Preview of final Report»"} /> можно проверить структуру собранного отчета согласно настроенным
+                        параметрам в&nbsp;форме <RedWords prop={"«Report Content»"} />. Для завершения настройки необходимо кликнуть{" "}
                         <RedWords prop={"«Save\u00A0&\u00A0Run»"} />
                     </p>
                 </div>

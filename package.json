@@ -23,9 +23,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "138.68.86.223/srv/www/"
+        "url": "lshushkov@138.68.86.223/srv/www/"
     },
-    "homepage": "/",
+    "homepage": ".",
     "eslintConfig": {
         "extends": [
             "react-app",
@@ -39,9 +39,9 @@
             "not op_mini all"
         ],
         "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
         ]
     },
     "devDependencies": {

@@ -4,7 +4,6 @@ import { Image } from "../../components/image";
 import { SectionHeading } from "../../components/sectionHeading";
 import { RedWords } from "../../components/redWords";
 import { Link } from "../../components/links";
-import BoldText from "../../components/boldText";
 
 export const SetMetrics = () => {
     return (
@@ -13,7 +12,7 @@ export const SetMetrics = () => {
                 <SectionHeading prop={sectionsTexts.metrics} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Для настройки метрики необходимо перейти в&nbsp;меню <BoldText prop={"«Select Metrics»"} />, выбрать{" "}
+                        Для настройки метрики необходимо перейти в&nbsp;меню <RedWords prop={"«Select Metrics»"} />, выбрать{" "}
                         <Link
                             prop={{
                                 text: "набор нужных показателей",
@@ -27,7 +26,7 @@ export const SetMetrics = () => {
                 <Image prop={sectionsTexts.metrics.image} />
                 <div className="section__content">
                     <p className="section__lead">
-                        В&nbsp;блоке <BoldText prop={"«Selected Metrics»"} /> отображаются выбранные показатели из&nbsp;левого меню. Их&nbsp;легко
+                        В&nbsp;блоке <RedWords prop={"«Selected Metrics»"} /> отображаются выбранные показатели из&nbsp;левого меню. Их&nbsp;легко
                         удалить из&nbsp;списка выбранных, нажав на&nbsp;значок корзины справа от&nbsp;ранее выбранной метрики.
                     </p>
                 </div>

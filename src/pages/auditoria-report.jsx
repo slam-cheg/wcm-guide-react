@@ -3,7 +3,7 @@ import { sectionsTexts } from "../props/sectionsTexts";
 import { Image } from "../components/image";
 import { SectionHeading } from "../components/sectionHeading";
 import { Link } from "../components/links";
-import BoldText from "../components/boldText";
+import { RedWords } from "../components/redWords";
 
 export const AuditoriaReport = () => {
     return (
@@ -49,13 +49,13 @@ export const AuditoriaReport = () => {
                                 href: "/campaign-tree",
                             }}
                         />{" "}
-                        к&nbsp;отчету по&nbsp;пересечению аудитории необходимо кликнуть на&nbsp;заголовок <BoldText prop={"«view»"} />, который
+                        к&nbsp;отчету по&nbsp;пересечению аудитории необходимо кликнуть на&nbsp;заголовок <RedWords prop={"«view»"} />, который
                         находится над таблицей&nbsp;/ под графиком. По&nbsp;клику на&nbsp;окошко, откроется дополнительное меню с&nbsp;5&nbsp;видами
                         представления данных и&nbsp;дополнительными настройками
                         <br />
                         <br />
-                        В&nbsp;дополнительном меню в&nbsp;строке <BoldText prop={"«pivot table»"} /> в&nbsp;окошке select dimension выбираем{" "}
-                        <BoldText prop={"«audience overlapping»"} />, кликаем <BoldText prop={"«Apply»"} /> Отчет представляет собой таблицу
+                        В&nbsp;дополнительном меню в&nbsp;строке <RedWords prop={"«pivot table»"} /> в&nbsp;окошке select dimension выбираем{" "}
+                        <RedWords prop={"«audience overlapping»"} />, кликаем <RedWords prop={"«Apply»"} /> Отчет представляет собой таблицу
                         с&nbsp;наложением пересечения аудитории между сайтами, в&nbsp;процентах
                     </p>
                 </div>
