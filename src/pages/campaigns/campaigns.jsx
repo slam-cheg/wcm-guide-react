@@ -21,7 +21,7 @@ export const Campaigns = () => {
                     </p>
                 </div>
                 <SectionCover />
-                <div className="section__additional-content">
+                <div className="section__additional-content" style={{gridTemplateColumns: "repeat(3, 1fr)"}}>
                     <Card prop={campaignsProps.campaigns} />
                     <Card prop={campaignsProps.campaignReport} />
                 </div>

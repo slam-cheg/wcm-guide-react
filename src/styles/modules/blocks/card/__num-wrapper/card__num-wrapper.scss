@@ -13,4 +13,9 @@
         @include menuFont;
         font-size: 20px;
     }
+
+    @media screen and (max-width: 1250px) {
+        width: 25px;
+        height: 25px;
+    }
 }

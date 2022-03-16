@@ -1,6 +1,7 @@
 .menu_disabled {
     transition: 0.2s;
     width: 65px;
+    overflow: hidden;
 
     .menu__text-wrapper {
         opacity: 0;

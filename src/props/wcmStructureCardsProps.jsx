@@ -19,7 +19,7 @@ export const wcmStructureCardsProps = {
         title: "Creative library",
         description: "Библиотека креативов",
         listItemOne: "Создание креативов",
-        listItemTwo: "Управление креативами (в т.ч. динамическими)",
+        listItemTwo: "Управление креативами (в\u00A0т.ч. динамическими)",
     },
     conversions: {
         id: "conversions",
@@ -35,7 +35,7 @@ export const wcmStructureCardsProps = {
         title: "Reporting",
         description: "Отчеты",
         listItemOne: "Подробный мониторинг размещений",
-        listItemTwo: "Создание расширенных отчетов по компании",
+        listItemTwo: "Создание расширенных отчетов по\u00A0компании",
         cardLink: "/reporting",
     },
     reportCenter: {
@@ -44,7 +44,7 @@ export const wcmStructureCardsProps = {
         title: "Report center",
         description: "Шаблоны отчетов",
         listItemOne: "Создание шаблонов отчетов",
-        listItemTwo: "Автоматическая отправка отчетов по расписанию",
+        listItemTwo: "Автоматическая отправка отчетов по\u00A0расписанию",
         cardLink: "/automatization",
     },
 };

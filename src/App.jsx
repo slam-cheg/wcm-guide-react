@@ -24,7 +24,7 @@ function App() {
     return (
         <div className="page page_light">
             <Header />
-            <main className="main">
+            <div className="main">
                 <Router>
                     <Menu />
                     <Routes>
@@ -48,7 +48,7 @@ function App() {
                         <Route path="/not-found" element={<NotFound />} />
                     </Routes>
                 </Router>
-            </main>
+            </div>
         </div>
     );
 }

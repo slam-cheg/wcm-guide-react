@@ -20,4 +20,8 @@
             border-bottom: 8px solid transparent;
         }
     }
+
+    @media screen and (max-width: 1365px) {
+        height: 40px;
+    }
 }
