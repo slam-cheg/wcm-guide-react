@@ -23,9 +23,9 @@ export const menuProps = {
         href: "/campaigns",
         img: icon,
         name: "Campaigns",
-        href2: "/campaigns/campaign-structure",
+        href2: "/campaign-structure",
         name2: "Просмотр структуры кампании",
-        href3: "/campaigns/campaign-report",
+        href3: "/campaign-report",
         name3: "Отчет по кампании",
     },
     reporting: {
@@ -45,9 +45,9 @@ export const menuProps = {
         href: "/settings",
         img: settingsMetrics,
         name: "Настройка периода и метрик",
-        href2: "/settings/period",
+        href2: "/settings-period",
         name2: "Настройка периода",
-        href3: "/settings/metrics",
+        href3: "/settings-metrics",
         name3: "Настройка метрик",
     },
     xlsxReports: {

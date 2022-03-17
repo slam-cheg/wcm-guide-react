@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react/cjs/react.production.min";
 import homescreen from "../images/homescreen.jpg";
 
 export const HomePage = () => {
