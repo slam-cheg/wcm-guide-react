@@ -14,6 +14,7 @@ import permalink from "../images/permalink.png";
 import auditoriaReport from "../images/auditoria-report.jpg";
 import auditoriaReportTwo from "../images/auditoria-report-two.jpg";
 import viewsReport from "../images/views-report.jpg";
+import viewsReportTwo from "../images/views-report-two.jpg";
 import viewsReportThree from "../images/views-report-three.jpg";
 import conversionReport from "../images/conversion-report.jpg";
 import conversionReportTwo from "../images/conversion-report-two.jpg";
@@ -106,7 +107,7 @@ export const sectionsTexts = {
     viewsReport: {
         title: "Отчет по распределению показов, кликов, конверсий и\u00A0частоты",
         image: viewsReport,
-        imageTwo: auditoriaReportTwo,
+        imageTwo: viewsReportTwo,
         imageThree: viewsReportThree,
         classes: "section section__not-homepage",
         id: "views-report",
