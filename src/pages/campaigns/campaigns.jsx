@@ -1,12 +1,10 @@
 import React from "react";
-import {Infoblock} from "../../components/infoblock";
-import {InfoTrigger} from "../../components/infotrigger";
-import {SectionHeading} from "../../components/sectionHeading";
+import { SectionHeading } from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
-import {RedWords} from "../../components/redWords";
+import { RedWords } from "../../components/redWords";
 import Card from "../../components/cards";
 import { campaignsProps } from "../../props/campaignsProps";
-import {Image} from "../../components/image";
+import { Image } from "../../components/image";
 
 export const Campaigns = () => {
     return (
@@ -20,22 +18,12 @@ export const Campaigns = () => {
                         <br /> Здесь удобно смотреть структуру заведения кампании и&nbsp;основные метрики.
                     </p>
                 </div>
-                <SectionCover />
-                <div className="section__additional-content" style={{gridTemplateColumns: "repeat(3, 1fr)"}}>
+                <Image prop={sectionsTexts.campaigns.image} />
+                <div className="section__additional-content" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
                     <Card prop={campaignsProps.campaigns} />
                     <Card prop={campaignsProps.campaignReport} />
                 </div>
             </section>
-        </div>
-    );
-};
-
-const SectionCover = () => {
-    return (
-        <div className="section__cover">
-            <Image prop={sectionsTexts.campaigns.image} />
-            <InfoTrigger />
-            <Infoblock />
         </div>
     );
 };

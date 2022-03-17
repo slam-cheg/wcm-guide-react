@@ -82,6 +82,7 @@
   transition: 0.3s;
   position: relative;
   z-index: 10000;
+  width: 300px;
 }
 .sidebar::-webkit-scrollbar {
   width: 0;
@@ -90,6 +91,7 @@
 
 .sidebar_disabled {
   position: fixed;
+  width: auto;
 }
 
 .menu {

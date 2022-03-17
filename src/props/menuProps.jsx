@@ -44,7 +44,7 @@ export const menuProps = {
         id: "settings",
         href: "/settings",
         img: settingsMetrics,
-        name: "Настройка периода и метрик",
+        name: "Настройка периода и\u00A0метрик",
         href2: "/settings-period",
         name2: "Настройка периода",
         href3: "/settings-metrics",
@@ -72,7 +72,7 @@ export const menuProps = {
         id: "views-report",
         href: "/views-report",
         img: reportClicks,
-        name: "Отчет по распределению показов, кликов, конверсий и частоты",
+        name: "Отчет по распределению показов, кликов, конверсий и\u00A0частоты",
     },
     conversionReport: {
         id: "conversion-report",
