@@ -8,9 +8,9 @@ export const wcmStructureCardsProps = {
         listItemTwo: "Структура рекламных кампаний",
         href: "/campaigns",
         name: "Campaigns",
-        href2: "/campaigns/campaign-structure",
+        href2: "/campaign-structure",
         name2: "Просмотр структуры кампании",
-        href3: "/campaigns/campaign-report",
+        href3: "/campaign-report",
         name3: "Отчет по кампании",
     },
     creativeLibrary: {
