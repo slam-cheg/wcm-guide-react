@@ -17,7 +17,7 @@ export const PeriodMetrics = () => {
                         <Link
                             prop={{
                                 text: "настройки периода",
-                                href: "/settings/period",
+                                href: "/settings-period",
                             }}
                         />{" "}
                         необходимо выбрать меню в правом верхнем углу.
@@ -26,7 +26,7 @@ export const PeriodMetrics = () => {
                         <Link
                             prop={{
                                 text: "настройки метрики",
-                                href: "/settings/metrics",
+                                href: "/settings-metrics",
                             }}
                         />{" "}
                         необходимо перейти в&nbsp;меню Select Metrics.

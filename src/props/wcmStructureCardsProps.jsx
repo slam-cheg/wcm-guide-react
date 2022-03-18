@@ -24,10 +24,11 @@ export const wcmStructureCardsProps = {
     conversions: {
         id: "conversions",
         num: "3",
-        title: "Convertions",
+        title: "Conversions",
         description: "Конверсии",
         listItemOne: "Создание страниц конверсий",
         listItemTwo: "Управление страницами конверсий",
+        cardLink: "/conversion-report",
     },
     reporting: {
         id: "reporting",
