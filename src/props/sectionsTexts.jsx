@@ -11,8 +11,7 @@ import metrics from "../images/metrics.jpg";
 import metricsSelected from "../images/metrics-selected.jpg";
 import exportSettings from "../images/export-settings.jpg";
 import permalink from "../images/permalink.png";
-import auditoriaReport from "../images/auditoria-report.jpg";
-import auditoriaReportTwo from "../images/auditoria-report-two.jpg";
+import availableReports from "../images/available-reports.jpg";
 import viewsReport from "../images/views-report.jpg";
 import viewsReportTwo from "../images/views-report-two.jpg";
 import viewsReportThree from "../images/views-report-three.jpg";
@@ -97,12 +96,11 @@ export const sectionsTexts = {
         classes: "section section__not-homepage",
         id: "permalinks",
     },
-    auditoriaReport: {
-        title: "Отчет по пересечению аудиторий",
-        image: auditoriaReport,
-        imageTwo: auditoriaReportTwo,
+    availableReports: {
+        title: "Встроенные доступные отчеты",
+        image: availableReports,
         classes: "section section__not-homepage",
-        id: "auditoria-report",
+        id: "available-reports",
     },
     viewsReport: {
         title: "Отчет по распределению показов, кликов, конверсий и\u00A0частоты",

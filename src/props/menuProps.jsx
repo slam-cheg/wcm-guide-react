@@ -62,11 +62,11 @@ export const menuProps = {
         img: links,
         name: "Формирование гостевых ссылок",
     },
-    auditoriaReport: {
-        id: "auditoria-report",
-        href: "/auditoria-report",
+    availableReports: {
+        id: "available-reports",
+        href: "/available-reports",
         img: auditories,
-        name: "Отчет по пересечению аудитории",
+        name: "Встроенные доступные отчеты",
     },
     viewsReport: {
         id: "views-report",

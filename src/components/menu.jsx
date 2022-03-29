@@ -15,7 +15,7 @@ export const Menu = () => {
                 <MenuListItem prop={menuProps.settings} />
                 <MenuListItem prop={menuProps.xlsxReports} />
                 <MenuListItem prop={menuProps.permalinks} />
-                <MenuListItem prop={menuProps.auditoriaReport} />
+                <MenuListItem prop={menuProps.availableReports} />
                 <MenuListItem prop={menuProps.viewsReport} />
                 <MenuListItem prop={menuProps.conversionReport} />
                 <MenuListItem prop={menuProps.automatization} />

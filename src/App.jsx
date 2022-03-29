@@ -12,7 +12,7 @@ import { PeriodMetrics } from "./pages/period-metrics/period-metrics";
 import { XlsxReports } from "./pages/xlsx-reports";
 import { SetMetrics } from "./pages/period-metrics/set-metrics";
 import { SetPeriod } from "./pages/period-metrics/set-period";
-import { AuditoriaReport } from "./pages/auditoria-report";
+import { AvailableReports } from "./pages/available-reports/available-reports";
 import { Permalinks } from "./pages/permalinks";
 import { Metrics } from "./pages/metrics";
 import { ViewsReport } from "./pages/views-report";
@@ -39,7 +39,7 @@ function App() {
                     <Route path="/settings-metrics" element={<SetMetrics />} />
                     <Route path="/xlsx-reports" element={<XlsxReports />} />
                     <Route path="/permalinks" element={<Permalinks />} />
-                    <Route path="/auditoria-report" element={<AuditoriaReport />} />
+                    <Route path="/available-reports" element={<AvailableReports />} />
                     <Route path="/views-report" element={<ViewsReport />} />
                     <Route path="/conversion-report" element={<ConversionReport />} />
                     <Route path="/metrics" element={<Metrics />} />
