@@ -380,6 +380,25 @@
   grid-template-columns: 2fr 1fr;
 }
 
+.section__list {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+}
+.section__list ::marker {
+  color: #c1002a;
+  font-weight: 600;
+}
+
+.section__list-item {
+  margin-bottom: 10px;
+  max-width: 1000px;
+}
+.section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
 .card {
   display: flex;
   flex-direction: column;

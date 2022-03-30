@@ -1,8 +1,9 @@
 import React from "react";
 import { sectionsTexts } from "../props/sectionsTexts";
-import {Image} from "../components/image";
-import {SectionHeading} from "../components/sectionHeading";
-import {RedWords} from "../components/redWords";
+import { Image } from "../components/image";
+import { SectionHeading } from "../components/sectionHeading";
+import { RedWords } from "../components/redWords";
+import { Link } from "../components/links";
 
 export const Permalinks = () => {
     return (
@@ -11,19 +12,27 @@ export const Permalinks = () => {
                 <SectionHeading prop={sectionsTexts.permalinks} />
                 <div className="section__content">
                     <p className="section__lead">
-                        Справа вверху находится кнопка <RedWords prop={"«Permalink»"} /> для получения гостевой ссылки (пермалинка).
+                        Для предоставления гостевого доступа к&nbsp;интерфейсу предварительно необходимо настроить нужный раздел данных и&nbsp;вывести{" "}
+                        <Link prop={{ text: "набор метрик", href: "/metrics" }} /> в&nbsp;интерфейсе.
                         <br />
-                        <br />
-                        По&nbsp;клику на&nbsp;
-                        <RedWords prop={"«Permalink»"} /> вы&nbsp;получаете &nbsp;&mdash; гостевую ссылку с&nbsp;доступом к&nbsp;отчету. По&nbsp;такой
-                        ссылке можно увидеть точно такой&nbsp;же отчет на&nbsp;том&nbsp;же самом уровне, можно менять период.
-                        <br />
-                        <br />
+                        По&nbsp;гостевой ссылке можно увидеть точно такой&nbsp;же отчет на&nbsp;том&nbsp;же самом уровне, можно менять период.
+                    </p>
+                    <ol className="section__list">
+                        <li className="section__list-item">
+                            Кликаем на функцию <RedWords prop={"«Permalink»"} /> в правом верхнем углу;
+                        </li>
+                        <li className="section__list-item">Копируем Short URL из&nbsp;появившегося окна;</li>
+                        <li className="section__list-item">
+                            нажимаем <RedWords prop={"«Close»"} />.
+                        </li>
+                    </ol>
+                    <p className="section__lead">
                         <RedWords
                             prop={
-                                "Менять метрики или зайти в\u00A0другой уровень отчета\u00A0/ в\u00A0другую кампанию по\u00A0гостевой ссылке невозможно."
+                                "«Менять метрики или зайти в\u00A0другой уровень отчета\u00A0/ в\u00A0другую кампанию по\u00A0гостевой ссылке невозможно»"
                             }
                         />
+                        .
                     </p>
                 </div>
                 <Image prop={sectionsTexts.permalinks.image} />

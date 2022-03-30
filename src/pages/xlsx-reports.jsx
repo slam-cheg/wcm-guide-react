@@ -3,6 +3,7 @@ import { sectionsTexts } from "../props/sectionsTexts";
 import { Image } from "../components/image";
 import { SectionHeading } from "../components/sectionHeading";
 import { Link } from "../components/links";
+import { RedWords } from "../components/redWords";
 
 export const XlsxReports = () => {
     return (
@@ -18,8 +19,24 @@ export const XlsxReports = () => {
                                 href: "/campaign-tree",
                             }}
                         />{" "}
-                        и&nbsp;вывести набор метрик в&nbsp;интерфейс. Затем&nbsp;&mdash; нажать на&nbsp;кнопку Export, присвоить отчету название
-                        и&nbsp;выгрузить его в&nbsp;формате .xlsx сразу, либо настроить его отправку по&nbsp;адресу электронной почты.
+                        и&nbsp;вывести набор метрик в&nbsp;интерфейс.
+                        <br />
+                        <br />
+                        Далее для выгрузки отчета необходимо:
+                    </p>
+                    <ol className="section__list">
+                        <li className="section__list-item">
+                            Нажать на <RedWords prop={"«Export»"} /> в правом верхнем углу;
+                        </li>
+                        <li className="section__list-item">Присвоить отчету название;</li>
+                        <li className="section__list-item">
+                            Выгрузить отчет удобным способом: отчет можно сразу выгрузить в&nbsp;формате .xlsx сразу через кнопку{" "}
+                            <RedWords prop={"«Download\u00A0only»"} /> или направить его по&nbsp;адресу электронной почты с&nbsp;помощью кнопки{" "}
+                            <RedWords prop={"«Send\u00A0by\u00A0email»"} /> (Если отчет большого объема).
+                        </li>
+                    </ol>
+                    <p className="section__lead">
+                        <RedWords prop={"! Отчет уходит на\u00A0почту в\u00A0соответствии с\u00A0учетной записью."} />
                     </p>
                 </div>
                 <Image prop={sectionsTexts.xlsxReports.image} />
