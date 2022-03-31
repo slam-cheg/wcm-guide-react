@@ -23,10 +23,10 @@ export const menuProps = {
         href: "/campaigns",
         img: icon,
         name: "Campaigns",
-        href2: "/campaign-structure",
-        name2: "Просмотр структуры кампании",
-        href3: "/campaign-report",
-        name3: "Отчет по кампании",
+        submenu: [
+            { link: "/campaign-structure", text: "Просмотр структуры кампании" },
+            { link: "/campaign-report", text: "Отчет по кампании" },
+        ],
     },
     reporting: {
         id: "reporting",
@@ -45,10 +45,10 @@ export const menuProps = {
         href: "/settings",
         img: settingsMetrics,
         name: "Настройка периода и\u00A0метрик",
-        href2: "/settings-period",
-        name2: "Настройка периода",
-        href3: "/settings-metrics",
-        name3: "Настройка метрик",
+        submenu: [
+            { link: "/settings-period", text: "Настройка периода" },
+            { link: "/settings-metrics", text: "Настройка метрик" },
+        ],
     },
     xlsxReports: {
         id: "xlsx-reports",
@@ -67,6 +67,13 @@ export const menuProps = {
         href: "/available-reports",
         img: auditories,
         name: "Встроенные доступные отчеты",
+        submenu: [
+            { link: "/auditoria-overlapping", text: "Отчет по пересечению аудиторий" },
+            { link: "/friquency-report", text: "Отчет по распределению на\u00A0частоты" },
+            { link: "/technology-report", text: "Отчет по технологиям" },
+            { link: "/auditoria-report", text: "Отчет по аудитории" },
+            { link: "/geo-report", text: "Отчет по географическому распределению" },
+        ],
     },
     viewsReport: {
         id: "views-report",

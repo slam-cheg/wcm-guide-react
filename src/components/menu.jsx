@@ -50,23 +50,20 @@ const MenuItem = ({ prop }) => {
 };
 
 const Submenu = ({ prop }) => {
-    if (prop.href2 === undefined) {
+    if (prop.submenu === undefined) {
         return null;
     }
-    return (
-        <div className="menu__subitem-container">
-            <div className="menu__subitem">
-                <a href={prop.href2} className="menu__subitem-link">
-                    {prop.name2}
-                </a>
-            </div>
-            <div className="menu__subitem">
-                <a href={prop.href3} className="menu__subitem-link">
-                    {prop.name3}
-                </a>
-            </div>
+    if (prop.id === "available-reports") {
+        
+    }
+    const listItems = prop.submenu.map((obj) => (
+        <div className="menu__subitem" key={obj}>
+            <a href={obj.link.toString()} className="menu__subitem-link">
+                {obj.text.toString()}
+            </a>
         </div>
-    );
+    ));
+    return <div className="menu__subitem-container">{listItems}</div>;
 };
 
 const handlerMenu = () => {
