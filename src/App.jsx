@@ -16,8 +16,12 @@ import { AvailableReports } from "./pages/available-reports/available-reports";
 import { AuditoriaOverlapping } from "./pages/available-reports/auditoria-overlapping";
 import { Permalinks } from "./pages/permalinks";
 import { Metrics } from "./pages/metrics";
-import { ViewsReport } from "./pages/views-report";
-import { ConversionReport } from "./pages/conversion-report";
+import { FriquencyReport } from "./pages/available-reports/friquency-report";
+import { TechnologyReport } from "./pages/available-reports/technology-report";
+import { AuditoriaReport } from "./pages/available-reports/auditoria-report";
+import { GeoReport } from "./pages/available-reports/geo-report";
+import { ConversionReport } from "./pages/conversion-report/conversion-report";
+import { Conversions } from "./pages/conversion-report/conversions";
 import { Automatization } from "./pages/automatization";
 import { NotFound } from "./pages/notFound";
 
@@ -42,8 +46,12 @@ function App() {
                     <Route path="/permalinks" element={<Permalinks />} />
                     <Route path="/available-reports" element={<AvailableReports />} />
                     <Route path="/auditoria-overlapping" element={<AuditoriaOverlapping />} />
-                    <Route path="/views-report" element={<ViewsReport />} />
+                    <Route path="/friquency-report" element={<FriquencyReport />} />
+                    <Route path="/technology-report" element={<TechnologyReport />} />
+                    <Route path="/auditoria-report" element={<AuditoriaReport />} />
+                    <Route path="/geo-report" element={<GeoReport />} />
                     <Route path="/conversion-report" element={<ConversionReport />} />
+                    <Route path="/conversions" element={<Conversions />} />
                     <Route path="/metrics" element={<Metrics />} />
                     <Route path="/automatization" element={<Automatization />} />
                     <Route path="/not-found" element={<NotFound />} />

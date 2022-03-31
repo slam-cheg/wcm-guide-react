@@ -16,7 +16,6 @@ export const Menu = () => {
                 <MenuListItem prop={menuProps.xlsxReports} />
                 <MenuListItem prop={menuProps.permalinks} />
                 <MenuListItem prop={menuProps.availableReports} />
-                <MenuListItem prop={menuProps.viewsReport} />
                 <MenuListItem prop={menuProps.conversionReport} />
                 <MenuListItem prop={menuProps.automatization} />
                 <MenuListItem prop={menuProps.metrics} />
@@ -54,7 +53,6 @@ const Submenu = ({ prop }) => {
         return null;
     }
     if (prop.id === "available-reports") {
-        
     }
     const listItems = prop.submenu.map((obj) => (
         <div className="menu__subitem" key={obj}>

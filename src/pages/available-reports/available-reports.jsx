@@ -1,10 +1,6 @@
 import React from "react";
 import { SectionContent } from "../../components/SectionContent";
 import { sectionsTexts } from "../../props/sectionsTexts";
-// import { Image } from "../../components/image";
-// import { SectionHeading } from "../../components/sectionHeading";
-// import { Link } from "../../components/links";
-// import { RedWords } from "../../components/redWords";
 import Card from "../../components/cards";
 import { availableReportsCardsProps } from "../../props/availableReportsCardsProps";
 

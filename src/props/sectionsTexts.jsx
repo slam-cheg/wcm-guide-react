@@ -15,13 +15,7 @@ import availableReports from "../images/available-reports.jpg";
 import viewsReport from "../images/views-report.jpg";
 import viewsReportTwo from "../images/views-report-two.jpg";
 import viewsReportThree from "../images/views-report-three.jpg";
-import conversionReport from "../images/conversion-report.jpg";
-import conversionReportTwo from "../images/conversion-report-two.jpg";
-import conversionReportThree from "../images/conversion-report-three.jpg";
-import conversionReportFour from "../images/conversion-report-four.jpg";
-import conversionReportFive from "../images/conversion-report-five.jpg";
-import conversionReportSix from "../images/conversion-report-six.jpg";
-import conversionReportSeven from "../images/conversion-report-seven.jpg";
+import conversionReport from "../images/report-conversions.jpg";
 import automatization from "../images/automatization.jpg";
 import automatizationTwo from "../images/automatization-two.jpg";
 import automatizationThree from "../images/automatization-three.jpg";
@@ -103,12 +97,12 @@ export const sectionsTexts = {
         id: "available-reports",
     },
     auditoriaOverlapping: {
-        title: "",
+        title: "Отчет по пересечению аудиторий",
         image: "",
-        classes: "",
-        id: "",
+        classes: "section section__not-homepage",
+        id: "auditoria-overlapping",
     },
-    viewsReport: {
+    friquencyReport: {
         title: "Отчет по распределению показов, кликов, конверсий и\u00A0частоты",
         image: viewsReport,
         imageTwo: viewsReportTwo,
@@ -116,17 +110,35 @@ export const sectionsTexts = {
         classes: "section section__not-homepage",
         id: "views-report",
     },
+    technologyReport: {
+        title: "Отчет по технологиям",
+        image: "",
+        classes: "section section__not-homepage",
+        id: "technology-report",
+    },
+    auditoriaReport: {
+        title: "Отчет по аудиториям",
+        image: "",
+        classes: "section section__not-homepage",
+        id: "auditoria-report",
+    },
+    geoReport: {
+        title: "Отчет по географическому распределению",
+        image: "",
+        classes: "section section__not-homepage",
+        id: "geo-report",
+    },
     conversionReport: {
-        title: "Отчеты по конверсиям",
+        title: "Конверсионные теги",
         image: conversionReport,
-        imageTwo: conversionReportTwo,
-        imageThree: conversionReportThree,
-        imageFour: conversionReportFour,
-        imageFive: conversionReportFive,
-        imageSix: conversionReportSix,
-        imageSeven: conversionReportSeven,
         classes: "section section__not-homepage",
         id: "conversion-report",
+    },
+    conversions: {
+        title: "Основная вкладка «conversions»",
+        image: "",
+        classes: "section section__not-homepage",
+        id: "conversion",
     },
     automatization: {
         title: "Автоматизация отчетов",

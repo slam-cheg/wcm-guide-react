@@ -75,9 +75,9 @@ export const menuProps = {
             { link: "/geo-report", text: "Отчет по географическому распределению" },
         ],
     },
-    viewsReport: {
-        id: "views-report",
-        href: "/views-report",
+    friquencyReport: {
+        id: "fruquency-report",
+        href: "/friquency-report",
         img: reportClicks,
         name: "Отчет по распределению показов, кликов, конверсий и\u00A0частоты",
     },
@@ -86,6 +86,10 @@ export const menuProps = {
         href: "/conversion-report",
         img: conversions,
         name: "Отчет по конверсиям",
+        submenu: [
+            { link: "/conversions", text: "Основная вкладка «Conversions»" },
+            { link: "/conversion-tags", text: "Отчет по\u00A0конверсиям и\u00A0конверсионным тегам" },
+        ],
     },
     automatization: {
         id: "automatization",
