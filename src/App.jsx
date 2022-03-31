@@ -13,6 +13,7 @@ import { XlsxReports } from "./pages/xlsx-reports";
 import { SetMetrics } from "./pages/period-metrics/set-metrics";
 import { SetPeriod } from "./pages/period-metrics/set-period";
 import { AvailableReports } from "./pages/available-reports/available-reports";
+import { AuditoriaOverlapping } from "./pages/available-reports/auditoria-overlapping";
 import { Permalinks } from "./pages/permalinks";
 import { Metrics } from "./pages/metrics";
 import { ViewsReport } from "./pages/views-report";
@@ -40,6 +41,7 @@ function App() {
                     <Route path="/xlsx-reports" element={<XlsxReports />} />
                     <Route path="/permalinks" element={<Permalinks />} />
                     <Route path="/available-reports" element={<AvailableReports />} />
+                    <Route path="/auditoria-overlapping" element={<AuditoriaOverlapping />} />
                     <Route path="/views-report" element={<ViewsReport />} />
                     <Route path="/conversion-report" element={<ConversionReport />} />
                     <Route path="/metrics" element={<Metrics />} />

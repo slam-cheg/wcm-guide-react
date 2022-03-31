@@ -31,7 +31,7 @@ export const sectionsTexts = {
     wcmStructure: {
         title: "Интерфейс WCM содержит 5 основных вкладок:",
         image: firstscreen,
-        classes: "section section_not-homepage",
+        classes: "section section__not-homepage",
         id: "wcm-structure",
     },
     campaigns: {
@@ -101,6 +101,12 @@ export const sectionsTexts = {
         image: availableReports,
         classes: "section section__not-homepage",
         id: "available-reports",
+    },
+    auditoriaOverlapping: {
+        title: "",
+        image: "",
+        classes: "",
+        id: "",
     },
     viewsReport: {
         title: "Отчет по распределению показов, кликов, конверсий и\u00A0частоты",

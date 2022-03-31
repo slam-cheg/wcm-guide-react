@@ -11,7 +11,7 @@ import { availableReportsCardsProps } from "../../props/availableReportsCardsPro
 export const AvailableReports = () => {
     return (
         <div className="section__wrapper">
-            <section className="section section__not-homepage" id="auditoria-report">
+            <section className="section section__not-homepage" id="available-reports">
                 <SectionContent prop={sectionsTexts.availableReports} />
                 <div className="section__additional-content">
                     <Card prop={availableReportsCardsProps.overlappingReport} />

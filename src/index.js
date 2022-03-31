@@ -16,7 +16,3 @@ ReactDOM.render(
 if (document.querySelector(".section") === null) {
     window.location.replace("/not-found")
 }
-
-if (document.location.pathname === "/wcm-structure") {
-    document.querySelector("#page").style.overflow = "hidden";
-}
