@@ -1,11 +1,10 @@
 export const availableReportsCardsProps = {
-    auditoriaReport: {
-        id: "auditoria-report",
+    overlappingReport: {
+        id: "overlapping-report",
         num: "1",
         title: "Отчет по пересечению аудиторий",
         description: "???",
-        listItemOne: "Выводится %\u00A0пересечения аудитории по\u00A0площадкам («Sites/Offers»)",
-        listItemTwo: "",
+        list: ["Выводится %\u00A0пересечения аудитории по\u00A0площадкам («Sites/Offers»)"],
         cardLink: "/auditoria-report",
     },
     friquencyReport: {
@@ -13,9 +12,31 @@ export const availableReportsCardsProps = {
         num: "2",
         title: "Отчет по распределению на\u00A0частоты",
         description: "???",
-        listItemOne: "охвата по частоте",
-        listItemTwo: "кликов по частоте",
-        listItemThree: "конверсий по частоте",
+        list: ["охвата по частоте", "кликов по частоте", "конверсий по частоте"],
         cardLink: "/friquency-report",
+    },
+    technologyReport: {
+        id: "technology-report",
+        num: "3",
+        title: "Отчет по технологиям",
+        description: "???",
+        list: ["Отчет по девайсам", "Отчет по операционным системам", "Отчет по браузерам", "Отчет по интернет-провайдерам"],
+        cardLink: "",
+    },
+    auditoriaReport: {
+        id: "auditoria-report",
+        num: "4",
+        title: "Отчет по аудитории",
+        description: "???",
+        list: ["Отчет по полу", "Отчет по возрасту", "Отчет по интересам", "My Audiences"],
+        cardLink: "",
+    },
+    geoReport: {
+        id: "geo-report",
+        num: "5",
+        title: "Отчет по географическому распределению",
+        description: "???",
+        list: ["Отчет по странам", "Отчет по макрорегионам России"],
+        cardLink: "",
     },
 };

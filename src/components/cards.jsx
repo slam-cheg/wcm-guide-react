@@ -1,4 +1,5 @@
 import React from "react";
+import { CardList } from "./cardList";
 
 export default function Card({ prop }) {
     if (prop.cardLink === undefined) {
@@ -9,10 +10,7 @@ export default function Card({ prop }) {
                 </div>
                 <h3 className="card__title">{prop.title}</h3>
                 <p className="card__description">{prop.description}</p>
-                <ul className="card__list">
-                    <li className="card__list-item">{prop.listItemOne}</li>
-                    <li className="card__list-item">{prop.listItemTwo}</li>
-                </ul>
+                <CardList prop={prop.list} />
                 <CardSubmenu prop={prop} />
             </div>
         );
@@ -24,10 +22,7 @@ export default function Card({ prop }) {
                 </div>
                 <h3 className="card__title">{prop.title}</h3>
                 <p className="card__description">{prop.description}</p>
-                <ul className="card__list">
-                    <li className="card__list-item">{prop.listItemOne}</li>
-                    <li className="card__list-item">{prop.listItemTwo}</li>
-                </ul>
+                <CardList prop={prop.list} />
                 <CardSubmenu prop={prop} />
             </a>
         );

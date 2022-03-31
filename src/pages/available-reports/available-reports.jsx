@@ -14,8 +14,11 @@ export const AvailableReports = () => {
             <section className="section section__not-homepage" id="auditoria-report">
                 <SectionContent prop={sectionsTexts.availableReports} />
                 <div className="section__additional-content">
-                    <Card prop={availableReportsCardsProps.auditoriaReport} />
+                    <Card prop={availableReportsCardsProps.overlappingReport} />
                     <Card prop={availableReportsCardsProps.friquencyReport} />
+                    <Card prop={availableReportsCardsProps.technologyReport} />
+                    <Card prop={availableReportsCardsProps.auditoriaReport} />
+                    <Card prop={availableReportsCardsProps.geoReport} />
                 </div>
             </section>
         </div>
