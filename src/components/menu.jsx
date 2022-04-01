@@ -52,8 +52,6 @@ const Submenu = ({ prop }) => {
     if (prop.submenu === undefined) {
         return null;
     }
-    if (prop.id === "available-reports") {
-    }
     const listItems = prop.submenu.map((obj) => (
         <div className="menu__subitem" key={obj}>
             <a href={obj.link.toString()} className="menu__subitem-link">

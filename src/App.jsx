@@ -22,6 +22,7 @@ import { AuditoriaReport } from "./pages/available-reports/auditoria-report";
 import { GeoReport } from "./pages/available-reports/geo-report";
 import { ConversionReport } from "./pages/conversion-report/conversion-report";
 import { Conversions } from "./pages/conversion-report/conversions";
+import { ConversionTags } from "./pages/conversion-report/conversion-tags";
 import { Automatization } from "./pages/automatization";
 import { NotFound } from "./pages/notFound";
 
@@ -52,6 +53,7 @@ function App() {
                     <Route path="/geo-report" element={<GeoReport />} />
                     <Route path="/conversion-report" element={<ConversionReport />} />
                     <Route path="/conversions" element={<Conversions />} />
+                    <Route path="/conversion-tags" element={<ConversionTags />} />
                     <Route path="/metrics" element={<Metrics />} />
                     <Route path="/automatization" element={<Automatization />} />
                     <Route path="/not-found" element={<NotFound />} />

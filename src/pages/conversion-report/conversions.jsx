@@ -3,12 +3,11 @@ import { sectionsTexts } from "../../props/sectionsTexts";
 import { Image } from "../../components/image";
 import { SectionHeading } from "../../components/sectionHeading";
 import { RedWords } from "../../components/redWords";
-import { Link } from "../../components/links";
 
 export const Conversions = () => {
     return (
         <div className="section__wrapper">
-            <section className="section section__not-homepage" id="available-reports">
+            <section className="section section__not-homepage" id="conversion-report">
                 <SectionHeading prop={sectionsTexts.conversions} />
                 <div className="section__content">
                     <p className="section__lead">
