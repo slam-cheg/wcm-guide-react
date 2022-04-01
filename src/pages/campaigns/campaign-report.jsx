@@ -2,8 +2,9 @@ import React from "react";
 import { Image } from "../../components/image";
 import { SectionHeading } from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
-import { RedWords, redWords } from "../../components/redWords";
+import { RedWords } from "../../components/redWords";
 import { Hint } from "../../components/hint";
+import { HintBtn } from "../../components/hintBtn";
 
 export const CampaignReport = () => {
     return (
@@ -12,6 +13,7 @@ export const CampaignReport = () => {
                 <SectionHeading prop={sectionsTexts.campaignsReport} />
                 <div className="section__content">
                     <Hint />
+                    <HintBtn />
                     <p className="section__lead">
                         Чтобы попасть в&nbsp;отчет по&nbsp;конкретной кампании в&nbsp;структуре кампании необходимо перейти в&nbsp;
                         <RedWords prop={"«Reporting»"} />:

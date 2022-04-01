@@ -5,12 +5,22 @@ export const Hint = () => {
     useEffect(() => {
         const hint = document.querySelector(".hint");
         const hintBtn = document.querySelector(".hint__button");
+        const hintBigBtn = document.querySelector("#hint-btn");
         hintBtn.addEventListener("click", () => {
             hint.classList.remove("hint_visible");
+            hintBigBtn.style.opacity = 1;
+            hintBigBtn.style.pointerEvents = "auto";
+            hintBigBtn.style.visibility = "visible";
+        });
+        hintBigBtn.addEventListener("click", () => {
+            hint.classList.add("hint_visible");
+            hintBigBtn.style.opacity = 0;
+            hintBigBtn.style.pointerEvents = "none";
+            hintBigBtn.style.visibility = "hidden";
         });
         setTimeout(() => {
             hint.classList.add("hint_visible");
-        }, 3000);
+        }, 4000);
     });
     return (
         <div className="hint">

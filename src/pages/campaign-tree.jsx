@@ -4,6 +4,7 @@ import { Image } from "../components/image";
 import { SectionHeading } from "../components/sectionHeading";
 import { RedWords } from "../components/redWords";
 import { Hint } from "../components/hint";
+import { HintBtn } from "../components/hintBtn";
 
 export const CampaignTree = () => {
     return (
@@ -12,6 +13,7 @@ export const CampaignTree = () => {
                 <SectionHeading prop={sectionsTexts.campaignTree} />
                 <div className="section__content">
                     <Hint />
+                    <HintBtn />
                     <p className="section__lead">
                         При переходе в&nbsp;блок статистических показателей по&nbsp;рекламной кампании данные отображаются в&nbsp;режиме{" "}
                         <RedWords prop={"«Campaign\u00A0Tree»"} /> (дерево кампании), так как структура подобна дереву: внутри кампании выделены
