@@ -737,14 +737,16 @@
 }
 
 .hint {
-  position: absolute;
+  position: fixed;
   width: 450px;
-  right: 20px;
+  bottom: 20px;
   background: #fff;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0px 0px 19px 9px #e2e5e6;
+  box-shadow: 0px 0px 19px 6px #6b6c6c;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition: 0.5s;
 }
 
@@ -757,4 +759,30 @@
 .hint_visible {
   opacity: 1;
   transition: 0.5s;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.hint__btn-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hint__button {
+  background: none;
+  border: none;
+  font-size: 35px;
+  line-height: 0.6;
+  top: -10px;
+  right: -10px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.3s;
+}
+.hint__button:hover {
+  transition: 0.3s;
+  color: #c1002a;
 }

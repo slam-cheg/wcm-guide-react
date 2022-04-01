@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { sectionsTexts } from "../props/sectionsTexts";
 import { Image } from "../components/image";
 import { SectionHeading } from "../components/sectionHeading";
@@ -6,9 +6,6 @@ import { RedWords } from "../components/redWords";
 import { Hint } from "../components/hint";
 
 export const CampaignTree = () => {
-    useEffect(() => {
-        hint();
-    });
     return (
         <div className="section__wrapper">
             <section className="section section__not-homepage" id="campaign-tree">
@@ -28,9 +25,4 @@ export const CampaignTree = () => {
     );
 };
 
-function hint() {
-    setTimeout(() => {
-        const hint = document.querySelector(".hint");
-        hint.classList.add("hint__visible");
-    }, 3000);
-}
+function hint() {}

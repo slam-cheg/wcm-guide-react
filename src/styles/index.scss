@@ -83,4 +83,6 @@
 // hint
 @import "./modules/blocks/hint/hint.scss";
 @import "./modules/blocks/hint/__text/hint__text.scss";
-@import "./modules/blocks/hint/__visible/hint__visible.scss";
+@import "./modules/blocks/hint/_visible/hint_visible.scss";
+@import "./modules/blocks/hint/__btn-wrapper/hint__btn-wrapper.scss";
+@import "./modules/blocks/hint/__button/hint__button.scss";
