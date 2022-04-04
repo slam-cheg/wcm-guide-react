@@ -9,7 +9,7 @@ export const HintBtn = () => {
                 width: 40,
                 height: 40,
                 background: "#fff",
-                position: "absolute",
+                position: "fixed",
                 bottom: 20,
                 borderRadius: 50,
                 boxShadow: "0px 0px 19px 6px #6b6c6c",

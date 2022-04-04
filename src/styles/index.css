@@ -78,7 +78,7 @@
   display: flex;
   overflow: auto;
   background-color: #090e24;
-  height: 100%;
+  height: calc(100vh - 60px);
   transition: 0.3s;
   position: relative;
   z-index: 10000;
@@ -92,6 +92,10 @@
 .sidebar_disabled {
   position: fixed;
   width: auto;
+}
+.sidebar_disabled::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .menu {
@@ -149,6 +153,11 @@
 .menu__ico {
   width: 25px;
 }
+@media screen and (max-width: 1440px) {
+  .menu__ico {
+    width: 20px;
+  }
+}
 
 .menu__text-wrapper {
   margin-left: 10px;
@@ -198,9 +207,9 @@
   border-left-color: inherit;
   border-bottom: 8px solid transparent;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1440px) {
   .menu__item-container {
-    height: 40px;
+    height: 30px;
   }
 }
 
@@ -236,6 +245,11 @@
   visibility: hidden;
   pointer-events: none;
   transition: 0.2s;
+}
+@media screen and (max-width: 1440px) {
+  .menu__subitem-container {
+    top: -50px;
+  }
 }
 
 .menu__subitem {

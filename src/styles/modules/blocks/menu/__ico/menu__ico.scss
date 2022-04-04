@@ -1,3 +1,7 @@
 .menu__ico {
     width: 25px;
+
+    @media screen and (max-width: 1440px) {
+        width: 20px;
+    }
 }

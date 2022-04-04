@@ -1,4 +1,9 @@
 .sidebar_disabled {
     position: fixed;
     width: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 }

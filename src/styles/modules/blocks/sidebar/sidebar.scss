@@ -2,7 +2,7 @@
     display: flex;
     overflow: auto;
     background-color: $darkblue;
-    height: 100%;
+    height: calc(100vh - 60px);
     transition: .3s;
     position: relative;
     z-index: 10000;

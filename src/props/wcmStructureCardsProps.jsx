@@ -17,7 +17,7 @@ export const wcmStructureCardsProps = {
         num: "2",
         title: "Creative library",
         description: "Библиотека креативов",
-        list: ["Создание креативов", "Управление креативами (в\u00A0т.ч. динамическими)"],
+        list: ["Добавление креативов", "Управление креативами (в\u00A0т.ч. динамическими)"],
     },
     conversions: {
         id: "conversions",
