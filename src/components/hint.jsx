@@ -4,8 +4,8 @@ import { RedWords } from "../components/redWords";
 export const Hint = () => {
     useEffect(() => {
         const hint = document.querySelector(".hint");
-        const hintBtn = document.querySelector(".hint__button");
-        const hintBigBtn = document.querySelector("#hint-btn");
+        const hintBtn = document.querySelector(".hint__close-button");
+        const hintBigBtn = document.querySelector("#hint-open-btn");
         hintBtn.addEventListener("click", () => {
             hint.classList.remove("hint_visible");
             hintBigBtn.style.opacity = 1;
@@ -25,7 +25,7 @@ export const Hint = () => {
     return (
         <div className="hint">
             <div className="hint__btn-wrapper">
-                <button className="hint__button">&times;</button>
+                <button className="hint__close-button">&times;</button>
             </div>
             <p className="hint__text">
                 <RedWords prop={"Хитрость"} />:<br /> По&nbsp;умолчанию в&nbsp;таблице под графиком отображается не&nbsp;более 10&nbsp;строк

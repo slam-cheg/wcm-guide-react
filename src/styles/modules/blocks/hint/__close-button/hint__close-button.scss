@@ -1,4 +1,4 @@
-.hint__button {
+.hint__close-button {
     background: none;
     border: none;
     font-size: 35px;
@@ -9,10 +9,10 @@
     margin: 0;
     cursor: pointer;
     position: absolute;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
-        transition: .3s;
+        transition: 0.3s;
         color: $red;
     }
 }

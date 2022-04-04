@@ -26,5 +26,3 @@ export const CampaignTree = () => {
         </div>
     );
 };
-
-function hint() {}

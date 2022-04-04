@@ -4,7 +4,7 @@ import { RedWords } from "../components/redWords";
 export const HintBtn = () => {
     return (
         <div
-            id="hint-btn"
+            id="hint-open-btn"
             style={{
                 width: 40,
                 height: 40,
