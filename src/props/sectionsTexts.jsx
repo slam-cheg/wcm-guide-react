@@ -141,7 +141,7 @@ export const sectionsTexts = {
         id: "conversion-report",
     },
     conversions: {
-        title: "Основная вкладка «conversions»",
+        title: "conversions",
         image: "",
         classes: "section section__not-homepage",
         id: "conversion",

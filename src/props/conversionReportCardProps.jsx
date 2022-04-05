@@ -2,7 +2,7 @@ export const conversionReportCardProps = {
     conversions: {
         id: "conversions",
         num: "1",
-        title: "Основная вкладка «Conversions»",
+        title: "Conversions",
         description: "Конверсии",
         list: ["Просмотр всех конверсионных тегов", "Первичный мониторинг результатов"],
         cardLink: "/conversions",
@@ -10,8 +10,8 @@ export const conversionReportCardProps = {
     conversionTags: {
         id: "conversion-tags",
         num: "2",
-        title: "Отчет по\u00A0конверсиям и\u00A0конверсионным тегам",
-        description: "???",
+        title: "Conversions report",
+        description: "Отчет по\u00A0конверсиям и\u00A0конверсионным тегам",
         list: ["С привязкой к\u00A0рекламным кампаниям", "Без привязки к\u00A0рекламным кампаниям"],
         cardLink: "/conversion-tags",
     },

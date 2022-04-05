@@ -87,7 +87,7 @@ export const menuProps = {
         img: conversions,
         name: "Отчет по конверсиям",
         submenu: [
-            { link: "/conversions", text: "Основная вкладка «Conversions»" },
+            { link: "/conversions", text: "Conversions" },
             { link: "/conversion-tags", text: "Отчет по\u00A0конверсиям и\u00A0конверсионным тегам" },
         ],
     },
