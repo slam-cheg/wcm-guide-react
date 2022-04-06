@@ -1,6 +1,6 @@
 import React from "react";
-import {SectionHeadingTitle} from "./sectionHeadingTitle";
-import BackButton from "../components/backButton";
+import { SectionHeadingTitle } from "./sectionHeadingTitle";
+import { BackButton } from "../components/backButton";
 
 export const SectionHeading = ({ prop }) => {
     return (

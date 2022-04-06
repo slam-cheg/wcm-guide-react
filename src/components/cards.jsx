@@ -1,7 +1,7 @@
 import React from "react";
 import { CardList } from "./cardList";
 
-export default function Card({ prop }) {
+export const Card = ({ prop }) => {
     if (prop.cardLink === undefined) {
         return (
             <div className="card" id={prop.id} style={{ cursor: "auto" }}>
@@ -27,9 +27,9 @@ export default function Card({ prop }) {
             </a>
         );
     }
-}
+};
 
-function CardSubmenu({ prop }) {
+const CardSubmenu = ({ prop }) => {
     if (prop.href === undefined) {
         return "";
     }
@@ -46,4 +46,4 @@ function CardSubmenu({ prop }) {
             </a>
         </div>
     );
-}
+};

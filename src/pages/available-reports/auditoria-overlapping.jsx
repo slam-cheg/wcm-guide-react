@@ -39,13 +39,15 @@ export class AuditoriaOverlapping extends React.Component {
                             </li>
                         </ol>
                     </div>
-                    <Image prop={sectionsTexts.automatization.image} />
+
+                    <Image prop={sectionsTexts.auditoriaOverlapping.image} />
                     <div className="section__content">
                         <p className="section__lead">
                             Отчет представляет собой таблицу с&nbsp;наложением пересечения аудитории между сайтами в&nbsp;процентах.
                         </p>
                     </div>
-                    <Image prop={sectionsTexts.automatization.image} />
+
+                    <Image prop={sectionsTexts.auditoriaOverlapping.imageTwo} />
                 </section>
             </div>
         );

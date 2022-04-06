@@ -1,7 +1,7 @@
 import React from "react";
 import { SectionContent } from "../../components/SectionContent";
 import { sectionsTexts } from "../../props/sectionsTexts";
-import Card from "../../components/cards";
+import { Card } from "../../components/cards";
 import { availableReportsCardsProps } from "../../props/availableReportsCardsProps";
 
 export class AvailableReports extends React.Component {

@@ -16,6 +16,8 @@ import viewsReport from "../images/views-report.jpg";
 import viewsReportTwo from "../images/views-report-two.jpg";
 import viewsReportThree from "../images/views-report-three.jpg";
 import conversionReport from "../images/report-conversions.jpg";
+import auditoriaOverlapping from "../images/auditoria-overlapping.jpg";
+import auditoriaOverlappingTwo from "../images/auditoria-overlapping two.jpg";
 import conversionReportTwo from "../images/conversion-report-two.jpg";
 import conversionReportThree from "../images/conversion-report-three.jpg";
 import conversionReportFour from "../images/conversion-report-four.jpg";
@@ -104,7 +106,8 @@ export const sectionsTexts = {
     },
     auditoriaOverlapping: {
         title: "Отчет по пересечению аудиторий",
-        image: "",
+        image: auditoriaOverlapping,
+        imageTwo: auditoriaOverlappingTwo,
         classes: "section section__not-homepage",
         id: "auditoria-overlapping",
     },

@@ -2,7 +2,7 @@ import React from "react";
 import { SectionHeading } from "../../components/sectionHeading";
 import { sectionsTexts } from "../../props/sectionsTexts";
 import { RedWords } from "../../components/redWords";
-import Card from "../../components/cards";
+import { Card } from "../../components/cards";
 import { campaignsProps } from "../../props/campaignsProps";
 import { Image } from "../../components/image";
 

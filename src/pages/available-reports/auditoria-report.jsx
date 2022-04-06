@@ -4,7 +4,7 @@ import { Image } from "../../components/image";
 import { SectionHeading } from "../../components/sectionHeading";
 import { RedWords } from "../../components/redWords";
 import { Link } from "../../components/links";
-import BoldText from "../../components/boldText";
+import { BoldText } from "../../components/boldText";
 
 export class AuditoriaReport extends React.Component {
     render() {

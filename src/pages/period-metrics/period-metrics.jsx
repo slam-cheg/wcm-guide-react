@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../components/cards";
+import { Card } from "../../components/cards";
 import { SectionHeading } from "../../components/sectionHeading";
 import { Image } from "../../components/image";
 import { sectionsTexts } from "../../props/sectionsTexts";
