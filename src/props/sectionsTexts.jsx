@@ -27,6 +27,7 @@ import conversionReportSeven from "../images/conversion-report-seven.jpg";
 import technologiesReport from "../images/technologies-report.jpg";
 import geoReport from "../images/geo-report.jpg";
 import audioriaReport from "../images/auditoria-report.jpg";
+import conversions from "../images/conversions.jpg";
 import automatization from "../images/automatization.jpg";
 import automatizationTwo from "../images/automatization-two.jpg";
 import automatizationThree from "../images/automatization-three.jpg";
@@ -148,7 +149,7 @@ export const sectionsTexts = {
     },
     conversions: {
         title: "conversions",
-        image: "",
+        image: conversions,
         classes: "section section__not-homepage",
         id: "conversion",
     },

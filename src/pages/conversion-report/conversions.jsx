@@ -27,7 +27,7 @@ export class Conversions extends React.Component {
                             />
                         </p>
                     </div>
-                    <Image />
+                    <Image prop={sectionsTexts.conversions.image} />
                 </section>
             </div>
         );
