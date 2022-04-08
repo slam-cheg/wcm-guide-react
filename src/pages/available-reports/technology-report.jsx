@@ -14,8 +14,10 @@ export class TechnologyReport extends React.Component {
                     <SectionHeading prop={sectionsTexts.technologyReport} />
                     <div className="section__content">
                         <p className="section__lead">
-                            Для просмотра отчета по&nbsp;техническим параметрам, т.е.&nbsp;в&nbsp;разбивке размещения по&nbsp;Девайсам,
-                            по&nbsp;Операционным системам, по&nbsp;Браузерам, по&nbsp;интернет провайдерам, необходимо:
+                            Отчеты по&nbsp;техническим параметрам находятся внутри закладки <RedWords prop={"«Technologies»"} /> в&nbsp;меню уровней
+                            и&nbsp;отчетов слева.
+                            <br />
+                            По&nbsp;умолчанию доступны отчеты&nbsp;по: Девайсам, Операционным системам, Браузерам, Интернет-провайдерам.
                         </p>
                         <ol className="section__list">
                             <li className="section__list-item">
@@ -55,7 +57,7 @@ export class TechnologyReport extends React.Component {
                             </li>
                         </ol>
                     </div>
-                    <Image />
+                    <Image prop={sectionsTexts.technologyReport.image} />
                 </section>
             </div>
         );

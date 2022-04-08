@@ -13,6 +13,10 @@ export class AuditoriaReport extends React.Component {
                 <section className="section section__not-homepage" id="available-reports">
                     <SectionHeading prop={sectionsTexts.auditoriaReport} />
                     <div className="section__content">
+                        <p className="section__lead">
+                            Отчеты по&nbsp;аудитории находятся внутри закладки <RedWords prop={"«Audience»"} /> в&nbsp;меню уровней и&nbsp;отчетов
+                            слева. По&nbsp;умолчанию доступны отчеты&nbsp;по: Полу, Возрасту, Интересам.
+                        </p>
                         <ol className="section__list">
                             <li className="section__list-item">
                                 Зайти в&nbsp;основную вкладку <Link prop={{ text: "«Reporting»", href: "/reporting" }} />;
@@ -47,7 +51,7 @@ export class AuditoriaReport extends React.Component {
                             </li>
                         </ol>
                     </div>
-                    <Image />
+                    <Image prop={sectionsTexts.auditoriaReport.image} />
                 </section>
             </div>
         );

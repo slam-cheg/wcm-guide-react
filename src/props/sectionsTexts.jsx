@@ -24,6 +24,9 @@ import conversionReportFour from "../images/conversion-report-four.jpg";
 import conversionReportFive from "../images/conversion-report-five.jpg";
 import conversionReportSix from "../images/conversion-report-six.jpg";
 import conversionReportSeven from "../images/conversion-report-seven.jpg";
+import technologiesReport from "../images/technologies-report.jpg";
+import geoReport from "../images/geo-report.jpg";
+import audioriaReport from "../images/auditoria-report.jpg";
 import automatization from "../images/automatization.jpg";
 import automatizationTwo from "../images/automatization-two.jpg";
 import automatizationThree from "../images/automatization-three.jpg";
@@ -112,7 +115,7 @@ export const sectionsTexts = {
         id: "auditoria-overlapping",
     },
     friquencyReport: {
-        title: "Отчет по распределению показов, кликов, конверсий и\u00A0частоты",
+        title: "Распределение показов, кликов, конверсий по\u00A0частотам",
         image: viewsReport,
         imageTwo: viewsReportTwo,
         imageThree: viewsReportThree,
@@ -121,19 +124,19 @@ export const sectionsTexts = {
     },
     technologyReport: {
         title: "Отчет по технологиям",
-        image: "",
+        image: technologiesReport,
         classes: "section section__not-homepage",
         id: "technology-report",
     },
     auditoriaReport: {
         title: "Отчет по аудиториям",
-        image: "",
+        image: audioriaReport,
         classes: "section section__not-homepage",
         id: "auditoria-report",
     },
     geoReport: {
         title: "Отчет по географическому распределению",
-        image: "",
+        image: geoReport,
         classes: "section section__not-homepage",
         id: "geo-report",
     },

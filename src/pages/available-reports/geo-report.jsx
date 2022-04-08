@@ -13,6 +13,11 @@ export class GeoReport extends React.Component {
                 <section className="section section__not-homepage" id="available-reports">
                     <SectionHeading prop={sectionsTexts.geoReport} />
                     <div className="section__content">
+                        <p className="section__lead">
+                            Отчеты по&nbsp;географическому распределению находятся внутри закладки <RedWords prop={"«Geographic»"}/> в&nbsp;меню уровней и&nbsp;отчетов
+                            слева.
+                            <br /> По&nbsp;умолчанию доступны отчеты&nbsp;по: Странам, Макрорегионам России.
+                        </p>
                         <ol className="section__list">
                             <li className="section__list-item">
                                 Зайти в&nbsp;основную вкладку <Link prop={{ text: "«Reporting»", href: "/reporting" }} />;
@@ -43,7 +48,7 @@ export class GeoReport extends React.Component {
                             </li>
                         </ol>
                     </div>
-                    <Image />
+                    <Image prop={sectionsTexts.geoReport.image} />
                 </section>
             </div>
         );
