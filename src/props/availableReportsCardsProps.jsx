@@ -5,7 +5,7 @@ export const availableReportsCardsProps = {
         title: "Audience overlapping",
         description: "Отчет по\u00A0пересечению аудиторий",
         list: ["Выводится %\u00A0пересечения аудитории по\u00A0площадкам («Sites/Offers»)"],
-        cardLink: "/auditoria-report",
+        cardLink: "/auditoria-overlapping",
     },
     friquencyReport: {
         id: "friquency-report",
@@ -21,7 +21,7 @@ export const availableReportsCardsProps = {
         title: "Technologies",
         description: "Отчет по технологиям",
         list: ["Отчет по девайсам", "Отчет по операционным системам", "Отчет по браузерам", "Отчет по интернет-провайдерам"],
-        cardLink: "",
+        cardLink: "/technology-report",
     },
     auditoriaReport: {
         id: "auditoria-report",
@@ -29,7 +29,7 @@ export const availableReportsCardsProps = {
         title: "Audience",
         description: "Отчет по аудитории",
         list: ["Отчет по полу", "Отчет по возрасту", "Отчет по интересам", "My Audiences"],
-        cardLink: "",
+        cardLink: "/auditoria-report",
     },
     geoReport: {
         id: "geo-report",
@@ -37,6 +37,6 @@ export const availableReportsCardsProps = {
         title: "Geographic",
         description: "Отчет по\u00A0географическому распределению",
         list: ["Отчет по странам", "Отчет по макрорегионам России"],
-        cardLink: "",
+        cardLink: "/geo-report",
     },
 };

@@ -22,7 +22,7 @@ export class AuditoriaOverlapping extends React.Component {
                                 и&nbsp;отчетов (Столбец слева);
                             </li>
                             <li className="section__list-item">
-                                Проваливаемся внутри нужно кампании, кликнув по&nbsp;ней (Попадаем в&nbsp;подробный отчет с&nbsp;разбивкой
+                                Проваливаемся внутри нужной кампании, кликнув по&nbsp;ней (Попадаем в&nbsp;подробный отчет с&nbsp;разбивкой
                                 по&nbsp;структуре&nbsp;&mdash; <Link prop={{ text: "«Campaign tree»", href: "/campaign-tree" }} />
                                 );
                             </li>

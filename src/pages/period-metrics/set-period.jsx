@@ -12,7 +12,7 @@ export class SetPeriod extends React.Component {
                     <SectionHeading prop={sectionsTexts.period} />
                     <div className="section__content">
                         <p className="section__lead">
-                            По&nbsp;умолчанию установлен период за&nbsp;последние 10&nbsp;дней. Необходимо сразу выставить необходимый вам период,
+                            По&nbsp;умолчанию установлен период за&nbsp;последние 10&nbsp;дней. Необходимо сразу выставить период,
                             чтобы с&nbsp;самого начала работы с&nbsp;отчетом видеть корректную статистику:
                         </p>
                         <ol className="section__list">

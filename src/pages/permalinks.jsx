@@ -30,7 +30,7 @@ export class Permalinks extends React.Component {
                             </li>
                             <li className="section__list-item">Копируем Short URL из&nbsp;появившегося окна;</li>
                             <li className="section__list-item">
-                                нажимаем <RedWords prop={"«Close»"} />.
+                                Нажимаем <RedWords prop={"«Close»"} />.
                             </li>
                         </ol>
                         <p className="section__lead">

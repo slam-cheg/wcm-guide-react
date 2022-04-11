@@ -12,11 +12,10 @@ export class Conversions extends React.Component {
                     <SectionHeading prop={sectionsTexts.conversions} />
                     <div className="section__content">
                         <p className="section__lead">
-                            При переходе на&nbsp;вкладку <RedWords prop={"«Conversion»"} />
-                            в&nbsp;верхнем меню в&nbsp;интерфейсе WCM появляется список конверсионных тегов, сгенерированных в&nbsp;рамках аккаунта.
-                            Верхняя строка меню в&nbsp;списке конверсионных тегов показывает количество конверсий в&nbsp;столбце{" "}
-                            <RedWords prop={"«#Conv.»"} /> за&nbsp;указанный период в&nbsp;правом верхнем углу и&nbsp;распределение типа
-                            подготовленного тега на&nbsp;формат:
+                            При переходе на&nbsp;вкладку <RedWords prop={"«Conversion»"} /> в&nbsp;верхнем меню в&nbsp;интерфейсе WCM появляется
+                            список конверсионных тегов, сгенерированных в&nbsp;рамках аккаунта. Верхняя строка меню в&nbsp;списке конверсионных тегов
+                            показывает количество конверсий в&nbsp;столбце <RedWords prop={"«#Conv.»"} /> за&nbsp;указанный период в&nbsp;правом
+                            верхнем углу и&nbsp;распределение типа подготовленного тега на&nbsp;формат:
                         </p>
                         <br />
                         <p className="section__lead">
